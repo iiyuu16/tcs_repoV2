@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 713495406413159198}
-  - component: {fileID: 1458025120951653639}
   - component: {fileID: 6949320548710743235}
   - component: {fileID: 1970702869763943120}
   - component: {fileID: 8762221576102448653}
@@ -39,14 +38,6 @@ Transform:
   - {fileID: 6008011291585539623}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1458025120951653639
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987449734361659041}
-  m_Mesh: {fileID: 0}
 --- !u!23 &6949320548710743235
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -141,7 +132,7 @@ MonoBehaviour:
   flashFX: {fileID: 5270763645811612562}
   fireFX: {fileID: 6624274781614507379}
   smokeFX: {fileID: 1443766617851946577}
-  fireRate: 1
+  fireRate: 0.3
   sfx: {fileID: 0}
 --- !u!1 &1802696650721011308
 GameObject:

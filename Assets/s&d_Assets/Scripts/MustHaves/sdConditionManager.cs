@@ -1,20 +1,35 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class SdWinConditionManager : MonoBehaviour
 {
     public GameObject[] targetGameObjects;
     public GameObject winScreen;
     public GameObject[] objectsToDisable;
-    public TextMeshProUGUI statusText; // Add this line to reference your TMP component
+    public TextMeshProUGUI statusText;
+    public sdTimer timeManager;
+    public float timeToSwitch;
 
     private bool hasWon = false;
+    private bool isAlternate = false;
+    private Coroutine toggleTargetsCoroutine;
+
+    private void Start()
+    {
+        if (timeManager == null)
+        {
+            Debug.LogError("TimeManager reference is missing.");
+            return;
+        }
+
+        toggleTargetsCoroutine = StartCoroutine(ToggleTargets());
+    }
 
     private void Update()
     {
         if (!hasWon)
         {
-            // Update the status text
             UpdateStatusText();
 
             if (AreAllTargetsDestroyed())
@@ -26,6 +41,11 @@ public class SdWinConditionManager : MonoBehaviour
 
                 DisableGameObjects();
                 hasWon = true;
+
+                if (toggleTargetsCoroutine != null)
+                {
+                    StopCoroutine(toggleTargetsCoroutine);
+                }
             }
         }
     }
@@ -68,4 +88,29 @@ public class SdWinConditionManager : MonoBehaviour
             statusText.text = $"Targets Destroyed: {missingTargets}/{totalTargets}";
         }
     }
+
+    private IEnumerator ToggleTargets()
+    {
+        while (!hasWon)
+        {
+            yield return new WaitForSeconds(timeToSwitch);
+            ToggleTargetsHalf(isAlternate);
+            isAlternate = !isAlternate;
+        }
+    }
+
+    private void ToggleTargetsHalf(bool firstHalf)
+    {
+        int midIndex = targetGameObjects.Length / 2;
+
+        for (int i = 0; i < targetGameObjects.Length; i++)
+        {
+            if (targetGameObjects[i] != null)
+            {
+                bool shouldBeActive = firstHalf ? (i >= midIndex) : (i < midIndex);
+                targetGameObjects[i].SetActive(shouldBeActive);
+            }
+        }
+    }
+
 }

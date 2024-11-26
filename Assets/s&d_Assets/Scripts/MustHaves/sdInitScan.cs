@@ -14,8 +14,8 @@ public class sdInitScan : MonoBehaviour
     public float growthRate = 1f;
     public float startingSize = 0.1f;
     public Material newMaterial;
-
-    public float cooldownDuration = 0.5f;
+    public GameObject scanText;
+    public float cooldownDuration = 3f;
 
     private SphereCollider sphereCollider;
     private bool isExpanding = false;
@@ -28,6 +28,7 @@ public class sdInitScan : MonoBehaviour
     public sdSoundSource sfx;
 
     private float nextScanTime;
+    private bool showScanInd = false;
 
     void Start()
     {
@@ -57,7 +58,32 @@ public class sdInitScan : MonoBehaviour
             sfx.scanSFX();
             StartExpanding();
             nextScanTime = Time.time + cooldownDuration;
+
+            if (scanText != null)
+            {
+                scanText.SetActive(false);
+            }
         }
+
+        if(Time.time >= nextScanTime && scanText != null)
+        {
+            showScanInd = true;
+            if (scanText != null)
+            {
+                scanText.SetActive(true);
+                Animator anim = scanText.GetComponent<Animator>();
+                if (anim != null)
+                {
+                    anim.Play("scanText");
+                }
+            }
+        }
+
+        if(showScanInd && scanText != null)
+        {
+            StartCoroutine(DisableScanText());
+        }
+
 
         if (isExpanding)
         {
@@ -106,6 +132,22 @@ public class sdInitScan : MonoBehaviour
             {
                 Debug.LogWarning("Target or new material is not assigned.");
             }
+        }
+    }
+
+    IEnumerator DisableScanText()
+    {
+        showScanInd = false;
+
+        Animator anim = scanText.GetComponent<Animator>();
+        if (anim != null)
+        {
+            yield return new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
+        }
+
+        if (scanText != null)
+        {
+            scanText.SetActive(false);
         }
     }
 
