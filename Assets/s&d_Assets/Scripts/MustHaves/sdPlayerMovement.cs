@@ -34,6 +34,9 @@ public class sdPlayerMovement : MonoBehaviour
 
     public KeyCode BoostKey;
     public sdSoundSource sfx;
+    public GameObject boostTxt;
+    private bool showBoostTxt = false;
+    private Animator boostTxtAnimator;
 
     private void Awake()
     {
@@ -61,6 +64,12 @@ public class sdPlayerMovement : MonoBehaviour
             sliderHP.value = maxHP;
             sliderHP.onValueChanged.AddListener(OnHealthChanged);
         }
+
+        if (boostTxt != null)
+        {
+            boostTxtAnimator = boostTxt.GetComponent<Animator>();
+            boostTxt.SetActive(false);
+        }
     }
 
     void Update()
@@ -73,6 +82,11 @@ public class sdPlayerMovement : MonoBehaviour
             HandleBoost();
         }
         HandleLife();
+
+        if (showBoostTxt)
+        {
+            EnableBoostTxt();
+        }
     }
 
     private void HandleLife()
@@ -85,7 +99,6 @@ public class sdPlayerMovement : MonoBehaviour
             currentSpeed = 0f;
 
             recoveryCoroutine = StartCoroutine(RecoveryState());
-
         }
     }
 
@@ -115,7 +128,6 @@ public class sdPlayerMovement : MonoBehaviour
         currHP = maxHP;
         sliderHP.value = maxHP;
         UpdateBoostIndicator();
-
     }
 
     public void OnHealthChanged(float value)
@@ -211,7 +223,31 @@ public class sdPlayerMovement : MonoBehaviour
             {
                 currBoosts++;
                 UpdateBoostIndicator();
+
+                showBoostTxt = true;
             }
+        }
+    }
+
+    private void EnableBoostTxt()
+    {
+        if (boostTxt != null && boostTxtAnimator != null)
+        {
+            boostTxt.SetActive(true);
+            boostTxtAnimator.Play("boostTxt");
+        }
+
+        showBoostTxt = false;
+
+        StartCoroutine(DisableBoostTxtAfterAnimation());
+    }
+
+    private IEnumerator DisableBoostTxtAfterAnimation()
+    {
+        yield return new WaitForSeconds(1f);
+        if (boostTxt != null)
+        {
+            boostTxt.SetActive(false);
         }
     }
 
