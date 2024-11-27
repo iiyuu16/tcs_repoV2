@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class turretAim : MonoBehaviour
 {
-    //public GameObject turret;
     public wormEnemyMovement worm;
     public Transform target;
     public Rigidbody rb;
@@ -14,7 +13,6 @@ public class turretAim : MonoBehaviour
 
     public AudioSource audio;
     
-    // Start is called before the first frame update
     void Start()
     {
         rb = bullet.GetComponent<Rigidbody>();
