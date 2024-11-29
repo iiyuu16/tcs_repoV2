@@ -3,10 +3,15 @@ using TMPro;
 
 public class survivalTimer : MonoBehaviour
 {
-    public float timeValue = 60;
+    public float timeValue = 180.5f;
     public TextMeshProUGUI timeText;
     public GameObject winScreen;
     public GameObject[] objectsToDisable;
+
+    public GameObject firstWave; 
+    public GameObject secondWave;
+    private bool firstMinuteTriggered = false;
+    private bool secondMinuteTriggered = false;
 
     private void Start()
     {
@@ -14,6 +19,9 @@ public class survivalTimer : MonoBehaviour
         {
             winScreen.SetActive(false);
         }
+
+        SetActiveForObject(firstWave, false);
+        SetActiveForObject(secondWave, false);
     }
 
     private void Update()
@@ -22,6 +30,18 @@ public class survivalTimer : MonoBehaviour
         {
             timeValue -= Time.deltaTime;
             DisplayTime(timeValue);
+
+            if (!firstMinuteTriggered && timeValue <= 120.5f)
+            {
+                SetActiveForObject(firstWave, true);
+                firstMinuteTriggered = true;
+            }
+
+            if (!secondMinuteTriggered && timeValue <= 60.5f)
+            {
+                SetActiveForObject(secondWave, true);
+                secondMinuteTriggered = true;
+            }
         }
         else
         {
@@ -53,7 +73,18 @@ public class survivalTimer : MonoBehaviour
     {
         foreach (GameObject obj in objectsToDisable)
         {
-            obj.SetActive(false);
+            if (obj != null)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
+
+    private void SetActiveForObject(GameObject obj, bool state)
+    {
+        if (obj != null)
+        {
+            obj.SetActive(state);
         }
     }
 }

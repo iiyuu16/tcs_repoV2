@@ -51,7 +51,6 @@ public class survivalTurret : MonoBehaviour
         Rigidbody bulletRig = bulletObj.GetComponent<Rigidbody>();
         bulletRig.velocity = directionToPlayer * bulletSpeed;
 
-        // Move to the next bullet type in the list, wrapping around if necessary
         bulletIndex = (bulletIndex + 1) % bulletPrefabs.Count;
 
         Destroy(bulletObj, 5f);

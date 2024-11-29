@@ -4,7 +4,7 @@ using TMPro;
 public class survivalScoreManager : MonoBehaviour
 {
     public static survivalScoreManager instance;
-    private int score = 0;
+    public int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI obtainedScoreText;
 
