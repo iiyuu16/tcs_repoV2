@@ -34,6 +34,11 @@ public class mainSceneController : MonoBehaviour
             WORM_gamemode();
         }
 
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToVIRUS")
+        {
+            VIRUS_gamemode();
+        }
+
     }
 
     private void Update()
@@ -102,6 +107,12 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayToLoadingSceneWORM());
         StartCoroutine(DelayedObjTransition());
     }
+    public void toLoadingSceneVIRUS()
+    {
+        StartCoroutine(DelayToLoadingSceneVIRUS());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     public void toVisNov_FLM()
     {
         StartCoroutine(DelayToFLM());
@@ -132,6 +143,18 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_VIRUS()
+    {
+        StartCoroutine(DelayToVIRUS());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void VIRUS_gamemode()
+    {
+        StartCoroutine(DelayToVIRUS_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     public void WORM_gamemode()
     {
         StartCoroutine(DelayToWORM_gamemode());
@@ -159,6 +182,12 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("LoadingScreenToWORM");
+    }
+
+    IEnumerator DelayToLoadingSceneVIRUS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToVIRUS");
     }
 
     IEnumerator DelayToFLM()
@@ -195,6 +224,18 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("wormGM");
+    }
+
+    IEnumerator DelayToVIRUS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_VIRUS");
+    }
+
+    IEnumerator DelayToVIRUS_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("survivalGM");
     }
 
     IEnumerator DelayedSceneTransition()

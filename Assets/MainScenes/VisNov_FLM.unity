@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43924576, g: 0.5021494, b: 0.49961644, a: 1}
+  m_IndirectSpecularColor: {r: 0.4392452, g: 0.50214875, b: 0.49961555, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10513,7 +10513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2491580662827872874, guid: cabc841a648d0c04485f71cb83f483b9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3653637870946553646, guid: cabc841a648d0c04485f71cb83f483b9, type: 3}
       propertyPath: m_Name
@@ -11080,9 +11080,110 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 113302502}
     m_Modifications:
+    - target: {fileID: 54715519625316138, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 257710321777824381, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f9a1e0cd3ff4c004e8d9fbeb3b3b39e6, type: 3}
+    - target: {fileID: 1940521543613649154, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: 'Game Conditions:
+
+        Mission Time: 5 minutes.
+
+
+        Lose Condition:
+        No time left.
+
+        Failing results in: Shop Inflation
+
+
+        Win Condition:
+        All SCRIPT CORES eliminated.
+
+        Winning results in: Shop Discount'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2186263579930126143, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617753799818934437, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146196179952481166, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635013744665068597, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_text
+      value: 'If your health reaches 0, you will enter in a stunned state.
+
+        After
+        a few seconds, you can move again.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4689652456552208362, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
       propertyPath: m_Name
       value: instructionsTab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4689652456552208362, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162706681174046051, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162706681174046051, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398368958916015215, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398368958916015215, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398368958916015215, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625991650787030645, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625991650787030645, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625991650787030645, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880248166148214414, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6880248166148214414, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -175
+      objectReference: {fileID: 0}
+    - target: {fileID: 6913363705971178444, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7080392798782823014, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510999375324982868, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -175
       objectReference: {fileID: 0}
     - target: {fileID: 8107006379747542196, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
       propertyPath: m_Pivot.x
