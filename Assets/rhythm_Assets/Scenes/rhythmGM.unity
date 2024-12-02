@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657516, g: 0.4964115, b: 0.5748149, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657564, g: 0.49641192, b: 0.5748152, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -629,12 +629,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInflation: 0
   nonStopPopUp: 0
+  shopNullify: 0
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
-  discountIcon: {fileID: 0}
-  inflationIcon: {fileID: 0}
-  popUpIcon: {fileID: 0}
+  discountIcon: {fileID: 7180965861715948892, guid: 1f72c949aa9337746b5f02628fa887d4, type: 3}
+  inflationIcon: {fileID: 7180965861715948892, guid: 29112790b2d2afe49acf56d3d852755c, type: 3}
+  popUpIcon: {fileID: 5605028186981554580, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+  shopNullIcon: {fileID: 0}
 --- !u!1 &90612107
 GameObject:
   m_ObjectHideFlags: 0

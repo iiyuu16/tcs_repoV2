@@ -7,12 +7,13 @@ public class StatusManager : MonoBehaviour
 
     private AugmentManager augmentManager;
     private ShopManager shopManager;
-
     private PopUpManager popUpManager;
 
     // debuffs
     public bool shopInflation;
     public bool nonStopPopUp;
+
+    public bool shopNullify;//disables shop functionality completely
 
     // buffs
     public bool shopDiscount;
@@ -22,9 +23,10 @@ public class StatusManager : MonoBehaviour
     public bool noPopups;
 
     // status icons
-    public GameObject discountIcon; //shop buff
-    public GameObject inflationIcon; // shop debuff
+    public GameObject discountIcon;
+    public GameObject inflationIcon;
     public GameObject popUpIcon;
+    public GameObject shopNullIcon;//cannot use shop
     private void Awake()
     {
         instance = this;
@@ -71,6 +73,11 @@ public class StatusManager : MonoBehaviour
             inflationIcon.SetActive(false);
         }
 
+        if (shopNullIcon != null)
+        {
+            shopNullIcon.SetActive(false);
+        }
+
         LoadStatus();
     }
 
@@ -85,6 +92,7 @@ public class StatusManager : MonoBehaviour
         //debuffs
         PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
         PlayerPrefs.SetInt("NonStopPopUp", nonStopPopUp ? 1 : 0);
+        PlayerPrefs.SetInt("ShopNullify", shopNullify ? 1 : 0);
 
         PlayerPrefs.Save();
     }
@@ -99,6 +107,7 @@ public class StatusManager : MonoBehaviour
         //debuffs
         shopInflation = PlayerPrefs.GetInt("ShopInflation", 0) == 1;
         nonStopPopUp = PlayerPrefs.GetInt("NonStopPopUp", 0) == 1;
+        shopNullify = PlayerPrefs.GetInt("ShopNullify", 0) == 1;
     }
 
     public void setToDefaultStatus()
@@ -110,15 +119,23 @@ public class StatusManager : MonoBehaviour
 
     public void Update()
     {
-        if (shopInflation)
+        if (!shopNullify)
         {
-            shopDebuffOn();
+            if (shopInflation)
+            {
+                shopDebuffOn();
+            }
+
+            if (shopDiscount)
+            {
+                shopBuffOn();
+            }
+        }
+        else
+        {
+
         }
 
-        if (shopDiscount)
-        {
-            shopBuffOn();
-        }
 
         if (shopNormal)
         {
@@ -142,10 +159,12 @@ public class StatusManager : MonoBehaviour
         shopInflation = false;
         shopNormal = true;
         shopDiscount = false;
+        shopNullify = false;
 
         PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 1);
+        PlayerPrefs.SetInt("ShopNullify", 0);
 
         if (inflationIcon != null)
         {
@@ -156,7 +175,6 @@ public class StatusManager : MonoBehaviour
         {
             discountIcon.SetActive(false);
         }
-
 
         SaveStatus();
         LoadStatus();
@@ -181,7 +199,7 @@ public class StatusManager : MonoBehaviour
         PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 1);
         PlayerPrefs.SetInt("ShopNormal", 0);
-
+        PlayerPrefs.SetInt("ShopNullify", 0);
 
         SaveStatus();
         LoadStatus();
@@ -206,6 +224,38 @@ public class StatusManager : MonoBehaviour
         PlayerPrefs.SetInt("ShopDiscount", 1);
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 0);
+        PlayerPrefs.SetInt("ShopNullify", 0);
+
+        SaveStatus();
+        LoadStatus();
+    }
+
+    public void shopNullOn()
+    {
+        shopInflation = false;
+        shopNormal = false;
+        shopDiscount = false;
+        shopNullify = true;
+
+        if (inflationIcon != null)
+        {
+            inflationIcon.SetActive(false);
+        }
+
+        if (discountIcon != null)
+        {
+            discountIcon.SetActive(false);
+        }
+
+        if (shopNullIcon != null)
+        {
+            shopNullIcon.SetActive(true);
+        }
+
+        PlayerPrefs.SetInt("ShopDiscount", 0);
+        PlayerPrefs.SetInt("ShopInflation", 0);
+        PlayerPrefs.SetInt("ShopNormal", 0);
+        PlayerPrefs.SetInt("ShopNullify", 1);
 
         SaveStatus();
         LoadStatus();

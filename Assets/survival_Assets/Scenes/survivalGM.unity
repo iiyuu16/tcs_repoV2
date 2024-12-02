@@ -2395,7 +2395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeValue: 180.5
   timeText: {fileID: 343508897}
-  winScreen: {fileID: 794241535}
+  winScreen: {fileID: 1323866487}
   objectsToDisable:
   - {fileID: 5827315786082522168}
   - {fileID: 642781817}
@@ -2655,7 +2655,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734721154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.61019415, y: -3.2899204e-15, z: 3.599283e-15, w: 0.79225194}
+  m_LocalRotation: {x: 0.61019415, y: 1.0645668e-14, z: -1.0973742e-14, w: 0.79225194}
   m_LocalPosition: {x: 45.25, y: 23.5, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4403,7 +4403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 7395295138775810747}
-  loseScreen: {fileID: 1883895188}
+  loseScreen: {fileID: 1527981105}
   objectsToDisable:
   - {fileID: 5827315786082522168}
   - {fileID: 2032015292}
@@ -5516,12 +5516,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInflation: 0
   nonStopPopUp: 0
+  shopNullify: 0
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
-  discountIcon: {fileID: 0}
+  discountIcon: {fileID: 7180965861715948892, guid: 1f72c949aa9337746b5f02628fa887d4, type: 3}
   inflationIcon: {fileID: 7180965861715948892, guid: 29112790b2d2afe49acf56d3d852755c, type: 3}
   popUpIcon: {fileID: 5605028186981554580, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+  shopNullIcon: {fileID: 0}
 --- !u!1 &1480858511
 GameObject:
   m_ObjectHideFlags: 0
@@ -6760,7 +6762,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874488695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.61019415, y: -3.2899204e-15, z: 3.599283e-15, w: 0.79225194}
+  m_LocalRotation: {x: 0.61019415, y: 1.0645668e-14, z: -1.0973742e-14, w: 0.79225194}
   m_LocalPosition: {x: 45.25, y: 23.5, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7596,6 +7598,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d58910b02bef240b8995cca217b148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  winScreen: {fileID: 0}
+  loseScreen: {fileID: 0}
+  statusText: {fileID: 0}
+  winScreenActive: 0
+  loseScreenActive: 0
+  multiScoreEffects: []
 --- !u!1001 &2111917120
 PrefabInstance:
   m_ObjectHideFlags: 0
