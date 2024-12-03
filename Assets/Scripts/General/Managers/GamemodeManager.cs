@@ -8,20 +8,23 @@ public class GameModeManager : MonoBehaviour
 
     public bool filelessMalwareDone;
     public bool adwareDone;
+    public bool wormDone;
+    public bool virusDone;
 
     private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
     private const string ADWARE_DONE_KEY = "AdwareDone";
+    private const string WORM_DONE_KEY = "WormDone";
+    private const string VIRUS_DONE_KEY = "VirusDone";
 
     public GameObject filelessButton;
     public GameObject adwareButton;
+    public GameObject wormButton;
+    public GameObject virusButton;
 
     public GameObject malwareFL;
     public GameObject malwareADWARE;
-
-    //gatekeep worm properties
-    public bool wormDone;
-    private const string WORM_DONE_KEY = "WormDone";
-    public GameObject wormButton;
+    public GameObject malwareWorm; // temp obj
+    public GameObject malwareVirus;
 
     private void Awake()
     {
@@ -66,7 +69,18 @@ public class GameModeManager : MonoBehaviour
             Debug.LogWarning("GM:adwarebtn is null");
         }
 
-        //worm properties
+
+        if (virusButton != null)
+        {
+            InvokeRepeating("UpdateVirusButton", 1f, 1f);
+            Debug.Log("GM:virusbtn not null");
+        }
+        else
+        {
+            virusDone = false;
+            Debug.LogWarning("GM:virusbtn is null");
+        }
+
         if (wormButton != null)
         {
             InvokeRepeating("UpdateWormButton", 1f, 1f);
@@ -79,6 +93,7 @@ public class GameModeManager : MonoBehaviour
         }
 
         //icon check
+
         if (malwareFL != null)
         {
             if (filelessMalwareDone)
@@ -86,11 +101,28 @@ public class GameModeManager : MonoBehaviour
                 malwareFL.SetActive(true);
             }
         }
+
         if (malwareADWARE != null)
         {
             if (adwareDone)
             {
                 malwareADWARE.SetActive(true);
+            }
+        }
+
+        if (malwareWorm != null)
+        {
+            if (wormDone)
+            {
+                malwareWorm.SetActive(true);
+            }
+        }
+
+        if (malwareVirus != null)
+        {
+            if (virusDone)
+            {
+                malwareVirus.SetActive(true);
             }
         }
 
@@ -111,7 +143,13 @@ public class GameModeManager : MonoBehaviour
         LoadGMProgress();
     }
 
-    //worm properties
+    public void virusGM_Done()
+    {
+        virusDone = true;
+        SaveGMProgress();
+        LoadGMProgress();
+    }
+
     public void worm_Done()
     {
         wormDone = true;
@@ -123,8 +161,7 @@ public class GameModeManager : MonoBehaviour
     {
         filelessMalwareDone = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0) == 1;
         adwareDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
-
-        //worm properties
+        virusDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
         wormDone = PlayerPrefs.GetInt(WORM_DONE_KEY, 0) == 1;
 
         SaveGMProgress();
@@ -134,8 +171,7 @@ public class GameModeManager : MonoBehaviour
     {
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, filelessMalwareDone ? 1 : 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, adwareDone ? 1 : 0);
-
-        //worm properties
+        PlayerPrefs.SetInt(ADWARE_DONE_KEY, virusDone ? 1 : 0);
         PlayerPrefs.SetInt(WORM_DONE_KEY, wormDone ? 1 : 0);
 
         PlayerPrefs.Save();
@@ -145,15 +181,14 @@ public class GameModeManager : MonoBehaviour
     {
         filelessMalwareDone = false;
         adwareDone = false;
-
+        wormDone = false;
+        
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, 0);
-        PlayerPrefs.Save();
-
-        //worm properties
-        wormDone = false;
         PlayerPrefs.SetInt(WORM_DONE_KEY, 0);
+        PlayerPrefs.SetInt(VIRUS_DONE_KEY, 0);
 
+        PlayerPrefs.Save();
         Debug.Log("GM:gamemodes progress reset");
     }
 
@@ -170,8 +205,7 @@ public class GameModeManager : MonoBehaviour
     {
         UpdateAdwareButton();
         UpdateFilelessButton();
-
-        //worm
+        UpdateVirusButton();
         UpdateWormButton();
     }
 
@@ -185,9 +219,13 @@ public class GameModeManager : MonoBehaviour
         UpdateButton(adwareButton, adwareDone);
     }
 
-    //worm
     public void UpdateWormButton()
     {
         UpdateButton(wormButton, wormDone);
+    }
+
+    public void UpdateVirusButton()
+    {
+        UpdateButton(virusButton, virusDone);
     }
 }
