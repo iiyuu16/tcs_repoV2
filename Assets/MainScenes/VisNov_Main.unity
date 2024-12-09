@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4392451, g: 0.5021487, b: 0.49961543, a: 1}
+  m_IndirectSpecularColor: {r: 0.43924576, g: 0.5021494, b: 0.49961644, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1986,7 +1986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.3137255}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.47058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2787,6 +2787,11 @@ RectTransform:
   m_AnchoredPosition: {x: 70, y: 0}
   m_SizeDelta: {x: 120, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &625772741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9025919829091381944, guid: b377c815c2fdd7f4998ce01930933873, type: 3}
+  m_PrefabInstance: {fileID: 7459844586562274811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &687135165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,14 +4637,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1921838816}
+    - target: {fileID: 1483698119677000715, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6619633662157276015}
     - target: {fileID: 2928369368994773989, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2038222676}
-    - target: {fileID: 3170581127427826153, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 6619633662157276015}
     - target: {fileID: 3192961901598508618, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4652,6 +4657,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1921838816}
+    - target: {fileID: 3596565164094280100, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6619633662157276015}
     - target: {fileID: 3795977833838836212, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4716,6 +4725,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1921838816}
+    - target: {fileID: 5696143369696165736, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6619633662157276015}
     - target: {fileID: 5826575617117046450, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4739,7 +4752,15 @@ PrefabInstance:
     - target: {fileID: 8070604840212937158, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 372023201}
+      objectReference: {fileID: 972850542}
+    - target: {fileID: 8070604840212937158, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1921838816}
+    - target: {fileID: 8070604840212937158, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 6619633662157276015}
     - target: {fileID: 8206417248856552922, guid: f1ff6584d2a19dd4e890dbe06f468a38, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6338,13 +6359,14 @@ MonoBehaviour:
   shopInflation: 0
   nonStopPopUp: 0
   shopNullify: 0
+  shopNavigation: {fileID: 625772741}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
   discountIcon: {fileID: 6410662034505362797}
   inflationIcon: {fileID: 414605739}
   popUpIcon: {fileID: 1960779174}
-  shopNullIcon: {fileID: 0}
+  shopNullIcon: {fileID: 3282381556776485850}
 --- !u!1 &1747055576
 GameObject:
   m_ObjectHideFlags: 0
@@ -7721,13 +7743,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2029744238}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: virusDone
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: adwareDone
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: botsButton
+      value: 
+      objectReference: {fileID: 8599095984871959859}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: wormButton
       value: 
       objectReference: {fileID: 1401110005}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: malwareBOTS
+      value: 
+      objectReference: {fileID: 1708230119648500390}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: malwareWORM
+      value: 
+      objectReference: {fileID: 577810263}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: malwareWorm
       value: 
@@ -7741,6 +7779,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3060966018770853206}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: malwareVIRUS
+      value: 
+      objectReference: {fileID: 798546760}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: malwareVirus
       value: 
       objectReference: {fileID: 798546760}
@@ -7749,9 +7791,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4732250670024567335}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: rootkitButton
+      value: 
+      objectReference: {fileID: 8599095984871959860}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: filelessButton
       value: 
       objectReference: {fileID: 9213263330413068503}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: malwareROOTKIT
+      value: 
+      objectReference: {fileID: 1708230119648500391}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: filelessMalwareDone
       value: 0
@@ -7867,6 +7917,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dc5b9d8664fb8f45b636da251d96af2, type: 3}
+--- !u!1 &1708230119648500390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1876155858890169618, guid: 5dc5b9d8664fb8f45b636da251d96af2, type: 3}
+  m_PrefabInstance: {fileID: 1708230119648500389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708230119648500391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5437383803379455172, guid: 5dc5b9d8664fb8f45b636da251d96af2, type: 3}
+  m_PrefabInstance: {fileID: 1708230119648500389}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2923769567877701698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7954,29 +8014,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2031065923}
     m_Modifications:
-    - target: {fileID: 3167275382340621499, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_text
-      value: Augment prices are reduced by 15%.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3167275382340621499, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 4167493537143337101, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
       propertyPath: m_Name
       value: statusPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 4167493537143337101, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758346032541124312, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4758346032541124312, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5495847334260938209, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
       propertyPath: m_Pivot.x
@@ -8058,19 +8098,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8202488307125233090, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 8202488307125233090, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
+--- !u!1 &3282381556776485850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2617852133459765998, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
+  m_PrefabInstance: {fileID: 3282381556776485849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3496757666792168280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8500,41 +8537,57 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 532478315175983047, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-304,"yPos":-212},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":-1,"yPos":-216},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-262,"yPos":-38},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-        please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":296,"yPos":-216},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":-51},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[22],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":75,"yPos":259},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-        please.>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":595,"yPos":-215},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":-47},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":331,"yPos":562},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
-        please.>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":851,"yPos":-220},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":854,"yPos":-47},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":-144,"yPos":-318},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
-        is the tutorial segment, would you like to proceed? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":-5,"yPos":-153},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":184,"yPos":128},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":487,"yPos":124},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":226,"yPos":302},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+        please.>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":784,"yPos":123},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[19],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":783,"yPos":289},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[22],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":563,"yPos":599},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+        please.>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":1083,"yPos":125},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[29],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":1084,"yPos":293},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[32],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":819,"yPos":902},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Again,
+        please.>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":1339,"yPos":120},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Yes>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":1342,"yPos":293},"ID":43,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Proceed>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":344,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+        is the tutorial segment, would you like to proceed? ","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":483,"yPos":187},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Welcome
         to The Cyber Sentinel! I am b.a.i.t.o, your Built-in AI Tutorial Overlay!\nI
-        will tell you how things work here!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":-1,"yPos":-52},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-        first is the Base, this is where you check your progress in your game! ","parentUIDs":[12,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":-4,"yPos":45},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+        will tell you how things work here!","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0.1,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":487,"yPos":288},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+        first is the Base, this is where you check your progress in your game! ","parentUIDs":[12,20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":484,"yPos":385},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"You
         can only check the description of a malware after you''ve encountered from
-        your missions!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":-4,"yPos":146},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        your missions!","parentUIDs":[13],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":20},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":484,"yPos":486},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"I
         can state it again if you''re still confused. Shall we continue to the next
-        part?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":297,"yPos":-152},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
-        to know! Ok moving on to the Shop!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":298,"yPos":27},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+        part?","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":785,"yPos":188},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+        to know! Ok moving on to the Shop!","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":786,"yPos":367},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
         we are at the Shop! The shop allows you to purchase Augments before missions!
         Augments can give unique abilities and would need certain conditions to be
-        effective.","parentUIDs":[24,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":299,"yPos":130},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"In
+        effective.","parentUIDs":[24,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":787,"yPos":470},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"In
         purchasing Augments, you need Fragments or Frags for short. This your main
-        in-game currency and can be obtained after missions!","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":298,"yPos":248},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Augments
-        can be pretty expensive, so you better get a lot of it to buy one!","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":295,"yPos":361},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        in-game currency and can be obtained after missions!","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":29}],"EditorInfo":{"isRoot":false,"xPos":786,"yPos":588},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Augments
+        can be pretty expensive, so you better get a lot of it to buy one!","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":783,"yPos":701},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"I
         can state it again if you''re still confused. Shall we continue to the next
-        part?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":593,"yPos":-146},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
-        to know! Lastly, moving on to the Mission Hub!","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":25},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
+        part?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33}],"EditorInfo":{"isRoot":false,"xPos":1081,"yPos":194},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Good
+        to know! Lastly, moving on to the Mission Hub!","parentUIDs":[31],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":1084,"yPos":365},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"Here
         we are at the Mission Hub! This is where you can select missions and complete
-        them!","parentUIDs":[33,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":597,"yPos":122},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+        them!","parentUIDs":[33,39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":44}],"EditorInfo":{"isRoot":false,"xPos":1085,"yPos":462},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"You
         could also see the Augment equipped with you, and probably switch Augments
-        you prefer!","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":328},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+        you prefer!","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":1084,"yPos":668},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"So
         each missions can give you status effects depending on the outcome of a mission,
-        it may make your gameplay less burden or make it miserable!","parentUIDs":[44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":595,"yPos":431},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-        give it your all when taking what mission to choose!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":593,"yPos":542},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        it may make your gameplay less burden or make it miserable!","parentUIDs":[44],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":1083,"yPos":771},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+        give it your all when taking what mission to choose!","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":1081,"yPos":882},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"I
         can state it again if you''re still confused. Shall we continue to the next
-        part?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":853,"yPos":-148},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
-        great! I guess that everything for now! See ya!","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":600.5,"yPos":231},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Speaking
+        part?","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":43}],"EditorInfo":{"isRoot":false,"xPos":1341,"yPos":192},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"That''s
+        great! I guess that everything for now! See ya!","parentUIDs":[40],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":1088.5,"yPos":571},"ID":44,"ParamActions":[],"TMPFontGUID":null,"Text":"Speaking
         of Augments in your missions, it will be discarded once the mission is finished.
         Even if the mission was a failure or a success.","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"b.a.i.t.o.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
       objectReference: {fileID: 0}
+    - target: {fileID: 532478315175983047, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 751623415}
+    - target: {fileID: 532478315175983047, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1994594264}
+    - target: {fileID: 532478315175983047, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1307123608}
+    - target: {fileID: 532478315175983047, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1307123606}
     - target: {fileID: 2243254134837413607, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8647,6 +8700,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2079545503}
+    - target: {fileID: 5740455601920655757, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1307123606}
+    - target: {fileID: 5740455601920655757, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1307123607}
     - target: {fileID: 7586932814202515541, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8663,6 +8724,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 475476837}
+    - target: {fileID: 7586932814202515541, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 1307123607}
+    - target: {fileID: 7586932814202515541, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1307123608}
     - target: {fileID: 8655838054632349796, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8671,6 +8740,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1994594264}
+    - target: {fileID: 8655838054632349796, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1307123608}
+    - target: {fileID: 8655838054632349796, guid: 2b4a741648f0ae24f8a0e80bfda2b7c5, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1307123606}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8821,6 +8898,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+--- !u!1 &8599095984871959859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5742656255488852396, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 8599095984871959858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8599095984871959860 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1065877783365122091, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 8599095984871959858}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9213263330413068503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8310732089396420444, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}

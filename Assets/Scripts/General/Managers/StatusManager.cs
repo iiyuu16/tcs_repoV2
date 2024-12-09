@@ -9,24 +9,25 @@ public class StatusManager : MonoBehaviour
     private ShopManager shopManager;
     private PopUpManager popUpManager;
 
-    // debuffs
+    [Header("Debuffs:")]
     public bool shopInflation;
     public bool nonStopPopUp;
 
-    public bool shopNullify;//disables shop functionality completely
+    public bool shopNullify;
+    public GameObject shopNavigation;
 
-    // buffs
+    [Header("Buffs:")]
     public bool shopDiscount;
 
-    // normal states (static)
+    [Header("Normal States:")]
     public bool shopNormal;
     public bool noPopups;
 
-    // status icons
+    [Header("Status Icons:")]
     public GameObject discountIcon;
     public GameObject inflationIcon;
     public GameObject popUpIcon;
-    public GameObject shopNullIcon;//cannot use shop
+    public GameObject shopNullIcon;
     private void Awake()
     {
         instance = this;
@@ -133,7 +134,7 @@ public class StatusManager : MonoBehaviour
         }
         else
         {
-
+            shopNullOn();
         }
 
 
@@ -252,6 +253,7 @@ public class StatusManager : MonoBehaviour
             shopNullIcon.SetActive(true);
         }
 
+        shopNavigation.SetActive(false);
         PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 0);

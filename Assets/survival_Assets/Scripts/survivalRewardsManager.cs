@@ -52,6 +52,7 @@ public class survivalRewardsManager : MonoBehaviour
             Debug.Log("survivalScoreManager instance is not found in the scene.");
             return;
         }
+
     }
 
     void Update()
@@ -128,7 +129,6 @@ public class survivalRewardsManager : MonoBehaviour
             if (loseScreenActive && !winScreenActive)
             {
                 _survivalScoreManager.BaseScoring();
-                GetSurvivalDebuff();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
             else if (winScreenActive && !loseScreenActive)
@@ -174,7 +174,6 @@ public class survivalRewardsManager : MonoBehaviour
             }
             else if (loseScreenActive && !winScreenActive)
             {
-                GetSurvivalDebuff();
                 _survivalScoreManager.BaseScoring();
                 return "Augmentless : Punishments triggered!\n";
             }
@@ -182,24 +181,10 @@ public class survivalRewardsManager : MonoBehaviour
         return "";
     }
 
-    public void GetSurvivalDebuff()
-    {
-        if (statusManager != null)
-        {
-            statusManager.shopDebuffOn();
-            //at visnovMain, shop should be not accessible anymore
-        }
-        else
-        {
-            Debug.LogError("shopNullifier instance is null.");
-        }
-    }
-
     public void GetSurvivalBuff()
     {
         if (statusManager != null)
         {
-            statusManager.shopBuffOn();
             //enter buff mechanic here
         }
         else
