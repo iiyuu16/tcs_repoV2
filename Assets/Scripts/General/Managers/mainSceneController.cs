@@ -29,16 +29,20 @@ public class mainSceneController : MonoBehaviour
             FLM_gamemode();
         }
 
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
-        {
-            WORM_gamemode();
-        }
-
         if (SceneManager.GetActiveScene().name == "LoadingScreenToVIRUS")
         {
             VIRUS_gamemode();
         }
 
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToROOTKIT")
+        {
+            ROOTKIT_gamemode();
+        }
+
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
+        {
+            WORM_gamemode();
+        }
     }
 
     private void Update()
@@ -113,27 +117,23 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toLoadingSceneROOTKIT()
+    {
+        StartCoroutine(DelayToLoadingSceneROOTKIT());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    //visual novels scenes
+
     public void toVisNov_FLM()
     {
         StartCoroutine(DelayToFLM());
         StartCoroutine(DelayedObjTransition());
     }
 
-    public void FLM_gamemode()
-    {
-        StartCoroutine(DelayToFLM_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
     public void toVisNov_ADWARE()
     {
         StartCoroutine(DelayToADWARE());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void ADWARE_gamemode()
-    {
-        StartCoroutine(DelayToADWARE_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -149,9 +149,36 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_ROOTKIT()
+    {
+        StartCoroutine(DelayToROOTKIT());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    // gamemode scenes
+
+
+    public void FLM_gamemode()
+    {
+        StartCoroutine(DelayToFLM_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void ADWARE_gamemode()
+    {
+        StartCoroutine(DelayToADWARE_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     public void VIRUS_gamemode()
     {
         StartCoroutine(DelayToVIRUS_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void ROOTKIT_gamemode()
+    {
+        StartCoroutine(DelayToROOTKIT_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -160,6 +187,7 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayToWORM_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
+
 
     IEnumerator DelayToVNMain()
     {
@@ -188,6 +216,12 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("LoadingScreenToVIRUS");
+    }
+
+    IEnumerator DelayToLoadingSceneROOTKIT()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToROOTKIT");
     }
 
     IEnumerator DelayToFLM()
@@ -236,6 +270,18 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("survivalGM");
+    }
+
+    IEnumerator DelayToROOTKIT()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_ROOTKIT");
+    }
+
+    IEnumerator DelayToROOTKIT_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene(" ");// make scene first
     }
 
     IEnumerator DelayedSceneTransition()
