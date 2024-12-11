@@ -14,12 +14,12 @@ public class GameModeManager : MonoBehaviour
     private const string WORM_DONE_KEY = "WormDone";
 
     [Header("Status")]
-    public bool filelessMalwareDone;
-    public bool adwareDone;
-    public bool virusDone;
-    public bool rootkitDone;
-    public bool botsDone;
-    public bool wormDone;
+    public int filelessMalwareDoneCount = 0;
+    public int adwareDoneCount = 0;
+    public int virusDoneCount = 0;
+    public int rootkitDoneCount = 0;
+    public int botsDoneCount = 0;
+    public int wormDoneCount = 0;
 
     [Header("Buttons")]
     public GameObject filelessButton;
@@ -48,7 +48,7 @@ public class GameModeManager : MonoBehaviour
         {
             instance = this;
         }
-        
+
         //progress restarter
         if (SceneManager.GetActiveScene().name == "VisNov_Prologue" || SceneManager.GetActiveScene().name == "MainMenu")
         {
@@ -61,252 +61,165 @@ public class GameModeManager : MonoBehaviour
             Debug.Log("GM:scene name is else");
         }
 
-        if (filelessButton != null)
-        {
-            InvokeRepeating("UpdateFilelessButton", 1f, 1f);
-            Debug.Log("GM:filessbtn not null");
-        }
-        else
-        {
-            filelessMalwareDone = false;
-            Debug.LogWarning("GM:filessbtn is null");
-        }
-
-        if (adwareButton != null)
-        {
-            InvokeRepeating("UpdateAdwareButton", 1f, 1f);
-            Debug.Log("GM:adwarebtn not null");
-        }
-        else
-        {
-            adwareDone = false;
-            Debug.LogWarning("GM:adwarebtn is null");
-        }
-
-        if (virusButton != null)
-        {
-            InvokeRepeating("UpdateVirusButton", 1f, 1f);
-            Debug.Log("GM:virusbtn not null");
-        }
-        else
-        {
-            virusDone = false;
-            Debug.LogWarning("GM:virusbtn is null");
-        }
-
- /*       if (rootkitButton != null)
-        {
-            InvokeRepeating("UpdateRookitButton", 1f, 1f);
-            Debug.Log("GM:rootkitbtn not null");
-        }
-        else
-        {
-            rootkitDone = false;
-            Debug.LogWarning("GM:rootkitbtn is null");
-        }
-
-        if (botsButton != null)
-        {
-            InvokeRepeating("UpdateBotsButton", 1f, 1f);
-            Debug.Log("GM:botsbtn not null");
-        }
-        else
-        {
-            botsDone = false;
-            Debug.LogWarning("GM:bots is null");
-        }
- */
-
-        if (wormButton != null)
-        {
-            InvokeRepeating("UpdateWormButton", 1f, 1f);
-            Debug.Log("GM:wormbtn not null");
-        }
-        else
-        {
-            wormDone = false;
-            Debug.LogWarning("GM:wormbtn is null");
-        }
+        // Check and update buttons
+        UpdateFilelessButton();
+        UpdateAdwareButton();
+        UpdateVirusButton();
+        UpdateRootkitButton();
+        UpdateBotsButton();
+        UpdateWormButton();
 
         //icon check
-
-        if (malwareFL != null)
-        {
-            if (filelessMalwareDone)
-            {
-                malwareFL.SetActive(true);
-            }
-        }
-
-        if (malwareADWARE != null)
-        {
-            if (adwareDone)
-            {
-                malwareADWARE.SetActive(true);
-            }
-        }
-
-        if (malwareVIRUS != null)
-        {
-            if (virusDone)
-            {
-                malwareVIRUS.SetActive(true);
-            }
-        }
-
-        /*if (malwareROOTKIT != null)
-        {
-            if (rootkitDone)
-            {
-                malwareROOTKIT.SetActive(true);
-            }
-        }
-
-        if (malwareBOTS != null)
-        {
-            if (botsDone)
-            {
-                malwareBOTS.SetActive(true);
-            }
-        }*/
-
-        if (malwareWORM != null)
-        {
-            if (wormDone)
-            {
-                malwareWORM.SetActive(true);
-            }
-        }
-
-        UpdateAllBtns();
+        UpdateMalwareIcons();
     }
 
     public void adwareGM_Done()
     {
-        adwareDone = true;
+        adwareDoneCount++;
         SaveGMProgress();
     }
 
     public void filelessGM_Done()
     {
-        filelessMalwareDone = true;
+        filelessMalwareDoneCount++;
         SaveGMProgress();
     }
 
     public void virusGM_Done()
     {
-        virusDone = true;
+        virusDoneCount++;
         SaveGMProgress();
     }
 
-    /*public void rootkitGM_Done()
+    public void rootkitGM_Done()
     {
-        rootkitDone = true;
+        rootkitDoneCount++;
         SaveGMProgress();
     }
 
     public void botsGM_Done()
     {
-        botsDone = true;
+        botsDoneCount++;
         SaveGMProgress();
-    }*/
+    }
 
     public void wormGM_Done()
     {
-        wormDone = true;
+        wormDoneCount++;
         SaveGMProgress();
     }
 
     public void LoadGMProgress()
     {
-        filelessMalwareDone = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0) == 1;
-        adwareDone = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0) == 1;
-        virusDone = PlayerPrefs.GetInt(VIRUS_DONE_KEY, 0) == 1;
-/*        rootkitDone = PlayerPrefs.GetInt(ROOTKIT_DONE_KEY, 0) == 1;
-        botsDone = PlayerPrefs.GetInt(BOTS_DONE_KEY, 0) == 1;*/
-        wormDone = PlayerPrefs.GetInt(WORM_DONE_KEY, 0) == 1;
+        filelessMalwareDoneCount = PlayerPrefs.GetInt(FILELESS_MALWARE_DONE_KEY, 0);
+        adwareDoneCount = PlayerPrefs.GetInt(ADWARE_DONE_KEY, 0);
+        virusDoneCount = PlayerPrefs.GetInt(VIRUS_DONE_KEY, 0);
+        rootkitDoneCount = PlayerPrefs.GetInt(ROOTKIT_DONE_KEY, 0);
+        botsDoneCount = PlayerPrefs.GetInt(BOTS_DONE_KEY, 0);
+        wormDoneCount = PlayerPrefs.GetInt(WORM_DONE_KEY, 0);
 
-        SaveGMProgress();
+        // Update buttons after loading
+        UpdateFilelessButton();
+        UpdateAdwareButton();
+        UpdateVirusButton();
+        UpdateRootkitButton();
+        UpdateBotsButton();
+        UpdateWormButton();
     }
 
     public void SaveGMProgress()
     {
-        PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, filelessMalwareDone ? 1 : 0);
-        PlayerPrefs.SetInt(ADWARE_DONE_KEY, adwareDone ? 1 : 0);
-        PlayerPrefs.SetInt(VIRUS_DONE_KEY, virusDone ? 1 : 0);
-/*        PlayerPrefs.SetInt(ROOTKIT_DONE_KEY, rootkitDone ? 1 : 0);
-        PlayerPrefs.SetInt(BOTS_DONE_KEY, botsDone ? 1 : 0);*/
-        PlayerPrefs.SetInt(WORM_DONE_KEY, wormDone ? 1 : 0);
+        PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, filelessMalwareDoneCount);
+        PlayerPrefs.SetInt(ADWARE_DONE_KEY, adwareDoneCount);
+        PlayerPrefs.SetInt(VIRUS_DONE_KEY, virusDoneCount);
+        PlayerPrefs.SetInt(ROOTKIT_DONE_KEY, rootkitDoneCount);
+        PlayerPrefs.SetInt(BOTS_DONE_KEY, botsDoneCount);
+        PlayerPrefs.SetInt(WORM_DONE_KEY, wormDoneCount);
 
         PlayerPrefs.Save();
     }
 
     public void ResetGMProgress()
     {
-        filelessMalwareDone = false;
-        adwareDone = false;
-        virusDone = false;
-/*        rootkitDone = false;
-        botsDone = false;*/
-        wormDone = false;
-        
+        filelessMalwareDoneCount = 0;
+        adwareDoneCount = 0;
+        virusDoneCount = 0;
+        rootkitDoneCount = 0;
+        botsDoneCount = 0;
+        wormDoneCount = 0;
+
         PlayerPrefs.SetInt(FILELESS_MALWARE_DONE_KEY, 0);
         PlayerPrefs.SetInt(ADWARE_DONE_KEY, 0);
         PlayerPrefs.SetInt(VIRUS_DONE_KEY, 0);
-/*        PlayerPrefs.SetInt(ROOTKIT_DONE_KEY, 0);
-        PlayerPrefs.SetInt(BOTS_DONE_KEY, 0);*/
+        PlayerPrefs.SetInt(ROOTKIT_DONE_KEY, 0);
+        PlayerPrefs.SetInt(BOTS_DONE_KEY, 0);
         PlayerPrefs.SetInt(WORM_DONE_KEY, 0);
 
         PlayerPrefs.Save();
         Debug.Log("GM:gamemodes progress reset");
     }
 
-    public void UpdateButton(GameObject buttonGameObject, bool booleanValue)
-    {
-        Button buttonComponent = buttonGameObject.GetComponent<Button>();
-
-        buttonComponent.interactable = !booleanValue;
-        SaveGMProgress();
-        LoadGMProgress();
-    }
-
-    public void UpdateAllBtns()
-    {
-        UpdateAdwareButton();
-        UpdateFilelessButton();
-        UpdateVirusButton();
-/*        UpdateRootkitButton();
-        UpdateBotsButton();*/
-        UpdateWormButton();
-    }
-
     public void UpdateFilelessButton()
     {
-        UpdateButton(filelessButton, filelessMalwareDone);
+        if (filelessButton != null)
+        {
+            Button buttonComponent = filelessButton.GetComponent<Button>();
+            buttonComponent.interactable = filelessMalwareDoneCount <= 0;
+        }
     }
 
     public void UpdateAdwareButton()
     {
-        UpdateButton(adwareButton, adwareDone);
+        if (adwareButton != null)
+        {
+            Button buttonComponent = adwareButton.GetComponent<Button>();
+            buttonComponent.interactable = adwareDoneCount <= 0;
+        }
     }
 
     public void UpdateVirusButton()
     {
-        UpdateButton(virusButton, virusDone);
+        if (virusButton != null)
+        {
+            Button buttonComponent = virusButton.GetComponent<Button>();
+            buttonComponent.interactable = virusDoneCount <= 0;
+        }
     }
 
-/*    public void UpdateRootkitButton()
+    public void UpdateRootkitButton()
     {
-        UpdateButton(rootkitButton, rootkitDone);
+        if (rootkitButton != null)
+        {
+            Button buttonComponent = rootkitButton.GetComponent<Button>();
+            buttonComponent.interactable = rootkitDoneCount <= 0;
+        }
     }
 
     public void UpdateBotsButton()
     {
-        UpdateButton(botsButton, botsDone);
-    }*/
+        if (botsButton != null)
+        {
+            Button buttonComponent = botsButton.GetComponent<Button>();
+            buttonComponent.interactable = botsDoneCount <= 0;
+        }
+    }
 
     public void UpdateWormButton()
     {
-        UpdateButton(wormButton, wormDone);
+        if (wormButton != null)
+        {
+            Button buttonComponent = wormButton.GetComponent<Button>();
+            buttonComponent.interactable = wormDoneCount <= 0;
+        }
+    }
+
+    private void UpdateMalwareIcons()
+    {
+        malwareFL.SetActive(filelessMalwareDoneCount > 0);
+        malwareADWARE.SetActive(adwareDoneCount > 0);
+        malwareVIRUS.SetActive(virusDoneCount > 0);
+        malwareROOTKIT.SetActive(rootkitDoneCount > 0);
+        malwareBOTS.SetActive(botsDoneCount > 0);
+        malwareWORM.SetActive(wormDoneCount > 0);
     }
 }
