@@ -29,11 +29,20 @@ public class mainSceneController : MonoBehaviour
             FLM_gamemode();
         }
 
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToVIRUS")
+        {
+            VIRUS_gamemode();
+        }
+
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToROOTKIT")
+        {
+            ROOTKIT_gamemode();
+        }
+
         if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
         {
             WORM_gamemode();
         }
-
     }
 
     private void Update()
@@ -102,15 +111,23 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayToLoadingSceneWORM());
         StartCoroutine(DelayedObjTransition());
     }
-    public void toVisNov_FLM()
+    public void toLoadingSceneVIRUS()
     {
-        StartCoroutine(DelayToFLM());
+        StartCoroutine(DelayToLoadingSceneVIRUS());
         StartCoroutine(DelayedObjTransition());
     }
 
-    public void FLM_gamemode()
+    public void toLoadingSceneROOTKIT()
     {
-        StartCoroutine(DelayToFLM_gamemode());
+        StartCoroutine(DelayToLoadingSceneROOTKIT());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    //visual novels scenes
+
+    public void toVisNov_FLM()
+    {
+        StartCoroutine(DelayToFLM());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -120,15 +137,48 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_WORM()
+    {
+        StartCoroutine(DelayToWORM());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_VIRUS()
+    {
+        StartCoroutine(DelayToVIRUS());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_ROOTKIT()
+    {
+        StartCoroutine(DelayToROOTKIT());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    // gamemode scenes
+
+
+    public void FLM_gamemode()
+    {
+        StartCoroutine(DelayToFLM_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     public void ADWARE_gamemode()
     {
         StartCoroutine(DelayToADWARE_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
 
-    public void toVisNov_WORM()
+    public void VIRUS_gamemode()
     {
-        StartCoroutine(DelayToWORM());
+        StartCoroutine(DelayToVIRUS_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void ROOTKIT_gamemode()
+    {
+        StartCoroutine(DelayToROOTKIT_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -137,6 +187,7 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayToWORM_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
+
 
     IEnumerator DelayToVNMain()
     {
@@ -159,6 +210,18 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("LoadingScreenToWORM");
+    }
+
+    IEnumerator DelayToLoadingSceneVIRUS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToVIRUS");
+    }
+
+    IEnumerator DelayToLoadingSceneROOTKIT()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToROOTKIT");
     }
 
     IEnumerator DelayToFLM()
@@ -195,6 +258,30 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("wormGM");
+    }
+
+    IEnumerator DelayToVIRUS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_VIRUS");
+    }
+
+    IEnumerator DelayToVIRUS_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("survivalGM");
+    }
+
+    IEnumerator DelayToROOTKIT()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_ROOTKIT");
+    }
+
+    IEnumerator DelayToROOTKIT_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("flappyGM");
     }
 
     IEnumerator DelayedSceneTransition()

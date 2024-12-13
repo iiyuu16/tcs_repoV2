@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657516, g: 0.4964115, b: 0.5748149, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657564, g: 0.49641192, b: 0.5748152, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -556,16 +556,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78345861}
-  m_LocalRotation: {x: 0.12315775, y: -0.25801915, z: -0.022911496, w: 0.9579841}
-  m_LocalPosition: {x: 0, y: 0, z: -0.049444184}
+  m_LocalRotation: {x: 0.12489432, y: -0.0012261911, z: 0.009740479, w: 0.9921215}
+  m_LocalPosition: {x: 0, y: 0, z: -0.038713075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1885876471}
-  m_LocalEulerAnglesHint: {x: 12.953, y: -30.867, z: -6.33}
+  m_LocalEulerAnglesHint: {x: 14.35, y: 0, z: 1.125}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -22.743958, y: -1.9927272}
+  m_AnchoredPosition: {x: -1.5029724, y: -1.9955326}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78345865
@@ -629,12 +629,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInflation: 0
   nonStopPopUp: 0
+  shopNullify: 0
+  shopNavigation: {fileID: 0}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
-  discountIcon: {fileID: 0}
-  inflationIcon: {fileID: 0}
-  popUpIcon: {fileID: 0}
+  discountIcon: {fileID: 7180965861715948892, guid: 1f72c949aa9337746b5f02628fa887d4, type: 3}
+  inflationIcon: {fileID: 7180965861715948892, guid: 29112790b2d2afe49acf56d3d852755c, type: 3}
+  popUpIcon: {fileID: 5605028186981554580, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+  shopNullIcon: {fileID: 0}
 --- !u!1 &90612107
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,7 +803,7 @@ RectTransform:
   m_GameObject: {fileID: 175958336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 2, y: 1.2, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 227953267}
@@ -810,7 +813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 310, y: 70}
+  m_AnchoredPosition: {x: 250, y: 70}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &175958338
@@ -1099,15 +1102,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2351309, g: 0.1961107, b: 0.3679245, a: 1}
+  m_Color: {r: 0, g: 0.12321911, b: 0.18867922, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 1e75fc7e798f3bb4bab021a7085afdd2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3222,7 +3225,7 @@ MonoBehaviour:
     network and flooded your system. Advertisements will continue to overflow your
     computer.
 
-    Debuffed Obtained: Consistent Pop-Up Advertisements.'
+    Debuff Obtained: Consistent Pop-Up Advertisements.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
@@ -4204,15 +4207,15 @@ RectTransform:
   m_GameObject: {fileID: 1634413032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2129499083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.8369751, y: 0}
-  m_SizeDelta: {x: 6.3612, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634413034
 MonoBehaviour:
@@ -4234,8 +4237,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: a9dbccf4a27070c4381cf136c1d87622, type: 3}
+  m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4243,7 +4246,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 50
 --- !u!222 &1634413035
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4471,7 +4474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.5097, y: 0.49997}
+  m_AnchoredPosition: {x: -2.5097, y: -20}
   m_SizeDelta: {x: 248.62, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733352542
@@ -4503,8 +4506,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294965760
-  m_fontColor: {r: 0, g: 0.9813695, b: 1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5125,17 +5128,17 @@ RectTransform:
   m_GameObject: {fileID: 2129499082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1634413033}
   - {fileID: 1733352541}
   m_Father: {fileID: 175958337}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.25}
-  m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 2.5, y: 0}
-  m_SizeDelta: {x: -4.9999332, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 245.00006, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2139722189
 GameObject:
@@ -5795,18 +5798,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 524550233}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1346864305}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2095064861}
     - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -10666,8 +10657,10 @@ MonoBehaviour:
     You''ve successfully intercepted the data signals
     breaching your computer!
 
+    Keep up the good work!
 
-'
+    Buff Obtained: worm
+    debuff here'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}

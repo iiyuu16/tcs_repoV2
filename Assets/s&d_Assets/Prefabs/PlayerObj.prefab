@@ -169,9 +169,9 @@ MonoBehaviour:
   playerTrail: {fileID: 928839311443309508}
   moveSpeed: 8
   rotationSpeed: 200
-  acceleration: 8
-  deceleration: 10
-  boostSpeed: 20
+  acceleration: 4
+  deceleration: 8
+  boostSpeed: 15
   boostCD: 1
   recoveryTime: 5
   boostRegenDelay: 5
@@ -187,6 +187,7 @@ MonoBehaviour:
   sliderHP: {fileID: 0}
   BoostKey: 304
   sfx: {fileID: 0}
+  boostTxt: {fileID: 0}
 --- !u!65 &9004435441446529444
 BoxCollider:
   m_ObjectHideFlags: 0
