@@ -61,7 +61,7 @@ public class GameModeManager : MonoBehaviour
             Debug.Log("GM:scene name is else");
         }
 
-        // Check and update buttons
+        //check and update buttons
         UpdateFilelessButton();
         UpdateAdwareButton();
         UpdateVirusButton();
@@ -77,36 +77,42 @@ public class GameModeManager : MonoBehaviour
     {
         adwareDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void filelessGM_Done()
     {
         filelessMalwareDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void virusGM_Done()
     {
         virusDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void rootkitGM_Done()
     {
         rootkitDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void botsGM_Done()
     {
         botsDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void wormGM_Done()
     {
         wormDoneCount++;
         SaveGMProgress();
+        CheckAndUpdateButtons();
     }
 
     public void LoadGMProgress()
@@ -191,7 +197,7 @@ public class GameModeManager : MonoBehaviour
         if (rootkitButton != null)
         {
             Button buttonComponent = rootkitButton.GetComponent<Button>();
-            buttonComponent.interactable = rootkitDoneCount <= 0;
+            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0);
         }
     }
 
@@ -200,7 +206,7 @@ public class GameModeManager : MonoBehaviour
         if (botsButton != null)
         {
             Button buttonComponent = botsButton.GetComponent<Button>();
-            buttonComponent.interactable = botsDoneCount <= 0;
+            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0 && rootkitDoneCount > 0);
         }
     }
 
@@ -209,7 +215,7 @@ public class GameModeManager : MonoBehaviour
         if (wormButton != null)
         {
             Button buttonComponent = wormButton.GetComponent<Button>();
-            buttonComponent.interactable = wormDoneCount <= 0;
+            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0 && rootkitDoneCount > 0 && botsDoneCount > 0);
         }
     }
 
@@ -221,5 +227,12 @@ public class GameModeManager : MonoBehaviour
         malwareROOTKIT.SetActive(rootkitDoneCount > 0);
         malwareBOTS.SetActive(botsDoneCount > 0);
         malwareWORM.SetActive(wormDoneCount > 0);
+    }
+
+    private void CheckAndUpdateButtons()
+    {
+        UpdateRootkitButton();
+        UpdateBotsButton();
+        UpdateWormButton();
     }
 }

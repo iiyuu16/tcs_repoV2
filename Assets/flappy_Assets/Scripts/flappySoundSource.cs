@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class flappySoundSource : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioSource src;
+    public AudioClip dead, score, jump;
+
+    public void deadSFX()
     {
-        
+        src.PlayOneShot(dead);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void scoreSFX()
     {
-        
+        src.PlayOneShot(score);
+    }
+
+    public void jumpsSFX()
+    {
+        src.PlayOneShot(jump);
     }
 }

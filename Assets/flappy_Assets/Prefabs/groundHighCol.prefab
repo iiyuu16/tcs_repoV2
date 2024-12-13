@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6708829480691699120}
   m_Layer: 0
   m_Name: groundHighCol
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 3, y: 0.5, z: 5}
+  m_LocalScale: {x: 3, y: 0.2, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 15
+  speed: -1.2
 --- !u!65 &3851062525536521505
 BoxCollider:
   m_ObjectHideFlags: 0

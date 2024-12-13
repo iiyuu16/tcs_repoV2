@@ -281,7 +281,7 @@ public class mainSceneController : MonoBehaviour
     IEnumerator DelayToROOTKIT_gamemode()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene(" ");// make scene first
+        SceneManager.LoadScene("flappyGM");
     }
 
     IEnumerator DelayedSceneTransition()

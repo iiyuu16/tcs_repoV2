@@ -5,7 +5,7 @@ using UnityEngine;
 public class flappyPillarObj : MonoBehaviour
 {
     public float timer = 1;
-    public float freq = 2;
+    public float freq = 1;
     public float pos;
     public GameObject pillarObj;
     public GameObject playerObj;
@@ -13,7 +13,7 @@ public class flappyPillarObj : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        if(timer <= 0)
+        if (timer <= 0)
         {
             pos = Random.Range(.6f, 1.3f);
             transform.position = new Vector3(0, pos, 3f);
@@ -21,13 +21,18 @@ public class flappyPillarObj : MonoBehaviour
             timer = freq;
         }
 
-        if(playerObj != null)
+        if (playerObj == null)
         {
-            Time.timeScale = 1;
+            CallGameOver();
         }
-        else
+    }
+
+    private void CallGameOver()
+    {
+        flappyConditionManager conditionManager = FindObjectOfType<flappyConditionManager>();
+        if (conditionManager != null)
         {
-            Time.timeScale = 0;
+            conditionManager.GameOver();
         }
     }
 }

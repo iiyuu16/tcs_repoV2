@@ -8,7 +8,7 @@ public class flappyGroundSpawner : MonoBehaviour
     public float freq = 1f;
     public GameObject lowObj;
     public GameObject highObj;
-    // Update is called once per frame
+
     void Update()
     {
         timer -= Time.deltaTime;

@@ -569,13 +569,25 @@ PrefabInstance:
       value: GM_Manager
       objectReference: {fileID: 0}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: botsButton
+      value: 
+      objectReference: {fileID: 855248661}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: wormButton
       value: 
       objectReference: {fileID: 855248660}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: virusButton
+      value: 
+      objectReference: {fileID: 855248663}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: adwareButton
       value: 
       objectReference: {fileID: 855248657}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: rootkitButton
+      value: 
+      objectReference: {fileID: 855248662}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: filelessButton
       value: 
@@ -1222,6 +1234,21 @@ GameObject:
 --- !u!1 &855248660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7980031448879383253, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 855248656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855248661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5742656255488852396, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 855248656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855248662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1065877783365122091, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 855248656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855248663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2584930563927584584, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
   m_PrefabInstance: {fileID: 855248656}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225

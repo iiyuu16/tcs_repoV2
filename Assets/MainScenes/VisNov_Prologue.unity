@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43924576, g: 0.5021494, b: 0.49961644, a: 1}
+  m_IndirectSpecularColor: {r: 0.4392452, g: 0.50214875, b: 0.49961555, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2052,6 +2052,10 @@ PrefabInstance:
       value: GM_Manager
       objectReference: {fileID: 0}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: botsButton
+      value: 
+      objectReference: {fileID: 1553516472}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: wormButton
       value: 
       objectReference: {fileID: 903447688271273871}
@@ -2063,6 +2067,10 @@ PrefabInstance:
       propertyPath: adwareButton
       value: 
       objectReference: {fileID: 903447688271273869}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: rootkitButton
+      value: 
+      objectReference: {fileID: 1553516473}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: filelessButton
       value: 
@@ -9517,6 +9525,16 @@ MonoBehaviour:
   maxPopUpCount: 4
   activePopUps: []
   isDebuffTriggered: 0
+--- !u!1 &1553516472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5742656255488852396, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 903447688271273867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1553516473 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1065877783365122091, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+  m_PrefabInstance: {fileID: 903447688271273867}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1556546638
 GameObject:
   m_ObjectHideFlags: 0
