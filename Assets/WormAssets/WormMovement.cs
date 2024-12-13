@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class WormMovement : MonoBehaviour
 {
@@ -34,6 +35,9 @@ public class WormMovement : MonoBehaviour
     public sdSoundSource sfx;
 
     public AudioSource audio;
+
+    internal Vector3 vPointPosition;
+    internal Vector3 vPointDirection;
 
     private void Awake()
     {
@@ -123,7 +127,15 @@ public class WormMovement : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (Input.GetKey(KeyCode.W))
+
+        UnityEngine.XR.InputDevice handLDevice = InputDevices.GetDeviceAtXRNode(XRNode.LeftHand);
+        bool posLSupported = handLDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.devicePosition, out Vector3 posL);
+        vPointPosition = transform.TransformPoint(posL);
+        bool rotRSupported = handLDevice.TryGetFeatureValue(UnityEngine.XR.CommonUsages.deviceRotation, out Quaternion rotL);
+        vPointDirection = rotL * Vector3.forward;
+        vPointDirection = transform.TransformDirection(vPointDirection);
+        //if (Input.GetKey(KeyCode.W))
+        if (vPointDirection == transform.forward)
         {
             if (!isBraking)
             {
