@@ -28,17 +28,8 @@ public class Bullet : AutoDestroyPoolableObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Player")
-        {
-            Debug.Log("I HIT PLAYER");
-            this.gameObject.SetActive(false);
-        }
-
-        if(other.gameObject.tag == "Ground")
-        {
-            Debug.Log("I HIT GROUND");
-            this.gameObject.SetActive(false);
-        }
+        Debug.Log("I HIT SOMETHING");
+        this.gameObject.SetActive(false);
         
     }
 }
