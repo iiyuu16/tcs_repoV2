@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43924576, g: 0.5021494, b: 0.49961644, a: 1}
+  m_IndirectSpecularColor: {r: 0.4392452, g: 0.50214875, b: 0.49961555, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8522,10 +8522,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sortie Menu
       objectReference: {fileID: 0}
-    - target: {fileID: 828484913333409883, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1361908834651244528, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -8546,6 +8542,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
+    - target: {fileID: 2386522059495940428, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1575412928}
+    - target: {fileID: 2386522059495940428, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1020631579}
     - target: {fileID: 3197669684990644070, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8560,6 +8564,10 @@ PrefabInstance:
       objectReference: {fileID: 1575412928}
     - target: {fileID: 3347165096891417043, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1575412928}
+    - target: {fileID: 3472067192965760790, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
     - target: {fileID: 3731112356436443940, guid: 6b9f7021f545f5740b4083b8fc4fe134, type: 3}
