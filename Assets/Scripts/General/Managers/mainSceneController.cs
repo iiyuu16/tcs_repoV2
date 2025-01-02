@@ -39,6 +39,11 @@ public class mainSceneController : MonoBehaviour
             ROOTKIT_gamemode();
         }
 
+        if (SceneManager.GetActiveScene().name == "LoadingScreenToBOTS")
+        {
+            BOTS_gamemode();
+        }
+
         if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
         {
             WORM_gamemode();
@@ -111,6 +116,7 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayToLoadingSceneWORM());
         StartCoroutine(DelayedObjTransition());
     }
+
     public void toLoadingSceneVIRUS()
     {
         StartCoroutine(DelayToLoadingSceneVIRUS());
@@ -120,6 +126,11 @@ public class mainSceneController : MonoBehaviour
     public void toLoadingSceneROOTKIT()
     {
         StartCoroutine(DelayToLoadingSceneROOTKIT());
+        StartCoroutine(DelayedObjTransition());
+    }
+    public void toLoadingSceneBOTS()
+    {
+        StartCoroutine(DelayToLoadingSceneBOTS());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -155,6 +166,12 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_BOTS()
+    {
+        StartCoroutine(DelayToBOTS());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     // gamemode scenes
 
 
@@ -185,6 +202,12 @@ public class mainSceneController : MonoBehaviour
     public void WORM_gamemode()
     {
         StartCoroutine(DelayToWORM_gamemode());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void BOTS_gamemode()
+    {
+        StartCoroutine(DelayToBOTS_gamemode());
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -222,6 +245,12 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("LoadingScreenToROOTKIT");
+    }
+
+    IEnumerator DelayToLoadingSceneBOTS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("LoadingScreenToBOTS");
     }
 
     IEnumerator DelayToFLM()
@@ -282,6 +311,19 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("flappyGM");
+    }
+
+    IEnumerator DelayToBOTS()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_BOTS");
+    }
+
+    IEnumerator DelayToBOTS_gamemode()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        Debug.Log("no scene assigned");
+        //SceneManager.LoadScene(" ");
     }
 
     IEnumerator DelayedSceneTransition()
