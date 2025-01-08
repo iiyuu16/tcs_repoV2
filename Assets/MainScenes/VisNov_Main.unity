@@ -723,6 +723,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 531383324}
     m_Modifications:
+    - target: {fileID: 209812166184814623, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: efc98a1814c5fa443bed79cfc71413ed, type: 3}
+    - target: {fileID: 978311755759122508, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 3165670ae4b655645b76adec46e1001c, type: 3}
     - target: {fileID: 978311755759122508, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -739,6 +747,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2038222676}
+    - target: {fileID: 2144743490963722611, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 6fa9491fcb0d289418026d31e389a738, type: 3}
     - target: {fileID: 2578863108889879672, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -809,33 +821,13 @@ PrefabInstance:
       objectReference: {fileID: 2038222676}
     - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":23,"yPos":159},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
-        go!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":480,"yPos":164},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Not
-        yet!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":255.5,"yPos":272},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":269,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
-        let''s get to work now!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.5},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":262,"yPos":139},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"It
-        looks like everything is good to go. Are you ready to cyberdive?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":2,"Volume":0.5},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":479,"yPos":242},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Right
-        when you''re ready.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.5}]}'
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":84.5,"yPos":159},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let''s
+        go!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":541.5,"yPos":164},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Not
+        yet!>-","parentUIDs":[1],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":317,"yPos":272},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[10],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":330.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright,
+        let''s get to work now!","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":323.5,"yPos":139},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"It
+        looks like everything is good to go. Are you ready to cyberdive?","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":2,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":540.5,"yPos":242},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"Right
+        when you''re ready.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
       objectReference: {fileID: 0}
-    - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1029548326}
-    - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 372023201}
-    - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2038222676}
-    - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 1307123612}
-    - target: {fileID: 5905710092687583002, guid: 0e9d656bd4e710742beceb812b16b2a0, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 1307123612}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2998,7 +2990,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5537,7 +5529,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9669960e415ea604d81fb0784634df79, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.08
+  m_Volume: 0.3
   m_Pitch: 0.9
   Loop: 1
   Mute: 0

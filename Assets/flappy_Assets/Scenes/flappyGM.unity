@@ -467,7 +467,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ff4911988149ecb4ca801ff687095519, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3388,7 +3388,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.15
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4697,10 +4697,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1542225191}
     m_Modifications:
-    - target: {fileID: 7867527017420355, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 44a490bb0c84c6f4c9b1ccdf6f13c5ab, type: 3}
     - target: {fileID: 172772084835960469, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4709,18 +4705,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 199225609}
-    - target: {fileID: 1353302333262224837, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
+    - target: {fileID: 1514247742812757998, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-    - target: {fileID: 1437351189294207163, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-    - target: {fileID: 1674240993475888769, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
+      objectReference: {fileID: 8300000, guid: 52ce869b44bc74647bfbef323408330f, type: 3}
     - target: {fileID: 1729169209078670460, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4829,79 +4817,31 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 199225609}
-    - target: {fileID: 3210595451110890525, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-    - target: {fileID: 3275867316391244522, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 44a490bb0c84c6f4c9b1ccdf6f13c5ab, type: 3}
-    - target: {fileID: 5562964451674935719, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 44a490bb0c84c6f4c9b1ccdf6f13c5ab, type: 3}
-    - target: {fileID: 5877735066146047293, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-    - target: {fileID: 6467204217773601855, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
     - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":248,"yPos":622},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":248.5,"yPos":-363},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Systems
-        will restart shortly. Please wait...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":101,"yPos":-266},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh...
-        What was that?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":381,"yPos":-265},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-        idea...","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":102,"yPos":-162},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait!
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":313.5,"yPos":547},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":314,"yPos":-438},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Systems
+        will restart shortly. Please wait...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":170.5,"yPos":-337},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh...
+        What was that?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":446.5,"yPos":-340},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+        idea...","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":167.5,"yPos":-237},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait!
         This kind of feeling! Are we in a video game? I''m pretty sure WE ARE in
-        a video game!","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":382,"yPos":-163},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        don''t think so... You just played too much games, Wolf.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":101,"yPos":-52},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
+        a video game!","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":447.5,"yPos":-238},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        don''t think so... You just played too much games, Wolf.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":166.5,"yPos":-127},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
         Vi, have you ever thought that we''ve never travelled the city? Its always
-        the shop we can only go to!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":98,"yPos":58},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"System
-        restarts in: Three...","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":384,"yPos":-57},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        don''t know what you''re talking about, Wolf.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":384,"yPos":51},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Its
-        back again! There it is Vi!","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":93,"yPos":164},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        Two.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":381,"yPos":165},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Can''t
-        you hear that countdown Vi?... Vi? Why aren''t you responding?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":89,"yPos":271},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":379,"yPos":269},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        One.","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":84,"yPos":379},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        Zero.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":380,"yPos":381},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":376,"yPos":488},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-        data found.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":86,"yPos":489},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"wHy
+        the shop we can only go to!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":163.5,"yPos":-17},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"System
+        restarts in: Three...","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":449.5,"yPos":-132},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        don''t know what you''re talking about, Wolf.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":449.5,"yPos":-24},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"Its
+        back again! There it is Vi!","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":158.5,"yPos":89},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"...
+        Two.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":446.5,"yPos":90},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Can''t
+        you hear that countdown Vi?... Vi? Why aren''t you responding?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":154.5,"yPos":196},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":444.5,"yPos":194},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"...
+        One.","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":149.5,"yPos":304},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"...
+        Zero.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":445.5,"yPos":306},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":441.5,"yPos":413},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+        data found.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":151.5,"yPos":414},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"wHy
         arE you stilL here?\ndon''t you have some Places to go?","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
       objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1367464992}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1571750641}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 995946840}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 1922994351}
-    - target: {fileID: 7144674649193424927, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: TMPFont
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 7478691870264450500, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
     - target: {fileID: 7902073022954670525, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_Name
       value: flappyConvoElements
       objectReference: {fileID: 0}
-    - target: {fileID: 8466609977183688225, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Icon
-      value: 
-      objectReference: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
     - target: {fileID: 8610759750787108259, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
