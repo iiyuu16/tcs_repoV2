@@ -578,6 +578,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5149528256743589336, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: ship
+      value: 
+      objectReference: {fileID: 1949695551}
     - target: {fileID: 6955369743933081507, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -935,6 +939,11 @@ MonoBehaviour:
   pooledObjects: []
   objectToPool: {fileID: 7947545814174395883, guid: 019092eb709ace244b8689dff94ffb7f, type: 3}
   amountToPool: 10
+--- !u!1 &1949695551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7086683072736200892, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+  m_PrefabInstance: {fileID: 1320752937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2093300743
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class BulletShooter : MonoBehaviour
 {
-    Rigidbody rb;
+    Rigidbody rb, sb;
     public GameObject camera;
+    public GameObject ship;
     
     private void Start()
     {
-        
+        sb = ship.GetComponent<Rigidbody>();
         //rb = bullet.GetComponent<Rigidbody>();
         //rb.AddForce(camera.transform.forward * 5f);
     }
@@ -27,7 +28,7 @@ public class BulletShooter : MonoBehaviour
                 PlayerBullet.SetActive(true);
             }
             rb = PlayerBullet.GetComponent<Rigidbody>();
-            rb.velocity = transform.forward * 30f; 
+            rb.velocity = (transform.forward * 70f); 
             //StartCoroutine(fire());
            
         }

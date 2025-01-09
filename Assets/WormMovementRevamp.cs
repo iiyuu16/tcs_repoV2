@@ -6,7 +6,7 @@ using UnityEngine.ProBuilder.Shapes;
 
 public class WormMovementRevamp : MonoBehaviour
 {
-    Rigidbody rb;
+    Rigidbody rb,bb;
     public float initThrust = 5f;
     bool isPushing = false;
     bool isTurningLeft = false;
@@ -39,6 +39,8 @@ public class WormMovementRevamp : MonoBehaviour
         {
             isBraking = true;
         }
+
+
     }
 
     private void FixedUpdate()
@@ -67,5 +69,7 @@ public class WormMovementRevamp : MonoBehaviour
             rb.AddTorque(cam.transform.up * 1f);
             isTurningRight = false;
         }
+
+
     }
 }
