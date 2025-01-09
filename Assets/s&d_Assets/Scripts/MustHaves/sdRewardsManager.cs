@@ -90,11 +90,6 @@ public class sdRewardsManager : MonoBehaviour
             statusText.text = effectMessage.Trim();
             statusText.gameObject.SetActive(true);
 
-/*            if (augmentManager.isMultiplyingOnEffect && winScreenActive)
-            {
-                _sdScoreManager.MultiplierEffect();
-            }*/
-
             scoreTriggered = true;
         }
     }
