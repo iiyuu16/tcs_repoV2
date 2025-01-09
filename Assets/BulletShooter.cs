@@ -19,15 +19,15 @@ public class BulletShooter : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GameObject bullet = ObjectPoolRevamp.SharedInstance.GetPooledObject();
-            if (bullet != null)
+            GameObject PlayerBullet = ObjectPoolRevamp.SharedInstance.GetPooledObject();
+            if (PlayerBullet != null)
             {
-                bullet.transform.position = this.transform.position;
-                bullet.transform.rotation = this.transform.rotation;
-                bullet.SetActive(true);
+                PlayerBullet.transform.position = this.transform.position;
+                PlayerBullet.transform.rotation = this.transform.rotation;
+                PlayerBullet.SetActive(true);
             }
-            rb = bullet.GetComponent<Rigidbody>();
-            rb.velocity = transform.forward * 20f;
+            rb = PlayerBullet.GetComponent<Rigidbody>();
+            rb.velocity = transform.forward * 30f; 
             //StartCoroutine(fire());
            
         }
