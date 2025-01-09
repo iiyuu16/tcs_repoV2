@@ -185,6 +185,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2093300744}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &306066517 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9150423525083416560, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+  m_PrefabInstance: {fileID: 1320752937}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &740270401
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +587,14 @@ PrefabInstance:
       propertyPath: ship
       value: 
       objectReference: {fileID: 1949695551}
+    - target: {fileID: 5149528256743589336, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 306066517}
+    - target: {fileID: 5149528256743589336, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6955369743933081507, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -590,7 +603,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4596582816300227116, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
