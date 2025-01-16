@@ -7,7 +7,7 @@ using UnityEngine.ProBuilder.Shapes;
 public class WormMovementRevamp : MonoBehaviour
 {
     Rigidbody rb,bb;
-    public float initThrust = 5f;
+    public float initThrust = 0.001f;
     bool isPushing = false;
     bool isTurningLeft = false;
     bool isTurningRight = false;
