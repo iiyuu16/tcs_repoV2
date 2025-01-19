@@ -24,7 +24,7 @@ public class flappyPlayerMechanics : MonoBehaviour
             speed = jumpStrength;
             soundSource.jumpsSFX();
             Debug.Log("Jump");
-            currentZRotation = -80f;
+            currentZRotation = -60f;
         }
 
         currentZRotation = Mathf.Lerp(currentZRotation, targetZRotation, weight);

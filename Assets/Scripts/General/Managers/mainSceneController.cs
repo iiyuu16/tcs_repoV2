@@ -172,6 +172,18 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_TrueEnding()
+    {
+        StartCoroutine(DelayToTrueEnding());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_GoodEnding()
+    {
+        StartCoroutine(DelayToGoodEnding());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     // gamemode scenes
 
 
@@ -326,10 +338,21 @@ public class mainSceneController : MonoBehaviour
         //SceneManager.LoadScene(" ");
     }
 
+    IEnumerator DelayToTrueEnding()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_TrueEnding");
+    }
+
+    IEnumerator DelayToGoodEnding()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_GoodEnding");
+    }
+
     IEnumerator DelayedSceneTransition()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         if (!string.IsNullOrEmpty(targetSceneName))
         {
