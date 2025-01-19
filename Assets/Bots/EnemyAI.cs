@@ -14,7 +14,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
-        // Initialize the NavMeshAgent
+        
         agent = GetComponent<NavMeshAgent>();
         agent.speed = 6f; 
     }
