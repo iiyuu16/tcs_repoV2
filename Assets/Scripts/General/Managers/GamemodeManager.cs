@@ -72,13 +72,10 @@ public class GameModeManager : MonoBehaviour
 
         //icon check
         UpdateMalwareIcons();
-    }
 
-    private void Update()
-    {
+        //msg check
         ShowFinalMSG();
     }
-
     public void adwareGM_Done()
     {
         adwareDoneCount++;
@@ -137,6 +134,9 @@ public class GameModeManager : MonoBehaviour
         UpdateRootkitButton();
         UpdateBotsButton();
         UpdateWormButton();
+
+        Debug.Log("Data Loaded!");
+
     }
 
     public void SaveGMProgress()
@@ -149,6 +149,8 @@ public class GameModeManager : MonoBehaviour
         PlayerPrefs.SetInt(WORM_DONE_KEY, wormDoneCount);
 
         PlayerPrefs.Save();
+        Debug.Log("Data Saved!");
+
     }
 
     public void ResetGMProgress()
