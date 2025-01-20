@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
-public class startPuzzle : MonoBehaviour
+public class BotDamage : MonoBehaviour
 {
     public GameObject ship;
     // Start is called before the first frame update
@@ -17,5 +18,11 @@ public class startPuzzle : MonoBehaviour
         
     }
 
-    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            ship.gameObject.SetActive(false);
+        }
+    }
 }
