@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class startPuzzle : MonoBehaviour
+public class registerHit : MonoBehaviour
 {
-    public GameObject ship;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +15,7 @@ public class startPuzzle : MonoBehaviour
     {
         
     }
-
-    private void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player Bullet")
         {
