@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/LoadingScreenToFLM.unity
     guid: 48a811850a2861b4db5e5b957f1c8a83
   - enabled: 1
-    path: Assets/All Game Modes/flmGM_Assets/Scenes/s&dGM.unity
+    path: Assets/s&d_Assets/Scenes/s&dGM.unity
     guid: 831a953575cc22c45b12f9ff73c765b9
   - enabled: 1
     path: Assets/MainScenes/VisNov_ADWARE.unity
@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/LoadingScreenToADWARE.unity
     guid: 96f3a20f9b31b6544bb60f5847707ce0
   - enabled: 1
-    path: Assets/All Game Modes/adwareGM_Assets/Scenes/rhythmGM.unity
+    path: Assets/rhythm_Assets/Scenes/rhythmGM.unity
     guid: b09db918762d8ed40b4e30a6b06dee6b
   - enabled: 1
     path: Assets/MainScenes/VisNov_WORM.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/LoadingScreenToWORM.unity
     guid: f8216b23fc4727a42a8355005bd6714f
   - enabled: 1
-    path: Assets/All Game Modes/WormAssets/wormGM.unity
+    path: Assets/WormAssets/wormGM.unity
     guid: 53b991a149846f94b8df6bc3f9fd1b53
   - enabled: 1
     path: Assets/MainScenes/VisNov_VIRUS.unity
@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/LoadingScreenToVIRUS.unity
     guid: d9dc0e69c7376cc4086ab2c7c652ecd1
   - enabled: 1
-    path: Assets/All Game Modes/virusGM_Assets/Scenes/survivalGM.unity
+    path: Assets/survival_Assets/Scenes/survivalGM.unity
     guid: 06b05c16924ddba4fae67eb441e35765
   - enabled: 1
     path: Assets/MainScenes/VisNov_ROOTKIT.unity
@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/MainScenes/LoadingScreenToROOTKIT.unity
     guid: 7d33972ac8f8338409b4bfeb1b9596d4
   - enabled: 1
-    path: Assets/All Game Modes/rootkitGM_Assets/Scenes/flappyGM.unity
+    path: Assets/flappy_Assets/Scenes/flappyGM.unity
     guid: 9235555700d5cad438c867e48dafdcf5
   - enabled: 1
     path: Assets/MainScenes/VisNov_BOTS.unity
@@ -65,10 +65,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainScenes/VisNov_Main.unity
     guid: d28bd882b1285d2429ffde365d63f551
-  - enabled: 1
-    path: Assets/MainScenes/VisNov_TrueEnding.unity
-    guid: d73aa5edc8510c248aaa26c47e1331c0
-  - enabled: 1
-    path: Assets/MainScenes/VisNov_GoodEnding.unity
-    guid: d759f34a4f183464dbbe54d70682e0cb
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 65e6c122592a228469f43ccd64ef1816, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 4eed97106179aea479e6e4e195d5e803, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dc99ec17705adc647836a2f01d9a4f87, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 6840ea33cdff5584c8d4ba60eee4911f, type: 2}
