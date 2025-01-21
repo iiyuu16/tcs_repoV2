@@ -299,6 +299,7 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("wormGM");
+        Debug.Log("gm not final");
     }
 
     IEnumerator DelayToVIRUS()
@@ -334,8 +335,7 @@ public class mainSceneController : MonoBehaviour
     IEnumerator DelayToBOTS_gamemode()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        Debug.Log("no scene assigned");
-        //SceneManager.LoadScene(" ");
+        SceneManager.LoadScene("Bots GM");
     }
 
     IEnumerator DelayToTrueEnding()
