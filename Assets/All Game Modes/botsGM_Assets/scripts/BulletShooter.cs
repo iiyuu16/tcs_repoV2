@@ -8,7 +8,8 @@ public class BulletShooter : MonoBehaviour
     Rigidbody rb, sb;
     public GameObject camera;
     public GameObject ship;
-    
+    public survivalSoundSource sfx;
+
     private void Start()
     {
         sb = ship.GetComponent<Rigidbody>();
@@ -28,9 +29,9 @@ public class BulletShooter : MonoBehaviour
                 PlayerBullet.SetActive(true);
             }
             rb = PlayerBullet.GetComponent<Rigidbody>();
-            rb.velocity = (transform.forward * 20f); 
+            rb.velocity = (transform.forward * 20f);
             //StartCoroutine(fire());
-           
+            sfx.slashSFX();
         }
         
     }

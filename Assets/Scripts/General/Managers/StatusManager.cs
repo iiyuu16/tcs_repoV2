@@ -316,4 +316,7 @@ public class StatusManager : MonoBehaviour
         SaveStatus();
         LoadStatus();
     }
+
+    //new debuff from bots
+    //shadermain color reso to 2
 }
