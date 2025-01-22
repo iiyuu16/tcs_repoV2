@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class registerHit : MonoBehaviour
 {
+    public int healthBar = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,12 @@ public class registerHit : MonoBehaviour
     {
         if (other.gameObject.tag == "Player Bullet")
         {
-            this.gameObject.SetActive(false);
+            healthBar--;
+            if(healthBar == 0)
+            {
+                this.gameObject.SetActive(false);
+            }
+            
         }
     }
 }
