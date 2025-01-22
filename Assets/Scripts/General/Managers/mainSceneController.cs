@@ -172,6 +172,18 @@ public class mainSceneController : MonoBehaviour
         StartCoroutine(DelayedObjTransition());
     }
 
+    public void toVisNov_TrueEnding()
+    {
+        StartCoroutine(DelayToTrueEnding());
+        StartCoroutine(DelayedObjTransition());
+    }
+
+    public void toVisNov_GoodEnding()
+    {
+        StartCoroutine(DelayToGoodEnding());
+        StartCoroutine(DelayedObjTransition());
+    }
+
     // gamemode scenes
 
 
@@ -287,6 +299,7 @@ public class mainSceneController : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTimeToPlay);
         SceneManager.LoadScene("wormGM");
+        Debug.Log("gm not final");
     }
 
     IEnumerator DelayToVIRUS()
@@ -322,14 +335,24 @@ public class mainSceneController : MonoBehaviour
     IEnumerator DelayToBOTS_gamemode()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        Debug.Log("no scene assigned");
-        //SceneManager.LoadScene(" ");
+        SceneManager.LoadScene("Bots GM");
+    }
+
+    IEnumerator DelayToTrueEnding()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_TrueEnding");
+    }
+
+    IEnumerator DelayToGoodEnding()
+    {
+        yield return new WaitForSeconds(delayTimeToPlay);
+        SceneManager.LoadScene("VisNov_GoodEnding");
     }
 
     IEnumerator DelayedSceneTransition()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         if (!string.IsNullOrEmpty(targetSceneName))
         {

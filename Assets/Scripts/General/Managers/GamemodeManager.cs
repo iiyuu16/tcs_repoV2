@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameModeManager : MonoBehaviour
 {
     public static GameModeManager instance;
+    public GameObject finalGameMSG;
 
     private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
     private const string ADWARE_DONE_KEY = "AdwareDone";
@@ -71,8 +72,10 @@ public class GameModeManager : MonoBehaviour
 
         //icon check
         UpdateMalwareIcons();
-    }
 
+        //msg check
+        ShowFinalMSG();
+    }
     public void adwareGM_Done()
     {
         adwareDoneCount++;
@@ -131,6 +134,9 @@ public class GameModeManager : MonoBehaviour
         UpdateRootkitButton();
         UpdateBotsButton();
         UpdateWormButton();
+
+        Debug.Log("Data Loaded!");
+
     }
 
     public void SaveGMProgress()
@@ -143,6 +149,8 @@ public class GameModeManager : MonoBehaviour
         PlayerPrefs.SetInt(WORM_DONE_KEY, wormDoneCount);
 
         PlayerPrefs.Save();
+        Debug.Log("Data Saved!");
+
     }
 
     public void ResetGMProgress()
@@ -234,5 +242,16 @@ public class GameModeManager : MonoBehaviour
         UpdateRootkitButton();
         UpdateBotsButton();
         UpdateWormButton();
+    }
+
+    private void ShowFinalMSG()
+    {
+        if (filelessMalwareDoneCount == 1 && adwareDoneCount == 1 && virusDoneCount == 1 && rootkitDoneCount == 1 && botsDoneCount == 1 && wormDoneCount == 1)
+        {
+            finalGameMSG.SetActive(true);
+            Debug.Log("message active");
+        }
+        else
+            Debug.Log("all gms not finished");
     }
 }
