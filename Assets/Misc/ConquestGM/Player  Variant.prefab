@@ -124,6 +124,30 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99889606
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.043612763
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.01743584
+      objectReference: {fileID: 0}
+    - target: {fileID: 4935703884854356641, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0007612654
+      objectReference: {fileID: 0}
     - target: {fileID: 5077818693448082210, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -198,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8551425567339497406, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
       propertyPath: m_Drag
-      value: 0.5
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 9150423525083416560, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
       propertyPath: m_Layer
@@ -240,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210bea235f47fe9438fc8321ab541b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 0}
+  ToBeDisabled: []
 --- !u!1 &4301372459082504124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9150423525083416560, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
@@ -284,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210bea235f47fe9438fc8321ab541b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 2816344557192239344}
+  ToBeDisabled: []
 --- !u!4 &8104642678551615809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3833732417486670093, guid: 75c6c852a58dbbe488e792c0384400ff, type: 3}
