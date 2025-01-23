@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : AutoDestroyPoolableObject
+public class enemyBullet : AutoDestroyPoolableObject
 {
     [HideInInspector]
     public Rigidbody rigidbody;
@@ -12,7 +12,7 @@ public class Bullet : AutoDestroyPoolableObject
     {
         rigidbody = GetComponent<Rigidbody>();
     }
-    
+
     public override void OnEnable()
     {
         base.OnEnable();
@@ -22,17 +22,17 @@ public class Bullet : AutoDestroyPoolableObject
 
     //public override void OnDisable()
     //{
-        //base.OnDisable();
-        //rigidbody.velocity = Vector3.zero;
+    //base.OnDisable();
+    //rigidbody.velocity = Vector3.zero;
     //}
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Player")
         {
             this.gameObject.SetActive(false);
         }
-        
-        
+        //this.gameObject.SetActive(false);
+
     }
 }
