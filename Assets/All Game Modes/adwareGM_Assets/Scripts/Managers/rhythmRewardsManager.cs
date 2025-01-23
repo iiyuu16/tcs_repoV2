@@ -189,6 +189,7 @@ public class RhythmRewardsManager : MonoBehaviour
         {
             Debug.LogError("PopUpManager instance is null.");
         }
+        statusManager.glitchDebuffOff();
     }
 
     public void GetRhythmBuff()
@@ -201,5 +202,6 @@ public class RhythmRewardsManager : MonoBehaviour
         {
             Debug.LogError("PopUpManager instance is null.");
         }
+        statusManager.glitchDebuffOff();
     }
 }
