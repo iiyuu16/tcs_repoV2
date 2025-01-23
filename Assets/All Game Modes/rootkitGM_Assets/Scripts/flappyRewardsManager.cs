@@ -174,5 +174,8 @@ public class flappyRewardsManager : MonoBehaviour
         {
             Debug.LogError("shopNullifier instance is null.");
         }
+        statusManager.glitchDebuffOff();
     }
+
+    //debuff is game reset, implemented at loseConvo.
 }

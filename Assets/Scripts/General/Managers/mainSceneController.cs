@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class mainSceneController : MonoBehaviour
 {
     private ParticleTransition particleTransition;
+    private glitchManager _glitchManager;
     public float delayTimeToPlay;
     public float delayTimeToTransition;
 
@@ -14,9 +15,17 @@ public class mainSceneController : MonoBehaviour
     private void Awake()
     {
         particleTransition = FindObjectOfType<ParticleTransition>();
+        _glitchManager = FindAnyObjectByType<glitchManager>();
+
         if (particleTransition == null)
         {
             Debug.Log("No ParticleTransition found in the scene.");
+        }
+
+        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "VisNov_Prologue")
+        {
+            _glitchManager.DisableGlitchEffect();
+            Debug.Log("glitchOff");
         }
 
         if (SceneManager.GetActiveScene().name == "LoadingScreenToADWARE")

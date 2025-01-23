@@ -44,7 +44,6 @@ public class botsTimer : MonoBehaviour
         {
             loseScreen.SetActive(true);
         }
-
         DisableGameObjects();
     }
 

@@ -679,7 +679,9 @@ GameObject:
   - component: {fileID: 315770317}
   - component: {fileID: 315770316}
   - component: {fileID: 315770315}
+  - component: {fileID: 315770322}
   - component: {fileID: 315770319}
+  - component: {fileID: 315770323}
   - component: {fileID: 315770320}
   - component: {fileID: 315770321}
   m_Layer: 5
@@ -903,6 +905,52 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &315770322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315770314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dec250b19dd59140a6377077aebe64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glitchMaterial: {fileID: 2100000, guid: 6548f7d9671cb164f89ce1f90054bc23, type: 2}
+  noiseAmount: 0
+  glitchStrength: 0
+--- !u!114 &315770323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315770314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25de3055b875e4aa20f3b3f5bae9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalGameMSG: {fileID: 0}
+  filelessMalwareDoneCount: 0
+  adwareDoneCount: 0
+  virusDoneCount: 0
+  rootkitDoneCount: 0
+  botsDoneCount: 0
+  wormDoneCount: 0
+  filelessButton: {fileID: 0}
+  adwareButton: {fileID: 0}
+  virusButton: {fileID: 0}
+  rootkitButton: {fileID: 0}
+  botsButton: {fileID: 0}
+  wormButton: {fileID: 0}
+  malwareFL: {fileID: 0}
+  malwareADWARE: {fileID: 0}
+  malwareVIRUS: {fileID: 0}
+  malwareROOTKIT: {fileID: 0}
+  malwareBOTS: {fileID: 0}
+  malwareWORM: {fileID: 0}
 --- !u!1 &394326972
 GameObject:
   m_ObjectHideFlags: 0

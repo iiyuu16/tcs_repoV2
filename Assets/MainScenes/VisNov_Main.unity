@@ -2272,6 +2272,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564933756}
   m_CullTransparentMesh: 1
+--- !u!1 &574600138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6601571018374967066, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
+  m_PrefabInstance: {fileID: 3282381556776485849}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &577810263 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2316556130235623737, guid: 5dc5b9d8664fb8f45b636da251d96af2, type: 3}
@@ -5989,15 +5994,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInflation: 0
   nonStopPopUp: 0
+  glitchesOn: 0
   shopNullify: 0
   shopNavigation: {fileID: 625772741}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
+  glitchesOff: 0
   discountIcon: {fileID: 6410662034505362797}
   inflationIcon: {fileID: 414605739}
   popUpIcon: {fileID: 1960779174}
   shopNullIcon: {fileID: 3282381556776485850}
+  glitchIcon: {fileID: 574600138}
 --- !u!1001 &1724529320
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7753,6 +7761,14 @@ PrefabInstance:
     - target: {fileID: 4167493537143337101, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
       propertyPath: m_Name
       value: statusPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495416207850001611, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4495416207850001611, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5495847334260938209, guid: 1c13f82e7bd25574fbb821d815f5b121, type: 3}
       propertyPath: m_Pivot.x

@@ -17,7 +17,6 @@ public class botsRewardManager : MonoBehaviour
     private AugmentManager augmentManager;
     private StatusManager statusManager;
     private botsScoreManager _botsScoreManager;
-    public Material shaderMat;
 
     private bool scoreTriggered = false;
 
@@ -53,7 +52,6 @@ public class botsRewardManager : MonoBehaviour
             Debug.Log("botsScoreManager instance is not found in the scene.");
             return;
         }
-
     }
 
     void Update()
@@ -179,14 +177,14 @@ public class botsRewardManager : MonoBehaviour
         {
             Debug.LogError("no botsDebuff");
         }
+        statusManager.glitchDebuffOff();
     }
 
     public void GetBotsDebuff()
     {
         if (statusManager != null)
         {
-            //retroshader colorresolution to 2
-
+            statusManager.glitchDebuffOn();
         }
         else
         {

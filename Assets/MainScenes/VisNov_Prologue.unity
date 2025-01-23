@@ -5816,6 +5816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1020631578}
   - component: {fileID: 1020631579}
+  - component: {fileID: 1020631580}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -5854,6 +5855,21 @@ MonoBehaviour:
   delayTimeToTransition: 2
   objTransition: {fileID: 908221950}
   targetSceneName: 
+--- !u!114 &1020631580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020631577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dec250b19dd59140a6377077aebe64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glitchMaterial: {fileID: 2100000, guid: 6548f7d9671cb164f89ce1f90054bc23, type: 2}
+  noiseAmount: 0
+  glitchStrength: 0
 --- !u!1 &1022197707
 GameObject:
   m_ObjectHideFlags: 0

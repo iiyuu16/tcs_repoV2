@@ -12,7 +12,7 @@ public class StatusManager : MonoBehaviour
     [Header("Debuffs:")]
     public bool shopInflation;
     public bool nonStopPopUp;
-
+    public bool glitchesOn;
     public bool shopNullify;
     public GameObject shopNavigation;
 
@@ -22,12 +22,15 @@ public class StatusManager : MonoBehaviour
     [Header("Normal States:")]
     public bool shopNormal;
     public bool noPopups;
+    public bool glitchesOff;
 
     [Header("Status Icons:")]
     public GameObject discountIcon;
     public GameObject inflationIcon;
     public GameObject popUpIcon;
     public GameObject shopNullIcon;
+    public GameObject glitchIcon;
+
     private void Awake()
     {
         instance = this;
@@ -79,6 +82,10 @@ public class StatusManager : MonoBehaviour
             shopNullIcon.SetActive(false);
         }
 
+        if (glitchIcon != null)
+        {
+            glitchIcon.SetActive(false);
+        }
         LoadStatus();
     }
 
@@ -88,12 +95,14 @@ public class StatusManager : MonoBehaviour
         //normal states
         PlayerPrefs.SetInt("ShopNormal", shopNormal ? 1 : 0);
         PlayerPrefs.SetInt("NoPopups", noPopups ? 1 : 0);
+        PlayerPrefs.SetInt("GlitchesOff", glitchesOff ? 1 : 0);
         //buffs
         PlayerPrefs.SetInt("ShopDiscount", shopDiscount ? 1 : 0);
         //debuffs
         PlayerPrefs.SetInt("ShopInflation", shopInflation ? 1 : 0);
         PlayerPrefs.SetInt("NonStopPopUp", nonStopPopUp ? 1 : 0);
         PlayerPrefs.SetInt("ShopNullify", shopNullify ? 1 : 0);
+        PlayerPrefs.SetInt("GlitchesOn", glitchesOn ? 1: 0);
 
         PlayerPrefs.Save();
     }
@@ -103,12 +112,14 @@ public class StatusManager : MonoBehaviour
         //normal states
         shopNormal = PlayerPrefs.GetInt("ShopNormal", 0) == 1;
         noPopups = PlayerPrefs.GetInt("NoPopups", 0) == 1;
+        glitchesOff = PlayerPrefs.GetInt("GlitchesOff", 0) == 1;
         //buffs
         shopDiscount = PlayerPrefs.GetInt("ShopDiscount", 0) == 1;
         //debuffs
         shopInflation = PlayerPrefs.GetInt("ShopInflation", 0) == 1;
         nonStopPopUp = PlayerPrefs.GetInt("NonStopPopUp", 0) == 1;
         shopNullify = PlayerPrefs.GetInt("ShopNullify", 0) == 1;
+        glitchesOn = PlayerPrefs.GetInt("GlitchesOn", 0) == 1;
     }
 
     public void setToDefaultStatus()
@@ -152,6 +163,19 @@ public class StatusManager : MonoBehaviour
         {
             popupDebuffOff();
         }
+
+        if (!glitchesOn)
+        {
+            if (glitchesOff)
+            {
+                glitchDebuffOff();
+            }
+        }
+        else
+        {
+            glitchDebuffOn();
+        }
+
     }
 
     // functs are called by rewardManagers from different gamemodes
@@ -317,6 +341,38 @@ public class StatusManager : MonoBehaviour
         LoadStatus();
     }
 
-    //new debuff from bots
-    //shadermain color reso to 2
+    public void glitchDebuffOn()
+    {
+        glitchesOff = false;
+        glitchesOn = true;
+
+        if (glitchIcon != null)
+        {
+            glitchIcon.SetActive(true);
+        }
+
+        PlayerPrefs.SetInt("GlitchesOff", 0);
+        PlayerPrefs.SetInt("GlitchesOn", 1);
+
+        SaveStatus();
+        LoadStatus();
+    }
+
+
+    public void glitchDebuffOff()
+    {
+        glitchesOff = true;
+        glitchesOn = false;
+
+        if (glitchIcon != null)
+        {
+            glitchIcon.SetActive(false);
+        }
+
+        PlayerPrefs.SetInt("GlitchesOff", 1);
+        PlayerPrefs.SetInt("GlitchesOn", 0);
+
+        SaveStatus();
+        LoadStatus();
+    }
 }

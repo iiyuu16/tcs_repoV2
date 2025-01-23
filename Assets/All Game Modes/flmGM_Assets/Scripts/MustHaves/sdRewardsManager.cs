@@ -188,6 +188,8 @@ public class sdRewardsManager : MonoBehaviour
         {
             Debug.LogError("PopUpManager instance is null.");
         }
+        statusManager.glitchDebuffOff();
+
     }
 
     public void GetSDBuff()
@@ -201,6 +203,8 @@ public class sdRewardsManager : MonoBehaviour
         {
             Debug.LogError("PopUpManager instance is null.");
         }
+        statusManager.glitchDebuffOff();
+
     }
 
 }

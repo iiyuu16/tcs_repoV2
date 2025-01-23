@@ -180,11 +180,12 @@ public class survivalRewardsManager : MonoBehaviour
     {
         if (statusManager != null)
         {
-            //enter buff mechanic here
+            augmentManager.ActivateAugment("Hollowing Augment");
         }
         else
         {
             Debug.LogError("shopNullifier instance is null.");
         }
+        statusManager.glitchDebuffOff();
     }
 }
