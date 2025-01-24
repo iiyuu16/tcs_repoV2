@@ -1,3 +1,4 @@
+using Meta.WitAi;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -28,11 +29,10 @@ public class Bullet : AutoDestroyPoolableObject
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Enemy")
+        if(other.gameObject.tag == "Enemy" || other.gameObject.tag == "Obstacle")
         {
             this.gameObject.SetActive(false);
         }
-        
-        
+        Debug.Log("bullet off");
     }
 }
