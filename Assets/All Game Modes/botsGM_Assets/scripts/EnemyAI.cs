@@ -16,7 +16,7 @@ public class EnemyAI : MonoBehaviour
     {
         
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = 6f; 
+        agent.speed = 3f; 
     }
 
     private void Update()

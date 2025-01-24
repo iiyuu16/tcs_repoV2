@@ -47,25 +47,25 @@ public class WormMovementRevamp : MonoBehaviour
     {
         if (isPushing == true)
         {
-            Debug.Log("Pushing");
+            //Debug.Log("Pushing");
             rb.AddForce(cam.transform.forward * initThrust);
             isPushing=false;
         }
         if (isBraking == true)
         {
-            Debug.Log("Pushing");
+            //Debug.Log("Pushing");
             rb.AddForce(-cam.transform.forward * initThrust);
             isBraking = false;
         }
         if (isTurningLeft == true)
         {
-            Debug.Log("Pushing");
+            //Debug.Log("Pushing");
             rb.AddTorque(-cam.transform.up * 1f);
             isTurningLeft = false;
         }
         if (isTurningRight == true)
         {
-            Debug.Log("Pushing");
+            //Debug.Log("Pushing");
             rb.AddTorque(cam.transform.up * 1f);
             isTurningRight = false;
         }
