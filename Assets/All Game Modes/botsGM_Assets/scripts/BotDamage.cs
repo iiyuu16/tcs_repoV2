@@ -9,12 +9,13 @@ public class BotDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Bullet"))
         {
             foreach (GameObject obj in ToBeDisabled)
             {
                 obj.SetActive(false);
             }
+            Debug.Log("player hit");
         }
     }
 }

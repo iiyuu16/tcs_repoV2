@@ -18,7 +18,7 @@ public class sdDBullet : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("player hit");
+            //Debug.Log("player hit");
             sparksFX.Play();
             smokeFX.Play();
             fireFX.Play();
@@ -29,7 +29,7 @@ public class sdDBullet : MonoBehaviour
         }
         else if (other.tag == "PlayerAttk" || other.tag == "Obstacle")
         {
-            Debug.Log("bullet destroyed");
+            //Debug.Log("bullet destroyed");
             hitFX.Play();
             col.enabled = false;
             bulletSkin.enabled = false;
@@ -49,7 +49,7 @@ public class sdDBullet : MonoBehaviour
 
     private IEnumerator DelayDestroy()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 }
