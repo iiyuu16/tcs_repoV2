@@ -27,7 +27,7 @@ public class sdDBullet : MonoBehaviour
             bulletSkin.enabled = false;
             StartCoroutine(DelayDestroy());
         }
-        else if (other.tag == "PlayerAttk")
+        else if (other.tag == "PlayerAttk" || other.tag == "Obstacle")
         {
             Debug.Log("bullet destroyed");
             hitFX.Play();

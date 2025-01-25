@@ -27,6 +27,14 @@ public class sdNDBullet : MonoBehaviour
             bulletSkin.enabled = false;
             StartCoroutine(DelayDestroy());
         }
+        else if (other.tag == "Obstacle")
+        {
+            Debug.Log("bullet destroyed");
+            hitFX.Play();
+            col.enabled = false;
+            bulletSkin.enabled = false;
+            StartCoroutine(DelayDestroy());
+        }
         else
         {
             StartCoroutine(BulletLifetime());
