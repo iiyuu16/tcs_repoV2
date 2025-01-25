@@ -5,66 +5,35 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform[] waypoints;   
     public Transform player;       
-    public float detectionRange = 5f; 
     public float waypointTolerance = 1f; 
 
     private NavMeshAgent agent;       
     private int currentWaypointIndex = 0; 
-    private bool isChasingPlayer = false; 
 
     private void Start()
     {
-        
         agent = GetComponent<NavMeshAgent>();
-        agent.speed = 3f; 
     }
 
     private void Update()
     {
-        if (PlayerInRange())
-        {
-            ChasePlayer();
-        }
-        else
-        {
-            Patrol();
-        }
+        MoveWorm();
     }
 
-    void Patrol()
+    void MoveWorm()
     {
         
         if (waypoints.Length == 0) return;
 
-        
-        if (!isChasingPlayer || agent.remainingDistance <= waypointTolerance)
+        if (agent.remainingDistance <= waypointTolerance)
         {
             agent.SetDestination(waypoints[currentWaypointIndex].position);
         }
-
        
         if (agent.remainingDistance <= waypointTolerance && !agent.pathPending)
         {
             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
         }
-
-      
-        isChasingPlayer = false;
-    }
-
-    bool PlayerInRange()
-    {
-        // Check if player within range
-        return Vector3.Distance(transform.position, player.position) <= detectionRange;
-    }
-
-    void ChasePlayer()
-    {
-        
-        agent.SetDestination(player.position);
-
-       
-        isChasingPlayer = true;
     }
 
     void OnDrawGizmos()
@@ -90,8 +59,5 @@ public class EnemyAI : MonoBehaviour
                 }
             }
         }
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 }

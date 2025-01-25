@@ -44,8 +44,6 @@ public class sdTurret : MonoBehaviour
     void ShootAtPlayer()
     {
         Vector3 directionToPlayer = (player.position - bulletSpawn.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
-        transform.rotation = Quaternion.Euler(0f, lookRotation.eulerAngles.y, 0f);
 
         GameObject bulletPrefab = bulletPrefabs[bulletIndex];
         GameObject bulletObj = Instantiate(bulletPrefab, bulletSpawn.position, Quaternion.identity);
