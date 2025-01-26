@@ -1099,6 +1099,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (8)
@@ -1412,7 +1416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.9843137}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1454,6 +1458,9 @@ MonoBehaviour:
   - {fileID: 3018336069143335936}
   - {fileID: 1861613101}
   - {fileID: 1931327032}
+  - {fileID: 70580241}
+  - {fileID: 982376551}
+  - {fileID: 875667173}
   objectsToDisable:
   - {fileID: 249153039}
   - {fileID: 1511220692}
@@ -1680,6 +1687,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (2)
@@ -2067,6 +2078,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (4)
@@ -2658,6 +2673,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (1)
@@ -2736,6 +2755,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (7)
@@ -3300,6 +3323,81 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &674406853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 674406854}
+  - component: {fileID: 674406856}
+  - component: {fileID: 674406855}
+  m_Layer: 5
+  m_Name: crosshair
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &674406854
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674406853}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 875667174}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 12, y: 12}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &674406855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674406853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e4c4e46ba50bb604f86f4217e0f4f7dd, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &674406856
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674406853}
+  m_CullTransparentMesh: 1
 --- !u!1 &720027744
 GameObject:
   m_ObjectHideFlags: 0
@@ -3914,7 +4012,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &875667174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3928,6 +4026,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1373649211}
+  - {fileID: 674406854}
   - {fileID: 3369444686823955305}
   - {fileID: 1861613102}
   - {fileID: 37848529}
@@ -5023,6 +5122,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (3)
@@ -5609,6 +5712,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (6)
@@ -6873,7 +6980,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511220692}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1511220696
 Camera:
   m_ObjectHideFlags: 0
@@ -7399,6 +7506,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1673013682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673013683}
+  - component: {fileID: 1673013684}
+  m_Layer: 0
+  m_Name: hitFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1673013683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673013682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2004085309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673013684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673013682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 1fbd9bc0b1883c6448215b72d9900608, type: 2}
 --- !u!1 &1700932806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2003131052134428189, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
@@ -7628,6 +7784,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (5)
@@ -8592,6 +8752,7 @@ Transform:
   m_Children:
   - {fileID: 118423953}
   - {fileID: 213936116}
+  - {fileID: 1673013683}
   m_Father: {fileID: 463508871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078465527 stripped
@@ -8876,6 +9037,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1596601972352589619}
+    - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: sfx
       value: 
@@ -8884,6 +9049,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1596601972352589619}
+    - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 1550933550805934391, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
@@ -8904,6 +9073,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1596601972352589619}
+    - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 7696371009999540430, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9009,6 +9182,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
   m_PrefabInstance: {fileID: 6008906310425149026}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596601972352589621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6008906310425149026}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931327032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59c68f407a351f44a1a7455411983a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1705878194137087813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9166,6 +9350,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 1596601972352589621}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj
@@ -9311,6 +9499,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9078377707083839879, guid: c8d64a0db520e0643a9dc1dafbf4e4fe, type: 3}
+      propertyPath: volumeFX
+      value: 
+      objectReference: {fileID: 1673013682}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9332,6 +9524,10 @@ PrefabInstance:
       propertyPath: scanText
       value: 
       objectReference: {fileID: 1373649210}
+    - target: {fileID: 1876398390161694277, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 875602802}
     - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
       propertyPath: sfx
       value: 
@@ -9340,6 +9536,10 @@ PrefabInstance:
       propertyPath: sliderHP
       value: 
       objectReference: {fileID: 1861613103}
+    - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: volumeFX
+      value: 
+      objectReference: {fileID: 1673013682}
     - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
       propertyPath: stunEffects
       value: 
@@ -9384,13 +9584,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6204460947916137291, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_TagString
-      value: Scanner
-      objectReference: {fileID: 0}
     - target: {fileID: 7481610756811120093, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
       propertyPath: m_Name
       value: PlayerWormGM
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481610756811120093, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

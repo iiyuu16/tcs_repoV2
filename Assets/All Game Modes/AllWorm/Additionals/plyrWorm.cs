@@ -8,6 +8,7 @@ public class plyrWorm : MonoBehaviour
     public wormStunFX stunEffects;
     public Rigidbody rb;
     public GameObject plyrObj;
+    public GameObject volumeFX;
 
     public float moveSpeed = 5f;
     public float rotationSpeed = 0.5f;
@@ -61,8 +62,6 @@ public class plyrWorm : MonoBehaviour
             ApplyBrake();
         }
         HandleLife();
-
-        Debug.Log("spd: "+currentSpeed);
     }
 
     private void HandleLife()
@@ -76,6 +75,12 @@ public class plyrWorm : MonoBehaviour
 
             recoveryCoroutine = StartCoroutine(RecoveryState());
         }
+    }
+
+    private IEnumerator NormalScreen()
+    {
+        yield return new WaitForSeconds(1f);
+       volumeFX.SetActive(false);
     }
 
     private IEnumerator RecoveryState()
@@ -113,13 +118,14 @@ public class plyrWorm : MonoBehaviour
     public void PlayerHit()
     {
         currHP -= 1;
-        sfx.hurtSFX();
+        sfx.explosionSFX();
         Debug.Log("hp:" + currHP);
-        sdCamShake.instance.ShakeCamera();
+        volumeFX.SetActive(true);
         if (sliderHP != null)
         {
             sliderHP.value = currHP;
         }
+        StartCoroutine(NormalScreen());
     }
 
     private void HandleMovement()

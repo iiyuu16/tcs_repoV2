@@ -9,6 +9,7 @@ public class wormStunFX : MonoBehaviour
     public static wormStunFX instance;
 
     public GameObject stunUI;
+    public GameObject volumeFX;
     public TextMeshProUGUI countdownText;
 
     private void Awake()
@@ -35,6 +36,8 @@ public class wormStunFX : MonoBehaviour
         {
             countdownText.gameObject.SetActive(true);
         }
+
+        volumeFX.SetActive(true);
     }
 
     public void DisableStunEffects()
@@ -48,6 +51,8 @@ public class wormStunFX : MonoBehaviour
         {
             countdownText.gameObject.SetActive(false);
         }
+
+        volumeFX.SetActive(false);
     }
 
     public void ShowRecoveryTime(float recoveryTime)

@@ -113,7 +113,7 @@ public class wormPlyrScan : MonoBehaviour
     {
         if (other.CompareTag("Target"))
         {
-            Debug.Log("Target detected in range");
+            //Debug.Log("Target detected in range");
 
             Renderer targetRenderer = other.GetComponent<Renderer>();
             if (targetRenderer != null && newMaterial != null)

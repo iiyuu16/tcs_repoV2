@@ -6,6 +6,7 @@ public class wormShooting : MonoBehaviour
 {
     public survivalSoundSource sfx;
     public Transform player;
+    public plyrWorm _plyrWorm;
     public List<GameObject> bulletPrefabs;
     public Transform[] bulletSpawn;
     public Collider bulletRange;
@@ -21,12 +22,11 @@ public class wormShooting : MonoBehaviour
 
     void Update()
     {
-        /*        //chage sd stuff to worm
-                if (Time.time >= nextFireTime && !sdPlayerMovement.instance.isStunned)
-                {
-                    ShootAtPlayer();
-                    nextFireTime = Time.time + 1 / fireRate;
-                }*/
+        if (Time.time >= nextFireTime && !_plyrWorm.isStunned)
+        {
+            ShootAtPlayer();
+            nextFireTime = Time.time + 1 / fireRate;
+        }
 
         if (Time.time >= nextFireTime)
         {

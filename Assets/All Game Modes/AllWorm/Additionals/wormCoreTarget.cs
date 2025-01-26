@@ -58,19 +58,21 @@ public class wormCoreTarget : MonoBehaviour
             RevealEnemy();
         }
 
-        if (other.CompareTag("PlayerBullet") && isRevealed)
+        if (other.CompareTag("Player Bullet") && isRevealed)
         {
             if (shieldHealth > 0)
             {
                 shieldHealth--;
                 hitFX.Play();
                 sfx.hitSFX();
+                Debug.Log("shield hit");
                 if (shieldHealth <= 0)
                 {
                     Destroy(shieldObject);
                     hitFX.Play();
                     sfx.hitSFX();
                     vulnerableObject.SetActive(true);
+                    Debug.Log("core open");
                 }
             }
             else
@@ -80,6 +82,8 @@ public class wormCoreTarget : MonoBehaviour
                 flashFX.Play();
                 fireFX.Play();
                 sfx.explosionSFX();
+                alertObj.SetActive(false);
+                normScreen.SetActive(true);
                 Destroy(vulnerableObject);
                 if (parentTransform != null)
                 {

@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2450425637847839474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3762414422842602267}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7196434, z: -0, w: -0.69434386}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
   m_LocalPosition: {x: -0.05682319, y: -0.3719946, z: -0.27044237}
   m_LocalScale: {x: 0.1541063, y: 0.15410627, z: 0.07121034}
   m_ConstrainProportionsScale: 0
@@ -1896,7 +1896,7 @@ Transform:
   - {fileID: 7505858843322501056}
   - {fileID: 3203398312218349390}
   m_Father: {fileID: 4183665061413609425}
-  m_LocalEulerAnglesHint: {x: 0, y: 267.95, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1 &4095337957805779456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,8 +1990,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5800311177648988300}
   - component: {fileID: 4370461493361712213}
+  - component: {fileID: 1876398390161694277}
   m_Layer: 0
-  m_Name: Turret
+  m_Name: bulletSpawnpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2005,13 +2006,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4263964730779801572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.059, y: 0, z: 0.85}
+  m_LocalRotation: {x: 0, y: -0.01745245, z: 0, w: 0.99984777}
+  m_LocalPosition: {x: -0.08, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4183665061413609425}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -2, z: 0}
 --- !u!33 &4370461493361712213
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2020,6 +2021,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4263964730779801572}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1876398390161694277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263964730779801572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2822492b131d34ca0c750e90d7e328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 8525128527710475867, guid: aa05e1c7c903a45428e651916f01eba4, type: 3}
+  bulletSpawnPoint: {fileID: 5800311177648988300}
+  bulletSpeed: 12
+  fireRate: 5
+  sfx: {fileID: 0}
+  rb: {fileID: 6015796267245420627}
 --- !u!1 &4387009954711327956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,10 +2655,9 @@ GameObject:
   - component: {fileID: 5507254121280473548}
   - component: {fileID: 6477138990254394672}
   - component: {fileID: 229064714961801317}
-  - component: {fileID: 1427980100874859907}
   m_Layer: 0
   m_Name: wormTargetScanner
-  m_TagString: Untagged
+  m_TagString: Scanner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7529,7 +7547,7 @@ MonoBehaviour:
   scanner: {fileID: 5507254121280473548}
   scanDuration: 4
   revealDuration: 5
-  maxSize: 30
+  maxSize: 8
   growthRate: 3
   startingSize: 0.1
   newMaterial: {fileID: 2100000, guid: 0e80e1fa5b65ccb4b9a08914c19661d2, type: 2}
@@ -7537,27 +7555,6 @@ MonoBehaviour:
   cooldownDuration: 3
   Scan: 324
   sfx: {fileID: 0}
---- !u!135 &1427980100874859907
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6204460947916137291}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6266442073006364326
 GameObject:
   m_ObjectHideFlags: 0
@@ -7981,7 +7978,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4183665061413609425
 Transform:
   m_ObjectHideFlags: 0
@@ -8087,6 +8084,7 @@ MonoBehaviour:
   stunEffects: {fileID: 0}
   rb: {fileID: 6015796267245420627}
   plyrObj: {fileID: 7481610756811120093}
+  volumeFX: {fileID: 0}
   moveSpeed: 1.8
   rotationSpeed: 0.25
   acceleration: 2
