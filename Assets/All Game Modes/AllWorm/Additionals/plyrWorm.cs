@@ -1,13 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.UI;
 
 public class plyrWorm : MonoBehaviour
 {
     public static plyrWorm instance;
-    public sdStunEffects stunEffects;
+    public wormStunFX stunEffects;
     public Rigidbody rb;
     public GameObject plyrObj;
 
@@ -63,7 +61,6 @@ public class plyrWorm : MonoBehaviour
             ApplyBrake();
         }
         HandleLife();
-
 
         Debug.Log("spd: "+currentSpeed);
     }
