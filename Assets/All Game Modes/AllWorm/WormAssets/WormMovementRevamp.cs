@@ -1,8 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
+using UnityEngine.Animations;
+using UnityEngine.InputSystem;
 using UnityEngine.ProBuilder.Shapes;
+
 
 public class WormMovementRevamp : MonoBehaviour
 {
@@ -14,6 +18,7 @@ public class WormMovementRevamp : MonoBehaviour
     bool isBraking = false;
     public GameObject cam;
     public GameObject sphere;
+    Vector2 left, right;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +28,10 @@ public class WormMovementRevamp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        //left = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+
+        if (Input.GetKey(KeyCode.W) || OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).Equals(1))
+
         {
             isPushing = true;
         }
@@ -35,8 +43,8 @@ public class WormMovementRevamp : MonoBehaviour
         {
             isTurningRight = true;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
+        if (Input.GetKey(KeyCode.S) || OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).Equals(0))
+        { 
             isBraking = true;
         }
 
