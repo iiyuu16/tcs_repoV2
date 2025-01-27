@@ -30,7 +30,7 @@ public class WormMovementRevamp : MonoBehaviour
     {
         //left = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
 
-        if (Input.GetKey(KeyCode.W) || OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).Equals(1))
+        if (Input.GetKey(KeyCode.W) || OVRInput.Get(OVRInput.Button.PrimaryThumbstickUp))
 
         {
             isPushing = true;
@@ -43,7 +43,7 @@ public class WormMovementRevamp : MonoBehaviour
         {
             isTurningRight = true;
         }
-        if (Input.GetKey(KeyCode.S) || OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).Equals(0))
+        if (Input.GetKey(KeyCode.S) || OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown))
         { 
             isBraking = true;
         }
