@@ -167,7 +167,7 @@ public class plyrWorm : MonoBehaviour
         if (isBraking)
         {
             currentSpeed -= deceleration * Time.deltaTime;
-            currentSpeed = Mathf.Clamp(currentSpeed, 0f, moveSpeed);
+            rb.AddForce(-plyrObj.transform.up * deceleration);
         }
     }
 }

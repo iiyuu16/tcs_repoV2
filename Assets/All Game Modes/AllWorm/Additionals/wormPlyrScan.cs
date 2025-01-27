@@ -58,11 +58,6 @@ public class wormPlyrScan : MonoBehaviour
             sfx.scanSFX();
             StartExpanding();
             nextScanTime = Time.time + cooldownDuration;
-
-            if (scanText != null)
-            {
-                scanText.SetActive(false);
-            }
         }
 
         if (Time.time >= nextScanTime && scanText != null)

@@ -307,8 +307,7 @@ public class mainSceneController : MonoBehaviour
     IEnumerator DelayToWORM_gamemode()
     {
         yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("wormGM");
-        Debug.Log("gm not final");
+        SceneManager.LoadScene("WormGM");
     }
 
     IEnumerator DelayToVIRUS()

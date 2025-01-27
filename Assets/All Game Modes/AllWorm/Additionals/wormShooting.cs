@@ -27,12 +27,6 @@ public class wormShooting : MonoBehaviour
             ShootAtPlayer();
             nextFireTime = Time.time + 1 / fireRate;
         }
-
-        if (Time.time >= nextFireTime)
-        {
-            ShootAtPlayer();
-            nextFireTime = Time.time + 1 / fireRate;
-        }
     }
 
     void ShootAtPlayer()
