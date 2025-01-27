@@ -69,7 +69,7 @@ public class wormStunFX : MonoBehaviour
 
         while (timer > 0)
         {
-            countdownText.text = "==" + Mathf.CeilToInt(timer) + "==";
+            countdownText.text =  $"{timer}";
             yield return new WaitForSeconds(1f);
             timer -= 1f;
         }

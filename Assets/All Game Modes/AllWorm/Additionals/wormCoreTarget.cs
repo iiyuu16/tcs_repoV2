@@ -18,6 +18,7 @@ public class wormCoreTarget : MonoBehaviour
 
     private Transform parentTransform;
     public survivalSoundSource sfx;
+    public GameObject audioCore;
 
     public GameObject normScreen;
     public GameObject alertObj;
@@ -56,6 +57,7 @@ public class wormCoreTarget : MonoBehaviour
         if (other.CompareTag("Scanner"))
         {
             RevealEnemy();
+            audioCore.SetActive(true);
         }
 
         if (other.CompareTag("Player Bullet") && isRevealed)

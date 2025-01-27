@@ -187,8 +187,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 10
-  m_Speed: 3
-  m_Acceleration: 10
+  m_Speed: 5
+  m_Acceleration: 12
   avoidancePriority: 10
   m_AngularSpeed: 500
   m_StoppingDistance: 1
@@ -234,12 +234,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
   player: {fileID: 0}
+  _plyrWorm: {fileID: 0}
   bulletPrefabs:
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
   bulletSpawn:
   - {fileID: 5376409730393216777}
   - {fileID: 2779591753722421323}
@@ -248,7 +249,7 @@ MonoBehaviour:
   - {fileID: 3295456317678598798}
   bulletRange: {fileID: 1102062080696919501}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 15
 --- !u!1 &640487591056520244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,8 +1202,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 10
-  m_Speed: 3
-  m_Acceleration: 10
+  m_Speed: 5
+  m_Acceleration: 12
   avoidancePriority: 10
   m_AngularSpeed: 500
   m_StoppingDistance: 1
@@ -1248,12 +1249,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
   player: {fileID: 0}
+  _plyrWorm: {fileID: 0}
   bulletPrefabs:
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
   bulletSpawn:
   - {fileID: 299865573074651851}
   - {fileID: 1249353951481308607}
@@ -1262,7 +1264,7 @@ MonoBehaviour:
   - {fileID: 7283782515789340065}
   bulletRange: {fileID: 2732318160428202061}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 15
 --- !u!1 &3617160345148084259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,8 +1510,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 10
-  m_Speed: 3
-  m_Acceleration: 10
+  m_Speed: 5
+  m_Acceleration: 12
   avoidancePriority: 10
   m_AngularSpeed: 500
   m_StoppingDistance: 1
@@ -1555,12 +1557,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfx: {fileID: 0}
   player: {fileID: 0}
+  _plyrWorm: {fileID: 0}
   bulletPrefabs:
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
-  - {fileID: 8525128527710475867, guid: 54c59964574015f489828b0aac4f181d, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
+  - {fileID: 8525128527710475867, guid: eb05816423d8d234ea567352354d61b7, type: 3}
   bulletSpawn:
   - {fileID: 8395504085480568627}
   - {fileID: 3360831210371135909}
@@ -1569,7 +1572,7 @@ MonoBehaviour:
   - {fileID: 2827727668075370018}
   bulletRange: {fileID: 780816225883709854}
   bulletSpeed: 10
-  fireRate: 5
+  fireRate: 15
 --- !u!1 &4570252538954214263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7696371009999540430
 Transform:
   m_ObjectHideFlags: 0
