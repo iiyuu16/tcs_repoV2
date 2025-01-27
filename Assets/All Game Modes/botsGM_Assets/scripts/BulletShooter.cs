@@ -19,7 +19,7 @@ public class BulletShooter : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || OVRInput.Get(OVRInput.Button.One))
         {
             GameObject PlayerBullet = ObjectPoolRevamp.SharedInstance.GetPooledObject();
             if (PlayerBullet != null)
