@@ -1,7 +1,8 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class sdDBullet : MonoBehaviour
+public class plyrWormBullet : MonoBehaviour
 {
     public float bulletLife = 5f;
     public Renderer bulletSkin;
@@ -16,23 +17,18 @@ public class sdDBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Shield")
         {
-            //Debug.Log("player hit");
             sparksFX.Play();
             smokeFX.Play();
             fireFX.Play();
-            sdPlayerMovement.instance.PlayerHit();
-            col.enabled = false;
-            bulletSkin.enabled = false;
             StartCoroutine(DelayDestroy());
         }
-        else if (other.tag == "PlayerAttk")
+        else if (other.tag == "Target")
         {
-            //Debug.Log("bullet destroyed");
-            hitFX.Play();
-            col.enabled = false;
-            bulletSkin.enabled = false;
+            sparksFX.Play();
+            smokeFX.Play();
+            fireFX.Play();
             StartCoroutine(DelayDestroy());
         }
         else
