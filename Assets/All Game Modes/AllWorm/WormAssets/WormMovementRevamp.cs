@@ -7,6 +7,8 @@ using UnityEngine.Animations;
 using UnityEngine.InputSystem;
 using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
+using Melanchall.DryWetMidi.Core;
 
 
 public class WormMovementRevamp : MonoBehaviour
@@ -20,6 +22,9 @@ public class WormMovementRevamp : MonoBehaviour
     public GameObject cam;
     public GameObject sphere;
     Vector2 left, right;
+    public Transform head;
+    public Transform target;
+    public Transform origin;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +52,13 @@ public class WormMovementRevamp : MonoBehaviour
         if (Input.GetKey(KeyCode.S) || OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown))
         { 
             isBraking = true;
+        }
+        if (Input.GetKey(KeyCode.R))
+        {
+            Debug.Log("recentering");
+            XROrigin xrOrigin = GetComponent<XROrigin>();
+            xrOrigin.MoveCameraToWorldLocation(target.position);
+            xrOrigin.MatchOriginUpCameraForward(target.up, target.forward);
         }
 
 
