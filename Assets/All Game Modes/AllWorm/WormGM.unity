@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17960714, g: 0.23634247, b: 0.23281474, a: 1}
+  m_IndirectSpecularColor: {r: 0.17960754, g: 0.23634331, b: 0.23281558, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -359,11 +359,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &33473346 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2346830952817839247, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &37848524
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,17 +503,6 @@ Transform:
   - {fileID: 230613017}
   m_Father: {fileID: 463508871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &77048058 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1233634235432101064, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &77354116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1367033541503579035, guid: 4632f72f2f8bd4f4e97126829f448cd1, type: 3}
@@ -596,12 +580,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeValue: 720.5
-  timeText: {fileID: 707833356}
+  timeText: {fileID: 8010979583122740111}
   gameOverScreen: {fileID: 37848524}
   objectsToDisable:
   - {fileID: 1705247458}
   - {fileID: 95121124}
-  - {fileID: 1931327032}
+  - {fileID: 6486317507274797159}
   - {fileID: 3018336069143335936}
   - {fileID: 70580241}
   - {fileID: 982376551}
@@ -824,11 +808,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (9)
@@ -1135,7 +1119,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -1143,7 +1127,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (16)
@@ -1266,7 +1250,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -1274,7 +1258,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (8)
@@ -1629,7 +1613,7 @@ MonoBehaviour:
   objectsToEnable:
   - {fileID: 1705247458}
   - {fileID: 3018336069143335936}
-  - {fileID: 1931327032}
+  - {fileID: 6486317507274797159}
   - {fileID: 70580241}
   - {fileID: 982376551}
   - {fileID: 95121124}
@@ -1855,7 +1839,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -1863,7 +1847,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (2)
@@ -2178,11 +2162,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (1)
@@ -2325,7 +2309,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -2333,7 +2317,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (4)
@@ -2505,11 +2489,6 @@ Transform:
   - {fileID: 982376552}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &472559389 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 513323456477275099, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490511995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8208744576185289891, guid: 4632f72f2f8bd4f4e97126829f448cd1, type: 3}
@@ -2925,7 +2904,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -2933,7 +2912,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (1)
@@ -3007,7 +2986,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -3015,7 +2994,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (7)
@@ -3422,11 +3401,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (10)
@@ -3718,7 +3697,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -3726,7 +3705,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (12)
@@ -3816,17 +3795,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674406853}
   m_CullTransparentMesh: 1
---- !u!114 &707833356 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3181404838537233236, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &710626056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3886,7 +3854,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -3894,7 +3862,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (10)
@@ -4231,11 +4199,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (6)
@@ -4346,7 +4314,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -4354,7 +4322,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (17)
@@ -4740,17 +4708,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &891205831 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9219374461982129175, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &899358302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4806,11 +4763,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (4)
@@ -4921,7 +4878,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -4929,7 +4886,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (15)
@@ -5214,11 +5171,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (2)
@@ -5712,11 +5669,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (7)
@@ -6166,7 +6123,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -6174,7 +6131,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (3)
@@ -6308,11 +6265,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (5)
@@ -6835,7 +6792,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -6843,7 +6800,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (6)
@@ -8598,7 +8555,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -8606,7 +8563,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (11)
@@ -8894,7 +8851,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -8902,7 +8859,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (13)
@@ -9008,7 +8965,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -9016,7 +8973,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (5)
@@ -9090,7 +9047,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -9098,7 +9055,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (9)
@@ -9397,6 +9354,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -104.9368}
   m_SizeDelta: {x: 550, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1843785474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843785476}
+  - component: {fileID: 1843785475}
+  m_Layer: 0
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1843785475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843785474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+--- !u!4 &1843785476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843785474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.1178107, y: 71.33916, z: -171.6845}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1858339830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9570,11 +9573,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (3)
@@ -9685,13 +9688,13 @@ MonoBehaviour:
   objectsToDisable:
   - {fileID: 1705247458}
   - {fileID: 95121124}
-  - {fileID: 1931327032}
+  - {fileID: 6486317507274797159}
   - {fileID: 3018336069143335936}
   - {fileID: 70580241}
   - {fileID: 982376551}
   - {fileID: 1076321206}
   objectToEnable: {fileID: 1511220692}
-  statusText: {fileID: 77048058}
+  statusText: {fileID: 2867031994144258964}
   timeManager: {fileID: 95121128}
 --- !u!1001 &1924320943
 PrefabInstance:
@@ -9748,11 +9751,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj (8)
@@ -9771,11 +9774,6 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
   m_PrefabInstance: {fileID: 1924320943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1931327032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7481610756811120093, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1954390447 stripped
 GameObject:
@@ -9868,7 +9866,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -9876,7 +9874,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (14)
@@ -10507,7 +10505,7 @@ MonoBehaviour:
   wormObj1: {fileID: 551837864}
   wormObj2: {fileID: 1700932806}
   wormObj3: {fileID: 1388673500}
-  countText: {fileID: 891205831}
+  countText: {fileID: 7201855143214616454}
 --- !u!1 &2106967047
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,11 +10738,11 @@ PrefabInstance:
     - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: sfx
       value: 
@@ -10752,23 +10750,23 @@ PrefabInstance:
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 1550933550805934391, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 2535642183368641363, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 3404123173196567528, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: sfx
       value: 
@@ -10776,11 +10774,11 @@ PrefabInstance:
     - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 7696371009999540430, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10877,22 +10875,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &1596601972352589619 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1596601972352589621 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-  m_PrefabInstance: {fileID: 6008906310425149026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1931327032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e59c68f407a351f44a1a7455411983a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1705878194137087813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10948,11 +10930,11 @@ PrefabInstance:
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: alertObj
       value: 
-      objectReference: {fileID: 33473346}
+      objectReference: {fileID: 9176654045217060380}
     - target: {fileID: 2514665494062500226, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: normScreen
       value: 
-      objectReference: {fileID: 472559389}
+      objectReference: {fileID: 5531496082326701073}
     - target: {fileID: 4122820900636830367, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
       propertyPath: m_Name
       value: WormTargetObj
@@ -10986,6 +10968,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2867031994144258964 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3232320883722391761, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2996331902869830549
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11045,7 +11038,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1596601972352589619}
+      objectReference: {fileID: 7187641974790567930}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
       value: 2
@@ -11053,7 +11046,7 @@ PrefabInstance:
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
-      objectReference: {fileID: 1596601972352589621}
+      objectReference: {fileID: 7826350091718203197}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj
@@ -11096,6 +11089,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 138649876}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &5531496082326701073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3592885989733641759, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5955649144687170029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11197,7 +11195,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8d64a0db520e0643a9dc1dafbf4e4fe, type: 3}
---- !u!1001 &6008906310425149026
+--- !u!1001 &6365436622610945685
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11205,87 +11203,108 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 229064714961801317, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: sfx
-      value: 
-      objectReference: {fileID: 875602802}
-    - target: {fileID: 229064714961801317, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: scanText
-      value: 
-      objectReference: {fileID: 1373649210}
-    - target: {fileID: 1876398390161694277, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: sfx
-      value: 
-      objectReference: {fileID: 875602802}
-    - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: sfx
-      value: 
-      objectReference: {fileID: 875602802}
-    - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: sliderHP
-      value: 
-      objectReference: {fileID: 1861613103}
-    - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: volumeFX
-      value: 
-      objectReference: {fileID: 1673013682}
-    - target: {fileID: 2704853051639634672, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: stunEffects
-      value: 
-      objectReference: {fileID: 8352567053149757903}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 80.939
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -186.18896
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4183665061413609425, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7481610756811120093, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+    - target: {fileID: 5601880588985581828, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
       propertyPath: m_Name
       value: PlayerWormGM
       objectReference: {fileID: 0}
-    - target: {fileID: 7481610756811120093, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
-      propertyPath: m_IsActive
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 80.939
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -186.18896
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7226614474621583708, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 875602802}
+    - target: {fileID: 8111480438093746165, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 875602802}
+    - target: {fileID: 8111480438093746165, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: sliderHP
+      value: 
+      objectReference: {fileID: 1861613103}
+    - target: {fileID: 8111480438093746165, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: volumeFX
+      value: 
+      objectReference: {fileID: 1673013682}
+    - target: {fileID: 8111480438093746165, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: stunEffects
+      value: 
+      objectReference: {fileID: 8352567053149757903}
+    - target: {fileID: 8935230063365545517, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 875602802}
+    - target: {fileID: 8935230063365545517, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: scanText
+      value: 
+      objectReference: {fileID: 1373649210}
+    - target: {fileID: 9133636603344344020, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+      propertyPath: m_Camera
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+--- !u!1 &6486317507274797159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5601880588985581828, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7187641974790567930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6343633346917900545, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7201855143214616454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1129308619076484088, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7380950701013554451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11458,6 +11477,28 @@ PrefabInstance:
       addedObject: {fileID: 2043670774}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3568ba2ec3cc8174dbea30ac2887cd27, type: 3}
+--- !u!114 &7826350091718203197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8111480438093746165, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6486317507274797159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e59c68f407a351f44a1a7455411983a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8010979583122740111 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7311317128115370863, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8352567053149757903 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9078377707083839879, guid: c8d64a0db520e0643a9dc1dafbf4e4fe, type: 3}
@@ -11474,6 +11515,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 226013709373713267, guid: e1a679f193e20b5409191849fef06ad2, type: 3}
   m_PrefabInstance: {fileID: 1705878194137087813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9176654045217060380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3445235091754511954, guid: 696b158eec9b5a64a881080b62b10918, type: 3}
+  m_PrefabInstance: {fileID: 6365436622610945685}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -11481,6 +11527,7 @@ SceneRoots:
   - {fileID: 1341866125}
   - {fileID: 2124463178}
   - {fileID: 463508871}
-  - {fileID: 6008906310425149026}
+  - {fileID: 6365436622610945685}
   - {fileID: 175323566500948305}
   - {fileID: 934385152}
+  - {fileID: 1843785476}

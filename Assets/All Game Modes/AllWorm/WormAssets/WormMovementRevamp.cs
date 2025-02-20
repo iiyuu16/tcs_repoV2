@@ -1,8 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
+using UnityEngine.Animations;
+using UnityEngine.InputSystem;
 using UnityEngine.ProBuilder.Shapes;
+using UnityEngine.XR.Interaction.Toolkit;
+using Unity.XR.CoreUtils;
+using Melanchall.DryWetMidi.Core;
+
 
 public class WormMovementRevamp : MonoBehaviour
 {
@@ -14,6 +21,10 @@ public class WormMovementRevamp : MonoBehaviour
     bool isBraking = false;
     public GameObject cam;
     public GameObject sphere;
+    Vector2 left, right;
+    public Transform head;
+    public Transform target;
+    public Transform origin;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +34,10 @@ public class WormMovementRevamp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        //left = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+
+        if (Input.GetKey(KeyCode.W) || OVRInput.Get(OVRInput.Button.PrimaryThumbstickUp))
+
         {
             isPushing = true;
         }
@@ -35,9 +49,16 @@ public class WormMovementRevamp : MonoBehaviour
         {
             isTurningRight = true;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
+        if (Input.GetKey(KeyCode.S) || OVRInput.Get(OVRInput.Button.PrimaryThumbstickDown))
+        { 
             isBraking = true;
+        }
+        if (Input.GetKey(KeyCode.R))
+        {
+            Debug.Log("recentering");
+            XROrigin xrOrigin = GetComponent<XROrigin>();
+            xrOrigin.MoveCameraToWorldLocation(target.position);
+            xrOrigin.MatchOriginUpCameraForward(target.up, target.forward);
         }
 
 
