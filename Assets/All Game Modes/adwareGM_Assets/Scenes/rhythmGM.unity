@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028344, g: 0.22571374, b: 0.30692318, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028335, g: 0.22571343, b: 0.3069227, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5885,18 +5885,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 1087546460549241418, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 524550233}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      objectReference: {fileID: 8300000, guid: 1f076f9edafac8e469da9b1383503059, type: 3}
+    - target: {fileID: 1146227737815487232, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 1346864305}
-    - target: {fileID: 1042759754069303253, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 2095064861}
+      objectReference: {fileID: 8300000, guid: 75bb37cf3b8bb03458308af076ebcdf6, type: 3}
     - target: {fileID: 1999669968423780200, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5909,10 +5905,34 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 2095064861}
+    - target: {fileID: 3815440114692760820, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: e49fe73f87522b341aca364ce9aec7cf, type: 3}
+    - target: {fileID: 5967530029913402735, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 949333b2dd3b1734cb4d9a287091c20f, type: 3}
     - target: {fileID: 7046226687840454700, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
       propertyPath: m_Name
       value: rhythmConvoElements
       objectReference: {fileID: 0}
+    - target: {fileID: 7210020909675234311, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 86bdc7d04e180e749865caa6d4e03b27, type: 3}
+    - target: {fileID: 7862524621952037947, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e9c570de48687a45beb1cfb49ac0b4b, type: 3}
+    - target: {fileID: 8639808437873682786, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 4085b689351cfeb4db4ffcacbd80267b, type: 3}
+    - target: {fileID: 9022419350371403204, guid: a86e6eb2509a43d48884fbc3de10fc52, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: cf376e1fd186b9c40baea5379b6b9489, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
