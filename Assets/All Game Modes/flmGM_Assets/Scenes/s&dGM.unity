@@ -2654,7 +2654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562030596}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38390407, y: 0.000000015428398, z: -0.000000007584249, w: 0.92337304}
+  m_LocalRotation: {x: 0.38390407, y: -0.00000001503256, z: 0.000000008427263, w: 0.92337304}
   m_LocalPosition: {x: 108.796875, y: -54.076164, z: 268.94864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8010,7 +8010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874488695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.42502072, y: 0.000000015574939, z: -0.0000000073130706, w: 0.9051836}
+  m_LocalRotation: {x: 0.42502072, y: -0.000000015574932, z: 0.0000000073130675, w: 0.9051836}
   m_LocalPosition: {x: 40.75, y: 20.5, z: 14.879999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9092,14 +9092,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1542225191}
     m_Modifications:
-    - target: {fileID: 186068513920780773, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 74691450c157bcb429ed6c254f52c06f, type: 3}
-    - target: {fileID: 469625437599318422, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 22a2a547e3c43a4439362b40ff9cb520, type: 3}
     - target: {fileID: 558113072277741464, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -9108,10 +9100,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 199225609}
-    - target: {fileID: 891960235670014480, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 8529146fcb893f2459d39a331b33a41c, type: 3}
     - target: {fileID: 1179377514720310102, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9131,66 +9119,34 @@ PrefabInstance:
     - target: {fileID: 1373254789148624749, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: Audio
       value: 
-      objectReference: {fileID: 8300000, guid: f50c7255dc8b6134396a747ad46f8c45, type: 3}
-    - target: {fileID: 1965021187159752061, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: fde5628a1d3e9ad4d991319b45e4eee2, type: 3}
-    - target: {fileID: 3003478747042247851, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 14d97765da1fd634a8f2546e98b593c3, type: 3}
-    - target: {fileID: 3436636599109076188, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 5dda5e052e1f36c469ef20f0e09a33bb, type: 3}
-    - target: {fileID: 4140572716707121438, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 1b5fc9606a6ac4344872ce96be6f627d, type: 3}
-    - target: {fileID: 4173467446777986010, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: fde5628a1d3e9ad4d991319b45e4eee2, type: 3}
-    - target: {fileID: 4276502690055443319, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 1a88501f0cb437a4bbaeea5ef34d9776, type: 3}
+      objectReference: {fileID: 8300000, guid: 066b2c15cb81f934aa1f223f6bcb5a94, type: 3}
     - target: {fileID: 5304009904907137082, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":60,"yPos":23},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Lie>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":384,"yPos":22},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Truth>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":50,"yPos":741},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[9,13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":222.5,"yPos":-82},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"How
-        is it goin! Did you able to fix my computer?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":60,"yPos":87},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+      value: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":84,"yPos":270},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Lie>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":408,"yPos":269},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Truth>-","parentUIDs":[0],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":74,"yPos":988},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[9,13],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":1},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":true,"xPos":246.5,"yPos":165},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"How
+        is it goin! Did you able to fix my computer?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":false,"xPos":84,"yPos":334},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
         its good to go. Although the computer has set to factory reset, probably
-        the files might be affected from the corruption process.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":60,"yPos":188},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh
+        the files might be affected from the corruption process.","parentUIDs":[1],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":6}],"EditorInfo":{"isRoot":false,"xPos":84,"yPos":435},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh
         is that so? Well as long as my permits are fine, then we''re good! Thanks
-        for fixing my computer!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":53,"yPos":294},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Right,
-        I still have some place I need to be. I''ll take my leave now.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":51,"yPos":494},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
-        I''ll take note of it. Come back to my shop soon!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":57,"yPos":607},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Roux
-        forgot to check her computer at that time.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":383,"yPos":85},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"There
+        for fixing my computer!","parentUIDs":[3],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":83,"yPos":538},"ID":6,"ParamActions":[],"TMPFontGUID":null,"Text":"Right,
+        I still have some place I need to be. I''ll take my leave now.","parentUIDs":[4],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":75,"yPos":741},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
+        I''ll take note of it. Come back to my shop soon!","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":81,"yPos":854},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Roux
+        forgot to check her computer at that time.","parentUIDs":[7],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":407,"yPos":332},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"There
         were some issues during the repairs. Unfortunately, your computer was purged
-        by the malware.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":383,"yPos":184},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Is
-        that so? I guess it was my mistake to leave it alone.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":379,"yPos":285},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well
-        thanks for everything I guess, I''ll start to work on the permits soon.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":367,"yPos":717},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
+        by the malware.","parentUIDs":[2],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":407,"yPos":431},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Is
+        that so? I guess it was my mistake to leave it alone.","parentUIDs":[10],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":403,"yPos":532},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Well
+        thanks for everything I guess, I''ll start to work on the permits soon.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":391,"yPos":964},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"Glad
         you still did the right thing. Let''s go, there''s nothing we can do here
-        anymore.","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":378,"yPos":505},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"So
+        anymore.","parentUIDs":[15],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":402,"yPos":751},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"So
         uh Roux, I''ll be taking my leave. But if you encounter these problems again,
-        do tell me, I''ll make up for it.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":375,"yPos":604},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
-        I''ll definitely let you know when things come by.","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":60.5,"yPos":392},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+        do tell me, I''ll make up for it.","parentUIDs":[18],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":13}],"EditorInfo":{"isRoot":false,"xPos":399,"yPos":851},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure,
+        I''ll definitely let you know when things come by.","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":7}],"EditorInfo":{"isRoot":false,"xPos":84.5,"yPos":639},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"And
         also a word of advice, don''t click suspicious links and emails directly.
         If you''re having doubts with an unknown application or email, do not press
-        it and if you have an antivirus software, then much better.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":375.5,"yPos":397},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"And
+        it and if you have an antivirus software, then much better.","parentUIDs":[6],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":false,"xPos":399.5,"yPos":644},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"And
         also a word of advice, don''t click suspicious links and emails directly.
         If you''re having doubts with an unknown application or email, do not press
         it and if you have an antivirus software, then much better.","parentUIDs":[12],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1}]}'
       objectReference: {fileID: 0}
-    - target: {fileID: 5304009904907137082, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5442125715446921453, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: a3f02b8e4760b4a47892ddfb9256e9d6, type: 3}
     - target: {fileID: 6502390591990378819, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9275,14 +9231,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: sdConvoElements
       objectReference: {fileID: 0}
-    - target: {fileID: 7204877072448746053, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 020bfdf079775734bb4baf1c7000e8f4, type: 3}
-    - target: {fileID: 7738197904024480904, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: d73367e5730c9144e974c4a36ae33655, type: 3}
     - target: {fileID: 8063032088111292007, guid: 6877023ce0917a04b86ec01947c3f35b, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
