@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17960754, g: 0.23634331, b: 0.23281558, a: 1}
+  m_IndirectSpecularColor: {r: 0.17960714, g: 0.23634247, b: 0.23281474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -173,34 +173,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 61
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":645,"yPos":983},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Nah,
-    no need. Let''s go.>-","parentUIDs":[59],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":337,"yPos":1118},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let
-    me prepare myself then.>- Recommended :>","parentUIDs":[38,59],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":337,"yPos":1232},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No
-    need, I''d definitely win!>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":884.5,"yPos":1232},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"-<You
-    will definitely regret this.>-","parentUIDs":[40],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":true,"xPos":345,"yPos":97},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello?
-    Roux you here? I came to see about your problem.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":639,"yPos":89},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
-    in time, Wolf! The problem is some malware corrupting the shop''s systems!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":638,"yPos":434},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-    time to talk. Virus is almost complete.","parentUIDs":[49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":644,"yPos":1096},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"You
-    sure? I think you know what you''re doing.","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":639,"yPos":1212},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok...
-    Good luck.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":355.5,"yPos":214},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":606.5,"yPos":908},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Nah,
+    no need. Let''s go.>-","parentUIDs":[59],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":298.5,"yPos":1043},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Let
+    me prepare myself then.>- Recommended :>","parentUIDs":[38,59],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":40}],"EditorInfo":{"isRoot":false,"xPos":298.5,"yPos":1157},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"-<No
+    need, I''d definitely win!>-","parentUIDs":[38],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":846,"yPos":1157},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"-<You
+    will definitely regret this.>-","parentUIDs":[40],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":true,"xPos":306.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hello?
+    Roux you here? I came to see about your problem.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":45}],"EditorInfo":{"isRoot":false,"xPos":600.5,"yPos":14},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Just
+    in time, Wolf! The problem is some malware corrupting the shop''s systems!","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":51}],"EditorInfo":{"isRoot":false,"xPos":599.5,"yPos":359},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"No
+    time to talk. The virus is almost complete.","parentUIDs":[49],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":39},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":605.5,"yPos":1021},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"You
+    sure? I think you know what to do.","parentUIDs":[34],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":600.5,"yPos":1137},"ID":40,"ParamActions":[],"TMPFontGUID":null,"Text":"Ok...
+    Good luck.","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":46}],"EditorInfo":{"isRoot":false,"xPos":317,"yPos":139},"ID":45,"ParamActions":[],"TMPFontGUID":null,"Text":"My
     customers are having a hard time browsing the store since the price displays
-    keep on flickering and showing the wrong prices!","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":634.5,"yPos":211},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Before
+    keep on flickering and showing the wrong prices!","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":47}],"EditorInfo":{"isRoot":false,"xPos":596,"yPos":136},"ID":46,"ParamActions":[],"TMPFontGUID":null,"Text":"Before
     you arrived, I''ve let my friend check it first. And she would prefer to have
-    an another person to do this kind of work.","parentUIDs":[45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":340.5,"yPos":325},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
+    an another person to do this kind of work.","parentUIDs":[45],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":48}],"EditorInfo":{"isRoot":false,"xPos":302,"yPos":250},"ID":47,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh,
     here she is! I''d let you talk each other about the problem at hand. Now, she
-    doesn''t talk that much but I believe you guys can get work done!","parentUIDs":[46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":638.5,"yPos":327},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Now
-    I still have work to do at the storage. See ya guys later!","parentUIDs":[47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":343.5,"yPos":432},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi...
-    friend of Roux, what''s your name?","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":340.5,"yPos":546},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"Virus
-    can shut down shop easily. Destroy systems and spread.","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":637.5,"yPos":546},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay...
-    This should be an easy task then, but why having two people working against this
-    virus?","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":342.5,"yPos":651},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"By
-    the looks of it, you seem capable of this. I guess you''re a hacker too.","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":55}],"EditorInfo":{"isRoot":false,"xPos":636.5,"yPos":653},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes...
-    but not good. Virus is tricky, it only detects one entity when breached, not
-    more.","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":339.5,"yPos":756},"ID":55,"ParamActions":[],"TMPFontGUID":null,"Text":"So
-    what you''re saying is that the virus is vulnerable to multiple attackers?","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":637.5,"yPos":759},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes.
-    I have a plan. I can delete the virus, but I need time. Reason is I need someone.","parentUIDs":[55],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":335.5,"yPos":860},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh
-    huh, I guess I''m the one buying time for you then.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":59}],"EditorInfo":{"isRoot":false,"xPos":638.5,"yPos":863},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"Virus
-    system blocks weapons. Just survive until done.","parentUIDs":[57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":333.5,"yPos":973},"ID":59,"ParamActions":[],"TMPFontGUID":null,"Text":"Ready?
+    doesn''t talk that much but I believe you guys can get work done!","parentUIDs":[46],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":49}],"EditorInfo":{"isRoot":false,"xPos":600,"yPos":252},"ID":48,"ParamActions":[],"TMPFontGUID":null,"Text":"Now
+    I still have work to do at the storage. See ya guys later!","parentUIDs":[47],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Roux","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":305,"yPos":357},"ID":49,"ParamActions":[],"TMPFontGUID":null,"Text":"Hi...
+    friend of Roux, what''s your name?","parentUIDs":[48],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":52}],"EditorInfo":{"isRoot":false,"xPos":302,"yPos":471},"ID":51,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    we don''t do anything now, it will destroy the shop and will spread across the
+    network.","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":53}],"EditorInfo":{"isRoot":false,"xPos":599,"yPos":471},"ID":52,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay...
+    It sound like an easy task, but why having two people working against this virus?","parentUIDs":[51],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":54}],"EditorInfo":{"isRoot":false,"xPos":199,"yPos":636},"ID":53,"ParamActions":[],"TMPFontGUID":null,"Text":"By
+    the looks of it, you seem capable of this. I guess you''re a hacker too?","parentUIDs":[52],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":56}],"EditorInfo":{"isRoot":false,"xPos":461,"yPos":629},"ID":54,"ParamActions":[],"TMPFontGUID":null,"Text":"Yes...
+    but I''m not that good. This one we''re dealing with is tricky, it only detects
+    and purges anything when breached.","parentUIDs":[53],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":57}],"EditorInfo":{"isRoot":false,"xPos":699,"yPos":632},"ID":56,"ParamActions":[],"TMPFontGUID":null,"Text":"I''ve
+    been tracking this virus for some time now, I can delete the virus and eliminate
+    it, but I need some time.","parentUIDs":[54],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":58}],"EditorInfo":{"isRoot":false,"xPos":297,"yPos":785},"ID":57,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh
+    huh, I guess I''m the one buying time for you then.","parentUIDs":[56],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":59}],"EditorInfo":{"isRoot":false,"xPos":600,"yPos":788},"ID":58,"ParamActions":[],"TMPFontGUID":null,"Text":"This
+    virus blocks weapons. Just survive until I am done. Don''t worry, I''ll try to
+    aid you while you''re distracting it.","parentUIDs":[57],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":300,"yPos":901},"ID":59,"ParamActions":[],"TMPFontGUID":null,"Text":"Ready?
     Here manual for attack.","parentUIDs":[58],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"???","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
   DefaultName: ???
@@ -225,7 +226,6 @@ MonoBehaviour:
   - {fileID: 16529668}
   - {fileID: 16529667}
   - {fileID: 16529666}
-  - {fileID: 16529665}
   - {fileID: 16529664}
   - {fileID: 16529663}
   - {fileID: 16529662}
@@ -262,7 +262,6 @@ GameObject:
   - component: {fileID: 16529668}
   - component: {fileID: 16529667}
   - component: {fileID: 16529666}
-  - component: {fileID: 16529665}
   - component: {fileID: 16529664}
   - component: {fileID: 16529663}
   - component: {fileID: 16529662}
@@ -338,7 +337,7 @@ MonoBehaviour:
   NodeID: 40
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: 0cb328f70ff186c49824499a06ce7c03, type: 3}
+  Audio: {fileID: 8300000, guid: 9445cc8d9edd6d743817f009af23e9bb, type: 3}
 --- !u!114 &16529634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,7 +375,7 @@ MonoBehaviour:
   NodeID: 38
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: a12ff0cfea5994c4193f1fe19bfc95aa, type: 3}
+  Audio: {fileID: 8300000, guid: 579a9816cd94ff6499a6d738cf348be3, type: 3}
 --- !u!114 &16529636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,7 +456,7 @@ MonoBehaviour:
   NodeID: 25
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: 73fda98f3cecaa14e9296cb88515f46c, type: 3}
+  Audio: {fileID: 8300000, guid: 43b1d6da22e55c94081f0558cee8216b, type: 3}
 --- !u!114 &16529645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,7 +475,7 @@ MonoBehaviour:
   NodeID: 24
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
-  Audio: {fileID: 8300000, guid: 2cf7b5f7d5eae0140bd0568b5a0e65df, type: 3}
+  Audio: {fileID: 8300000, guid: d07dde9958b086e47940741d56b0a3fb, type: 3}
 --- !u!114 &16529660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +506,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 647f7ba12cde32d4189c3cc70d473a12, type: 3}
+  Audio: {fileID: 8300000, guid: ff70181cd81c3ef4fb98340623623336, type: 3}
 --- !u!114 &16529661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +525,7 @@ MonoBehaviour:
   NodeID: 59
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: ed04cf020ced3e74e9708f8a92e20e80, type: 3}
+  Audio: {fileID: 8300000, guid: c8524754d0b521947a182955c8f74106, type: 3}
 --- !u!114 &16529662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +544,7 @@ MonoBehaviour:
   NodeID: 58
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: 0a989c3f53cdd3748a2a5d03d285ff01, type: 3}
+  Audio: {fileID: 8300000, guid: 72667cb18852bd1429ab6bb94b960af8, type: 3}
 --- !u!114 &16529663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +563,7 @@ MonoBehaviour:
   NodeID: 57
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 888a36e70956b1e4b9cdbc409f0cb961, type: 3}
+  Audio: {fileID: 8300000, guid: 7c583f7240da93e42855cbe81bd8bbf9, type: 3}
 --- !u!114 &16529664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,26 +582,7 @@ MonoBehaviour:
   NodeID: 56
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: 1b81499581b462641a40056da8f5c421, type: 3}
---- !u!114 &16529665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16529630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 55
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 2dcf3713f6b292d4aaf7468572676328, type: 3}
+  Audio: {fileID: 8300000, guid: bde94941c71891b4da4a2bf8f0b95ab0, type: 3}
 --- !u!114 &16529666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -621,7 +601,7 @@ MonoBehaviour:
   NodeID: 54
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: 8c92fda4ed5593e468b609354dff6d1c, type: 3}
+  Audio: {fileID: 8300000, guid: 305032c98ce5a9c4387d56527a618975, type: 3}
 --- !u!114 &16529667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,7 +620,7 @@ MonoBehaviour:
   NodeID: 53
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: bf1162c4e8df0d94fae8f70e153fb949, type: 3}
+  Audio: {fileID: 8300000, guid: 82515dd4b74c4d847bc05470a06d2234, type: 3}
 --- !u!114 &16529668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +639,7 @@ MonoBehaviour:
   NodeID: 52
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 2274ca4e4459f4e489da2ff8d795fd37, type: 3}
+  Audio: {fileID: 8300000, guid: 9dbc911d133c4b349b424fb1ad2ae77a, type: 3}
 --- !u!114 &16529669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +658,7 @@ MonoBehaviour:
   NodeID: 51
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 2c4690257f61b8344a3dcd7ac279b5a5, type: 3}
-  Audio: {fileID: 8300000, guid: f59ca8cde3c56ae44abb350ddb054843, type: 3}
+  Audio: {fileID: 8300000, guid: 97ca93192fe59ac43b1e6b118962f3ed, type: 3}
 --- !u!114 &16529670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,7 +677,7 @@ MonoBehaviour:
   NodeID: 49
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 1cb83af484102d9478c4b366e2dbca56, type: 3}
+  Audio: {fileID: 8300000, guid: bc5cf29fb5a17954d8387b8f23dd0692, type: 3}
 --- !u!114 &16529671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +696,7 @@ MonoBehaviour:
   NodeID: 48
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
-  Audio: {fileID: 8300000, guid: 59649b67c088fbd4abd3d1271f4c87b5, type: 3}
+  Audio: {fileID: 8300000, guid: f2d133a83aa207149a958645416f9b67, type: 3}
 --- !u!114 &16529672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,7 +715,7 @@ MonoBehaviour:
   NodeID: 47
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
-  Audio: {fileID: 8300000, guid: 8ba281f75cf74e640a35a08e833922bb, type: 3}
+  Audio: {fileID: 8300000, guid: a857247a40122c049a73e8e6abe3fe2e, type: 3}
 --- !u!114 &16529673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +734,7 @@ MonoBehaviour:
   NodeID: 46
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
-  Audio: {fileID: 8300000, guid: 6c0a43b7182ae66438641c4631a7044b, type: 3}
+  Audio: {fileID: 8300000, guid: ad4faae5a5528964b9b84f50181e8ae7, type: 3}
 --- !u!114 &16529674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +753,7 @@ MonoBehaviour:
   NodeID: 45
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 82432ea91be0f8745aa7337def2c627b, type: 3}
-  Audio: {fileID: 8300000, guid: 77e4f2fb26b1e5345b650b683ed2e921, type: 3}
+  Audio: {fileID: 8300000, guid: fc71a2684c15d0641860c9f6f8e02ce1, type: 3}
 --- !u!1001 &18078755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2449,11 +2429,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 13
-  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":439.5,"yPos":341},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[12],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":439,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
-    Vi, It seems Roux has an another problem.\nIt could be a computer malware again,
-    let''s stop by at her shop.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":440,"yPos":125},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay,
+  json: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":307,"yPos":342},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[12],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":true,"xPos":306.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Hey
+    Vi, It seems Roux has an another problem. It could be a computer malware again,
+    let''s stop by at her shop.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":12}],"EditorInfo":{"isRoot":false,"xPos":307.5,"yPos":126},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"Okay,
     but these computer issues are kinda rampant right now. Like it''s a large area
-    attack, don''t you think?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":439,"yPos":244},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+    attack, don''t you think?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":306.5,"yPos":245},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
     you''re right. Good thing I''ve updated our systems yesterday. Now let''s go
     see Roux''s problem.","parentUIDs":[11],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1}]}'
   saveVersion: 110
@@ -5389,7 +5369,7 @@ MonoBehaviour:
   NodeID: 0
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: 1b741a59d67504e45a89c5917bc48f73, type: 3}
+  Audio: {fileID: 8300000, guid: 8fa95391b51706e439329d856e0d42f4, type: 3}
 --- !u!114 &1236818841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5408,7 +5388,7 @@ MonoBehaviour:
   NodeID: 12
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 1fcbb3ac3b3f1e94ebec10ff9327587f, type: 3}
-  Audio: {fileID: 8300000, guid: e73e16ef08fa2554dbb0e909b89e9685, type: 3}
+  Audio: {fileID: 8300000, guid: cb354f80ebe7a154582d82b3e406f910, type: 3}
 --- !u!114 &1236818842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5427,7 +5407,7 @@ MonoBehaviour:
   NodeID: 11
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e12e8359b082c0a4da3be9fd1e1bd471, type: 3}
-  Audio: {fileID: 8300000, guid: b54c60326a413b44cba8cf08fcac1ce5, type: 3}
+  Audio: {fileID: 8300000, guid: 6df66128127e002418965e1567a9cc07, type: 3}
 --- !u!1 &1238184384
 GameObject:
   m_ObjectHideFlags: 0
