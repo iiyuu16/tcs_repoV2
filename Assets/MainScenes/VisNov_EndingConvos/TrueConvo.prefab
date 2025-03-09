@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2699233125443270691}
   - component: {fileID: 1863923839754070011}
   m_Layer: 5
-  m_Name: TrueEndConvo
+  m_Name: TrueConvo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,8 +143,8 @@ MonoBehaviour:
   - {fileID: 5212280412868983319}
   - {fileID: 6166153594736143456}
   - {fileID: 3435422653449104782}
-  - {fileID: 7051070391751824030}
   - {fileID: 422204714435817563}
+  - {fileID: 3175857669198829231}
   ContinueFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   EndConversationFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Event:
@@ -197,8 +197,9 @@ GameObject:
   - component: {fileID: 5212280412868983319}
   - component: {fileID: 6166153594736143456}
   - component: {fileID: 3435422653449104782}
-  - component: {fileID: 7051070391751824030}
   - component: {fileID: 422204714435817563}
+  - component: {fileID: 8555091897923490743}
+  - component: {fileID: 3175857669198829231}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -979,25 +980,6 @@ MonoBehaviour:
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: e7343c32596382e479cd3ebb477b8c2d, type: 3}
   Audio: {fileID: 0}
---- !u!114 &7051070391751824030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6755851397224211190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 56
-  TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-  Icon: {fileID: 21300000, guid: e7343c32596382e479cd3ebb477b8c2d, type: 3}
-  Audio: {fileID: 8300000, guid: f286a14aa6413f54c95fb45fcb5b88ee, type: 3}
 --- !u!114 &422204714435817563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,4 +998,42 @@ MonoBehaviour:
   NodeID: 57
   TMPFont: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   Icon: {fileID: 21300000, guid: 70e433de46068504fa56fcf7f49b32b1, type: 3}
+  Audio: {fileID: 0}
+--- !u!114 &8555091897923490743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755851397224211190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 56
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &3175857669198829231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6755851397224211190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 56
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
   Audio: {fileID: 0}
