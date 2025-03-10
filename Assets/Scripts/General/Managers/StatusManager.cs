@@ -146,6 +146,7 @@ public class StatusManager : MonoBehaviour
         else
         {
             shopNullOn();
+            shopNavigation.SetActive(false);
         }
 
 
@@ -277,7 +278,6 @@ public class StatusManager : MonoBehaviour
             shopNullIcon.SetActive(true);
         }
 
-        shopNavigation.SetActive(false);
         PlayerPrefs.SetInt("ShopDiscount", 0);
         PlayerPrefs.SetInt("ShopInflation", 0);
         PlayerPrefs.SetInt("ShopNormal", 0);
