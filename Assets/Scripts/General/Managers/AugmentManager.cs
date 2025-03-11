@@ -62,19 +62,19 @@ public class AugmentManager : MonoBehaviour
 
         if (isInsuranceActive)
         {
-            currentStatus += "Insurance Augment: Active\n";
+            currentStatus += "Augment Status: Insurance\n";
         }
         if (isMultiplyingActive)
         {
-            currentStatus += "Multiplying Augment: Active\n";
+            currentStatus += "Augment Status: Multiplying\n";
         }
         if (isHollowingActive)
         {
-            currentStatus += "Hollowing Augment: Active\n";
+            currentStatus += "Augment Status: Hollowing\n";
         }
         if (string.IsNullOrEmpty(currentStatus))
         {
-            currentStatus = "Augmentless";
+            currentStatus = "Augment Status: None\n";
         }
 
         foreach (var augStatusText in augStatusTexts)

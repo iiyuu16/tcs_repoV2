@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &18078755
+--- !u!1001 &26937232
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_SizeDelta.x
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_LocalPosition.x
@@ -181,15 +181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -220,15 +220,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
---- !u!224 &18078756 stripped
+--- !u!224 &26937233 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2670118615748861978, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
-  m_PrefabInstance: {fileID: 18078755}
+  m_PrefabInstance: {fileID: 26937232}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &18078757 stripped
+--- !u!114 &26937234 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6080028679286249356, guid: e2bc72cc9e64f724ea94486392cf7714, type: 3}
-  m_PrefabInstance: {fileID: 18078755}
+  m_PrefabInstance: {fileID: 26937232}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -5986,7 +5986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoney: 0
-  moneyText: {fileID: 18078757}
+  moneyText: {fileID: 26937234}
 --- !u!1 &1575412926
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,7 +7593,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 18078756}
+  - {fileID: 26937233}
   - {fileID: 1918103870}
   - {fileID: 1145310377}
   - {fileID: 2079895500}
