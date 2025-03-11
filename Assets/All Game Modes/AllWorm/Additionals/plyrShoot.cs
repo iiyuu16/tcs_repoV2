@@ -10,6 +10,8 @@ public class plyrShoot : MonoBehaviour
     public survivalSoundSource sfx;
     public Rigidbody rb;
 
+    public plyrWorm plyrWorm;
+
     private void Start()
     {
         nextFireTime = 0f;
@@ -17,7 +19,7 @@ public class plyrShoot : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && plyrWorm.isStunned == false)
         {
             ShootBullet();
         }

@@ -75,9 +75,8 @@ public class wormConditionManager : MonoBehaviour
                 {
                     missingTargets++;
                 }
+                statusText.text = $"Cores: {missingTargets}/{totalTargets}";
             }
-
-            statusText.text = $"Cores: {missingTargets}/{totalTargets}";
         }
     }
 }

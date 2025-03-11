@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17960754, g: 0.23634331, b: 0.23281558, a: 1}
+  m_IndirectSpecularColor: {r: 0.17960714, g: 0.23634247, b: 0.23281474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6661,7 +6661,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ff4911988149ecb4ca801ff687095519, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6be3631cc8d83ac42ab1a1744176afb3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
   m_Pitch: 0.8
@@ -8625,22 +8625,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 875667174}
     m_Modifications:
-    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+    - target: {fileID: 34004183540002376, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 166632092}
-    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      objectReference: {fileID: 8300000, guid: c5389a6dc3263064e8ad267af07fd05c, type: 3}
+    - target: {fileID: 1535802158323571089, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 425509658}
-    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      objectReference: {fileID: 8300000, guid: 00f96393fa7cd324a8af270f5d626525, type: 3}
+    - target: {fileID: 2039471244502628906, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
       value: 
-      objectReference: {fileID: 185073888}
-    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
-      value: 
-      objectReference: {fileID: 250750137}
+      objectReference: {fileID: 8300000, guid: 212c01a9b7a303d438ebd13488a70f1d, type: 3}
     - target: {fileID: 2516078434437109331, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: m_Name
       value: botsConvoElements
@@ -8725,26 +8721,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4234657383562223352, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
+    - target: {fileID: 3004489516172615554, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ef483a1bb10c9f48bc2a052719bb94a, type: 3}
     - target: {fileID: 4234657383562223352, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 916498320}
-    - target: {fileID: 4234657383562223352, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 4234657383562223352, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4234657383562223352, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4314751579610359876, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8762,28 +8746,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 250750137}
     - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 916498320}
-    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
+      propertyPath: json
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":300,"yPos":609},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[35],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":308.5,"yPos":-53},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wolf!
+        Are you ok? I got worried for a bit there.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":165,"yPos":48},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Crap...
+        I got hit by a bot. It instantly got me out from its network.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":441,"yPos":45},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait...
+        Wolf, it looks you''ve got infected... cybernetically.","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":164,"yPos":158},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"What?
+        I feel totally fine. What you mean Vi? Is it that bad? Can you cure it?","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":442,"yPos":148},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+        don''t think so at the moment... but it''s mostly at your eyes, its like
+        taking over your sight. Let me try to nullify it.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":163,"yPos":260},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+        eyes are getting itchy all of a sudden, I can''t stop rubbing it. This is
+        getting irritating! ","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":159,"yPos":369},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"Argh...
+        It burns... Let me put an ice pack on it, it really stings.","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":444,"yPos":253},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"Oh
+        no, we are in deep trouble. The host may have installed a script injection
+        in the bot infection and triggers when it is sabotaged. If I try to tinker
+        it again, you will go blind.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":444,"yPos":361},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+        sorry, Wolf. I guess you''ll be temporarily blind for now. As soon as the
+        host gets further from its bots, its effectiveness will be weaken. But we
+        would need to wait for a few weeks and find the perfect time to decipher
+        the infection.","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":152,"yPos":475},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"Alright.
+        Since it can''t be helped for now... I''ll rest my eyes. Hopefully it won''t
+        be much as painful.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":439,"yPos":476},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure.
+        I''ll keep an eye and check some clues from our breach earlier. Now, get
+        some rest.","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8}]}'
       objectReference: {fileID: 0}
     - target: {fileID: 5660383143952332250, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -8793,6 +8777,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 1705247458}
+    - target: {fileID: 7338441775286957664, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: 205cefff9d23a9b4e8dfb653c5f46a2d, type: 3}
     - target: {fileID: 7564639854535432307, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -8817,6 +8805,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 1705247458}
+    - target: {fileID: 9033199822981160940, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Audio
+      value: 
+      objectReference: {fileID: 8300000, guid: fc2208d67d819444ba4f04e1c3cca6ad, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

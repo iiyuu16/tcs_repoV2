@@ -145,6 +145,8 @@ public class plyrWorm : MonoBehaviour
         else if (Input.GetKey(KeyCode.S))
         {
             isBraking = true;
+            currentSpeed -= deceleration * Time.deltaTime;
+            currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
