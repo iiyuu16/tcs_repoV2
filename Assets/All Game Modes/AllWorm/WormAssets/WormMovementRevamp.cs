@@ -55,7 +55,6 @@ public class WormMovementRevamp : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.R))
         {
-            Debug.Log("recentering");
             XROrigin xrOrigin = GetComponent<XROrigin>();
             xrOrigin.MoveCameraToWorldLocation(target.position);
             xrOrigin.MatchOriginUpCameraForward(target.up, target.forward);

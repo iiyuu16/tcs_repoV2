@@ -17,14 +17,7 @@ public class plyrWormBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Shield")
-        {
-            sparksFX.Play();
-            smokeFX.Play();
-            fireFX.Play();
-            StartCoroutine(DelayDestroy());
-        }
-        else if (other.tag == "Target")
+        if (other.tag == "Shield"||other.tag == "Target"|| other.tag == "Obstacle")
         {
             sparksFX.Play();
             smokeFX.Play();

@@ -15,7 +15,7 @@ public class botsConditionManager : MonoBehaviour
         if (!hasWon)
         {
             int remainingTargets = CountActiveTargets();
-            objRemaining.text = $"Bots: {remainingTargets}/5";
+            objRemaining.text = $"Bots: {remainingTargets}/15";
 
             if (remainingTargets == 0)
             {

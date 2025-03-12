@@ -153,7 +153,6 @@ GameObject:
   - component: {fileID: 2366706448100358345}
   - component: {fileID: 2535642183368641363}
   - component: {fileID: 4334830245180334897}
-  - component: {fileID: 937810798010922624}
   m_Layer: 0
   m_Name: WormEntity
   m_TagString: Untagged
@@ -251,21 +250,6 @@ MonoBehaviour:
   bulletRange: {fileID: 1102062080696919501}
   bulletSpeed: 10
   fireRate: 15
---- !u!114 &937810798010922624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527339196598606965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f9ba7c0e2207543ad5ff1f57ac4944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayTimeToPlay: 1
-  delayTimeToTransition: 0
-  objTransition: {fileID: 0}
 --- !u!1 &640487591056520244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1216,6 @@ GameObject:
   - component: {fileID: 2030718613271616757}
   - component: {fileID: 1550933550805934391}
   - component: {fileID: 1062192147465252023}
-  - component: {fileID: 2377217294553105130}
   m_Layer: 0
   m_Name: WormEntity
   m_TagString: Untagged
@@ -1330,21 +1313,6 @@ MonoBehaviour:
   bulletRange: {fileID: 2732318160428202061}
   bulletSpeed: 10
   fireRate: 15
---- !u!114 &2377217294553105130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3366813926884456097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f9ba7c0e2207543ad5ff1f57ac4944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayTimeToPlay: 1
-  delayTimeToTransition: 0
-  objTransition: {fileID: 0}
 --- !u!1 &3617160345148084259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,7 +1524,6 @@ GameObject:
   - component: {fileID: 8791754847833859756}
   - component: {fileID: 3404123173196567528}
   - component: {fileID: 1211779923868687899}
-  - component: {fileID: 6377002773568722117}
   m_Layer: 0
   m_Name: WormEntity
   m_TagString: Untagged
@@ -1654,21 +1621,6 @@ MonoBehaviour:
   bulletRange: {fileID: 780816225883709854}
   bulletSpeed: 10
   fireRate: 15
---- !u!114 &6377002773568722117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4565077184402223802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f9ba7c0e2207543ad5ff1f57ac4944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayTimeToPlay: 1
-  delayTimeToTransition: 0
-  objTransition: {fileID: 0}
 --- !u!1 &4570252538954214263
 GameObject:
   m_ObjectHideFlags: 0

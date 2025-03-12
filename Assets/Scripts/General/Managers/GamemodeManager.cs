@@ -7,35 +7,35 @@ public class GameModeManager : MonoBehaviour
     public static GameModeManager instance;
     public GameObject finalGameMSG;
 
-    private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
-    private const string ADWARE_DONE_KEY = "AdwareDone";
-    private const string VIRUS_DONE_KEY = "VirusDone";
     private const string ROOTKIT_DONE_KEY = "RootkitDone";
+    private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
+    private const string VIRUS_DONE_KEY = "VirusDone";
     private const string BOTS_DONE_KEY = "BotsDone";
+    private const string ADWARE_DONE_KEY = "AdwareDone";
     private const string WORM_DONE_KEY = "WormDone";
 
     [Header("Status")]
-    public int filelessMalwareDoneCount = 0;
-    public int adwareDoneCount = 0;
-    public int virusDoneCount = 0;
     public int rootkitDoneCount = 0;
+    public int filelessMalwareDoneCount = 0;
+    public int virusDoneCount = 0;
     public int botsDoneCount = 0;
+    public int adwareDoneCount = 0;
     public int wormDoneCount = 0;
 
     [Header("Buttons")]
-    public GameObject filelessButton;
-    public GameObject adwareButton;
-    public GameObject virusButton;
     public GameObject rootkitButton;
+    public GameObject filelessButton;
+    public GameObject virusButton;
     public GameObject botsButton;
+    public GameObject adwareButton;
     public GameObject wormButton;
 
     [Header("Icons")]
-    public GameObject malwareFL;
-    public GameObject malwareADWARE;
-    public GameObject malwareVIRUS;
     public GameObject malwareROOTKIT;
+    public GameObject malwareFL;
+    public GameObject malwareVIRUS;
     public GameObject malwareBOTS;
+    public GameObject malwareADWARE;
     public GameObject malwareWORM;
 
     private void Awake()
@@ -173,21 +173,21 @@ public class GameModeManager : MonoBehaviour
         Debug.Log("GM:gamemodes progress reset");
     }
 
+    public void UpdateRootkitButton()
+    {
+        if (rootkitButton != null)
+        {
+            Button buttonComponent = rootkitButton.GetComponent<Button>();
+            buttonComponent.interactable = rootkitDoneCount <= 0;
+        }
+    }
+
     public void UpdateFilelessButton()
     {
         if (filelessButton != null)
         {
             Button buttonComponent = filelessButton.GetComponent<Button>();
-            buttonComponent.interactable = filelessMalwareDoneCount <= 0;
-        }
-    }
-
-    public void UpdateAdwareButton()
-    {
-        if (adwareButton != null)
-        {
-            Button buttonComponent = adwareButton.GetComponent<Button>();
-            buttonComponent.interactable = adwareDoneCount <= 0;
+            buttonComponent.interactable = (filelessMalwareDoneCount <= 0);
         }
     }
 
@@ -196,16 +196,16 @@ public class GameModeManager : MonoBehaviour
         if (virusButton != null)
         {
             Button buttonComponent = virusButton.GetComponent<Button>();
-            buttonComponent.interactable = virusDoneCount <= 0;
+            buttonComponent.interactable = (virusDoneCount <= 0);
         }
     }
 
-    public void UpdateRootkitButton()
+    public void UpdateAdwareButton()
     {
-        if (rootkitButton != null)
+        if (adwareButton != null)
         {
-            Button buttonComponent = rootkitButton.GetComponent<Button>();
-            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0);
+            Button buttonComponent = adwareButton.GetComponent<Button>();
+            buttonComponent.interactable = (rootkitDoneCount > 0 && filelessMalwareDoneCount > 0 && virusDoneCount > 0 && adwareDoneCount <= 0);
         }
     }
 
@@ -214,7 +214,7 @@ public class GameModeManager : MonoBehaviour
         if (botsButton != null)
         {
             Button buttonComponent = botsButton.GetComponent<Button>();
-            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0 && rootkitDoneCount > 0);
+            buttonComponent.interactable = (rootkitDoneCount > 0 && filelessMalwareDoneCount > 0 && virusDoneCount > 0 && botsDoneCount <= 0);
         }
     }
 
@@ -223,23 +223,26 @@ public class GameModeManager : MonoBehaviour
         if (wormButton != null)
         {
             Button buttonComponent = wormButton.GetComponent<Button>();
-            buttonComponent.interactable = (filelessMalwareDoneCount > 0 && adwareDoneCount > 0 && virusDoneCount > 0 && rootkitDoneCount > 0 && botsDoneCount > 0);
+            buttonComponent.interactable = (rootkitDoneCount > 0 && filelessMalwareDoneCount > 0 && virusDoneCount > 0 && adwareDoneCount > 0  && botsDoneCount > 0 && wormDoneCount <= 0);
         }
     }
 
     private void UpdateMalwareIcons()
     {
-        malwareFL.SetActive(filelessMalwareDoneCount > 0);
-        malwareADWARE.SetActive(adwareDoneCount > 0);
-        malwareVIRUS.SetActive(virusDoneCount > 0);
         malwareROOTKIT.SetActive(rootkitDoneCount > 0);
+        malwareFL.SetActive(filelessMalwareDoneCount > 0);
+        malwareVIRUS.SetActive(virusDoneCount > 0);
         malwareBOTS.SetActive(botsDoneCount > 0);
+        malwareADWARE.SetActive(adwareDoneCount > 0);
         malwareWORM.SetActive(wormDoneCount > 0);
     }
 
     private void CheckAndUpdateButtons()
     {
         UpdateRootkitButton();
+        UpdateFilelessButton();
+        UpdateVirusButton();
+        UpdateAdwareButton();
         UpdateBotsButton();
         UpdateWormButton();
     }

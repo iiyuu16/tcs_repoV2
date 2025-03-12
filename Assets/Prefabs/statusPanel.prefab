@@ -219,7 +219,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1127750478466289329}
   m_Layer: 5
-  m_Name: rootkitD|B
+  m_Name: virusD|B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -856,7 +856,6 @@ RectTransform:
   m_Children:
   - {fileID: 7407957914561087768}
   - {fileID: 4093267753466138020}
-  - {fileID: 3603975987632524130}
   - {fileID: 1127750478466289329}
   - {fileID: 1182263694553439986}
   m_Father: {fileID: 5583649234617517750}
@@ -906,41 +905,6 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -15.35}
   m_SizeDelta: {x: 0, y: -30.7}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &8830000807073356714
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3603975987632524130}
-  m_Layer: 5
-  m_Name: virusD|B
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3603975987632524130
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8830000807073356714}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4173746127270819350}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1315251610139848367
 PrefabInstance:
@@ -1093,6 +1057,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1182263694553439986}
     m_Modifications:
+    - target: {fileID: 2897678868376216133, guid: a740ed533c662d548b2083c859e14b75, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897678868376216133, guid: a740ed533c662d548b2083c859e14b75, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3153631343007865201, guid: a740ed533c662d548b2083c859e14b75, type: 3}
       propertyPath: objsToShow.Array.size
       value: 1
@@ -1232,6 +1204,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5112790891361412622, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 139
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112790891361412622, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5112790891361412622, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 75
+      objectReference: {fileID: 0}
     - target: {fileID: 6390202032128328244, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1311,6 +1295,13 @@ PrefabInstance:
     - target: {fileID: 6390202032128328244, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745586638871001504, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
+      propertyPath: m_text
+      value: 'Shop access is restricted for the whole game.
+
+        (Shop Inflation
+        becomes invalid.)'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1636,27 +1627,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7407957914561087768}
     m_Modifications:
-    - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
-      propertyPath: m_text
-      value: 'Pop up ads will spawn during game modes.
-
-'
+    - target: {fileID: 1532818730076060402, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
       propertyPath: m_fontSize
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
-    - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
       propertyPath: m_fontSizeBase
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
+    - target: {fileID: 2897678868376216133, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3153631343007865201, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
       propertyPath: objsToShow.Array.size

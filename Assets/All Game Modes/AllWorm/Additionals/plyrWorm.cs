@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.UI;
 
 public class plyrWorm : MonoBehaviour
@@ -10,19 +11,13 @@ public class plyrWorm : MonoBehaviour
     public GameObject plyrObj;
     public GameObject volumeFX;
 
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 0.5f;
-    public float acceleration = 5f;
-    public float deceleration = 10f;
+    private bool isBraking = false;
+    public bool isStunned = false;
 
     public float recoveryTime = 5f;
-    private float currentSpeed = 0f;
-    public float maxSpeed = 15f;
     public int maxHP;
     private int currHP;
 
-    private bool isBraking = false;
-    public bool isStunned = false;
     private Coroutine recoveryCoroutine;
 
     public Slider sliderHP;
@@ -40,6 +35,8 @@ public class plyrWorm : MonoBehaviour
 
     private void Start()
     {
+        rb = plyrObj.GetComponent<Rigidbody>();
+
         currHP = maxHP;
         stunEffects.DisableStunEffects();
         Debug.Log("starting hp:" + currHP);
@@ -55,12 +52,6 @@ public class plyrWorm : MonoBehaviour
 
     void Update()
     {
-        if (!isStunned)
-        {
-            HandleMovement();
-            HandleRotation();
-            ApplyBrake();
-        }
         HandleLife();
     }
 
@@ -71,7 +62,6 @@ public class plyrWorm : MonoBehaviour
             isStunned = true;
             Debug.Log("Stunned state activated");
             sfx.stunSFX();
-            currentSpeed = 0f;
 
             recoveryCoroutine = StartCoroutine(RecoveryState());
         }
@@ -80,7 +70,7 @@ public class plyrWorm : MonoBehaviour
     private IEnumerator NormalScreen()
     {
         yield return new WaitForSeconds(1f);
-       volumeFX.SetActive(false);
+        volumeFX.SetActive(false);
     }
 
     private IEnumerator RecoveryState()
@@ -128,48 +118,4 @@ public class plyrWorm : MonoBehaviour
         StartCoroutine(NormalScreen());
     }
 
-    private void HandleMovement()
-    {
-        if (Input.GetKey(KeyCode.W))
-        {
-            if (!isBraking)
-            {
-                currentSpeed += acceleration * Time.deltaTime;
-                currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
-            }
-            else
-            {
-                isBraking = false;
-            }
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            isBraking = true;
-            currentSpeed -= deceleration * Time.deltaTime;
-            currentSpeed = Mathf.Min(currentSpeed, maxSpeed);
-        }
-
-        transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
-    }
-
-    private void HandleRotation()
-    {
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.AddTorque(-plyrObj.transform.up * rotationSpeed);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            rb.AddTorque(plyrObj.transform.up * rotationSpeed);
-        }
-    }
-
-    private void ApplyBrake()
-    {
-        if (isBraking)
-        {
-            currentSpeed -= deceleration * Time.deltaTime;
-            rb.AddForce(-plyrObj.transform.up * deceleration);
-        }
-    }
 }

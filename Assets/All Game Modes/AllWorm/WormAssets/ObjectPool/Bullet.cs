@@ -7,7 +7,7 @@ public class Bullet : AutoDestroyPoolableObject
 {
     [HideInInspector]
     public Rigidbody rigidbody;
-    public Vector3 speed = new Vector3(200, 0);
+    public Vector3 speed = new Vector3(70, 0);
 
     private void Awake()
     {
