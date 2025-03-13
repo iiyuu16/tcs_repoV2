@@ -15,7 +15,7 @@ public class DateTimeDisp : MonoBehaviour
 
     void Update()
     {
-        dateTimeText.text = System.DateTime.Now.ToString("MM/dd  HH:mm");
+        dateTimeText.text = System.DateTime.Now.ToString("MM/dd HH:mm");
     }
 }
 
