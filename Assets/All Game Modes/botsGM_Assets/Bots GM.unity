@@ -6461,7 +6461,8 @@ MonoBehaviour:
   nonStopPopUp: 0
   glitchesOn: 0
   shopNullify: 0
-  shopNavigation: {fileID: 0}
+  shopNavigation:
+  - {fileID: 0}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
@@ -8336,7 +8337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoney: 0
-  moneyText: {fileID: 0}
+  moneyTexts: []
 --- !u!1001 &1756597902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10375,6 +10376,64 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 875667174}
     m_Modifications:
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: json
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":384.5,"yPos":503},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[9],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":true,"xPos":253,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Wolf!
+        Are you ok? I got worried for a bit there.","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":5,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":384.5,"yPos":136},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"Ah,
+        that''s great. But unfortunately, the source host managed to escape.","parentUIDs":[35],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":6,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":145.5,"yPos":253},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"How?
+        I destroyed it''s bots, so it should affect the host.","parentUIDs":[1],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":5.5,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":142.5,"yPos":374},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+        it would take some time for the host to recover, since disconnecting instantly
+        can do more harm for their computers.","parentUIDs":[34],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":376.5,"yPos":370},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Well
+        everything is fine now, I''m taking a break then.","parentUIDs":[3],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":4,"Volume":1},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":141.5,"yPos":486},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Sure.
+        I''ll keep an eye and check some clues from our breach earlier.","parentUIDs":[8],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":376,"yPos":255},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"The
+        host managed to disconnect in time before the damage reached him.","parentUIDs":[2],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":4,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":false,"xPos":143.5,"yPos":144},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+        good news is at I eliminated all the bots in one piece. Hopefully this won''t
+        happen for some time.","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":8,"Volume":1}]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 166632092}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 425509658}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 185073888}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 250750137}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1222590455}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 1222590453}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
+      value: StatusManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301957212480931146, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2516078434437109331, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: m_Name
       value: botsConvoElements
@@ -10479,6 +10538,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 250750137}
+    - target: {fileID: 4314751579610359876, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 1222590455}
+    - target: {fileID: 4807322074410102967, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 916498320}
     - target: {fileID: 5660383143952332250, guid: 63c9551424224cd4f94e78d0a7deb49d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

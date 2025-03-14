@@ -631,7 +631,8 @@ MonoBehaviour:
   nonStopPopUp: 0
   glitchesOn: 0
   shopNullify: 0
-  shopNavigation: {fileID: 0}
+  shopNavigation:
+  - {fileID: 0}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
@@ -706,7 +707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoney: 0
-  moneyText: {fileID: 0}
+  moneyTexts: []
 --- !u!1 &103782433
 GameObject:
   m_ObjectHideFlags: 0
