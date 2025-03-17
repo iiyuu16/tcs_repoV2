@@ -3029,7 +3029,7 @@ MonoBehaviour:
   inflationIcon: {fileID: 7180965861715948892, guid: 29112790b2d2afe49acf56d3d852755c, type: 3}
   popUpIcon: {fileID: 5605028186981554580, guid: a5338c9dbea72844faf73eee053bf27b, type: 3}
   shopNullIcon: {fileID: 4063007358918902385, guid: 3145d6573059f7547b313d9a78a9e0b7, type: 3}
-  glitchIcon: {fileID: 0}
+  glitchIcon: {fileID: 5605028186981554580, guid: a740ed533c662d548b2083c859e14b75, type: 3}
 --- !u!1 &1480858511
 GameObject:
   m_ObjectHideFlags: 0
@@ -4649,6 +4649,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1.0000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924462952029160405, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
       propertyPath: ShapeModule.alignToDirection
       value: 1
       objectReference: {fileID: 0}
@@ -5046,22 +5050,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 199225609}
-    - target: {fileID: 1353302333262224837, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 6e12f1f1cec4c3348b413ea15258e236, type: 3}
-    - target: {fileID: 1437351189294207163, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: eccf1d383f088254ab891c12ec5661ac, type: 3}
-    - target: {fileID: 1514247742812757998, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 0539cdbd1dfec3e45a5cbf5d38111eb6, type: 3}
-    - target: {fileID: 1674240993475888769, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 0291814cbc4ea6a408e9046adc476913, type: 3}
     - target: {fileID: 1729169209078670460, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5147,6 +5135,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1510612870}
     - target: {fileID: 2593034567999138326, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593034567999138326, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1367464992}
@@ -5162,6 +5154,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1922994351}
+    - target: {fileID: 2593034567999138326, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: ActivateAugment
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593034567999138326, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Insurance Augment
+      objectReference: {fileID: 0}
     - target: {fileID: 3201641831923922185, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -5170,94 +5170,170 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
       value: 
       objectReference: {fileID: 199225609}
-    - target: {fileID: 3210595451110890525, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 927f117695bb5c942826af1ccf4f1e14, type: 3}
-    - target: {fileID: 3275867316391244522, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: a1639ade00da36d499c9f8c8c2db7957, type: 3}
-    - target: {fileID: 5117686992104753332, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 9a9c6e7e0e4303e44a34157dba8a26b2, type: 3}
-    - target: {fileID: 5562964451674935719, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: c220939795665e14387fe4db7cb5425d, type: 3}
-    - target: {fileID: 5877735066146047293, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 578eb5ef8ed7390428fd6c315b40e680, type: 3}
-    - target: {fileID: 5987555791630230127, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 4e03e96046404514296963308fa1dcd4, type: 3}
-    - target: {fileID: 6467204217773601855, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 53deb9706baf0e04099c006987608ea9, type: 3}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: json
-      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":329.5,"yPos":1007},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[41],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":true,"xPos":330,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Systems
-        will restart shortly. Please wait...","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":20}],"EditorInfo":{"isRoot":false,"xPos":186.5,"yPos":123},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"Uh...
-        What was that?","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":21}],"EditorInfo":{"isRoot":false,"xPos":466.5,"yPos":126},"ID":20,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-        idea...","parentUIDs":[19],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":22}],"EditorInfo":{"isRoot":false,"xPos":181.5,"yPos":223},"ID":21,"ParamActions":[],"TMPFontGUID":null,"Text":"Wait
-        a minute! Are we in a video game? I''m pretty sure WE ARE in a video game!","parentUIDs":[20],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":23}],"EditorInfo":{"isRoot":false,"xPos":463.5,"yPos":222},"ID":22,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        don''t think so... You just played too many games, Wolf.","parentUIDs":[21],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":180.5,"yPos":333},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"Say
-        Vi, have you ever thought that we''ve never travelled the city? It''s always
-        the shop we can only go to!","parentUIDs":[22],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":179.5,"yPos":443},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"System
-        restarts in: Three...","parentUIDs":[25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":24}],"EditorInfo":{"isRoot":false,"xPos":467.5,"yPos":328},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-        don''t know what you''re talking about, Wolf.","parentUIDs":[23],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":27}],"EditorInfo":{"isRoot":false,"xPos":465.5,"yPos":436},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
-        back again! There it is Vi!","parentUIDs":[24],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":35}],"EditorInfo":{"isRoot":false,"xPos":174.5,"yPos":549},"ID":27,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        Two.","parentUIDs":[26],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":462.5,"yPos":550},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Can''t
-        you hear that countdown Vi?... Vi? Why aren''t you responding?","parentUIDs":[27],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":37}],"EditorInfo":{"isRoot":false,"xPos":174.5,"yPos":655},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":38}],"EditorInfo":{"isRoot":false,"xPos":459.5,"yPos":657},"ID":37,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        One.","parentUIDs":[36],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":39}],"EditorInfo":{"isRoot":false,"xPos":166.5,"yPos":765},"ID":38,"ParamActions":[],"TMPFontGUID":null,"Text":"...
-        Zero.","parentUIDs":[37],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":42}],"EditorInfo":{"isRoot":false,"xPos":459.5,"yPos":751},"ID":39,"ParamActions":[],"TMPFontGUID":null,"Text":"...","parentUIDs":[38],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":459.5,"yPos":872},"ID":41,"ParamActions":[],"TMPFontGUID":null,"Text":"No
-        data found.","parentUIDs":[42],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":41}],"EditorInfo":{"isRoot":false,"xPos":167.5,"yPos":874},"ID":42,"ParamActions":[],"TMPFontGUID":null,"Text":"wHy
-        arE you stilL here?\ndon''t you still have some Places to go?","parentUIDs":[39],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.8}]}'
+      value: '{"Options":[{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":441.5,"yPos":486},"ID":10,"ParamActions":[],"TMPFontGUID":null,"Text":"-<Continue>-","parentUIDs":[31],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":329,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"That
+        was close! Told ya I can handle it. Hehe~","parentUIDs":[12],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":5,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":2}],"EditorInfo":{"isRoot":false,"xPos":568.5,"yPos":22},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+        still, you''re kinda stupid to compromise the base from your sketchy, unprotected,
+        pirated game!","parentUIDs":[0],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":8,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":34}],"EditorInfo":{"isRoot":false,"xPos":328.5,"yPos":139},"ID":2,"ParamActions":[],"TMPFontGUID":null,"Text":"But
+        hey, I fixed the problem, right? And I''ve also learned my lesson.","parentUIDs":[1],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":4,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":326.5,"yPos":260},"ID":3,"ParamActions":[],"TMPFontGUID":null,"Text":"Yeah,
+        totally got it. Won''t do it again! Unless... if it''s the new upcoming Retropunk
+        2007!","parentUIDs":[34],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":10,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":9}],"EditorInfo":{"isRoot":false,"xPos":565.5,"yPos":256},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"WOLF!","parentUIDs":[3],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":1.5,"Volume":0.8},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":324.5,"yPos":372},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"Hahaha!
+        I''m just kidding! Now let''s have pizza for tonight!","parentUIDs":[8],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"Wolf","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":5,"Volume":1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":0}],"EditorInfo":{"isRoot":false,"xPos":448.5,"yPos":-87},"ID":12,"ParamActions":[],"TMPFontGUID":null,"Text":"Wolf!
+        You did it!","parentUIDs":[],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":3,"Volume":0.8},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":10}],"EditorInfo":{"isRoot":false,"xPos":566.5,"yPos":373},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"Twas
+        an eventful day, were everything could disappear instantly...\n\nBut it never
+        ocurred.","parentUIDs":[9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":3}],"EditorInfo":{"isRoot":false,"xPos":562,"yPos":147},"ID":34,"ParamActions":[],"TMPFontGUID":null,"Text":"...
+        Just don''t plug any unknown drives and files into the base computer. I ain''t
+        dealing this today.","parentUIDs":[2],"AdvanceDialogueAutomatically":true,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":true,"IconGUID":null,"Name":"V.I.R.U.S.","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":9,"Volume":0.8}]}'
       objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1367464992}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1571750641}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 995946840}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1922994351}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 4603039850864091724}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: toVisNovMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: rootkitGM_Done
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: ActivateAugment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: mainSceneController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: GameModeManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: AugmentManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: Insurance Augment
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394474719690357935, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4603039850864091723}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6726541227262414849, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 7144674649193424927, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: b0391047ef480da4697a73b0ddfc1b95, type: 3}
-    - target: {fileID: 7478691870264450500, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 04d005f8c16f54240b653b1353c953bf, type: 3}
+      objectReference: {fileID: 1510612870}
     - target: {fileID: 7902073022954670525, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
       propertyPath: m_Name
       value: flappyConvoElements
@@ -5278,18 +5354,14 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 1922994351}
-    - target: {fileID: 8700490766778860927, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
-      propertyPath: Audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 11feece9a429065418271db4ff14eb1a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
---- !u!1 &4603039850864091723 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8100292828129467941, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+--- !u!82 &4603039850864091724 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8269165308627291765, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
   m_PrefabInstance: {fileID: 4603039850864091722}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &6081265790337784680 stripped

@@ -6,7 +6,7 @@ public class MoneyManager : MonoBehaviour
 {
     public static MoneyManager instance;
     public int currentMoney;
-    public TextMeshProUGUI moneyText;
+    public TextMeshProUGUI[] moneyTexts;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class MoneyManager : MonoBehaviour
     private void Start()
     {
         LoadMoney();
-        UpdateMoneyText();
+        UpdateMoneyTexts();
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
@@ -40,15 +40,15 @@ public class MoneyManager : MonoBehaviour
 
     public void SetupSceneReferences()
     {
-        moneyText = GameObject.Find("MoneyText")?.GetComponent<TextMeshProUGUI>();
-        UpdateMoneyText();
+        moneyTexts = GameObject.FindObjectsOfType<TextMeshProUGUI>();
+        UpdateMoneyTexts();
     }
 
     public void AddMoney(int amount)
     {
         currentMoney += amount;
         SaveMoney();
-        UpdateMoneyText();
+        UpdateMoneyTexts();
         Debug.Log("Added money: " + amount + ". Current money: " + currentMoney);
     }
 
@@ -56,7 +56,7 @@ public class MoneyManager : MonoBehaviour
     {
         currentMoney -= Mathf.Abs(amount);
         SaveMoney();
-        UpdateMoneyText();
+        UpdateMoneyTexts();
         Debug.Log("Subtracted money: " + amount + ". Current money: " + currentMoney);
     }
 
@@ -66,7 +66,7 @@ public class MoneyManager : MonoBehaviour
         {
             currentMoney -= amount;
             SaveMoney();
-            UpdateMoneyText();
+            UpdateMoneyTexts();
             Debug.Log("Spent money: " + amount + ". Current money: " + currentMoney);
             return true;
         }
@@ -82,11 +82,17 @@ public class MoneyManager : MonoBehaviour
         return currentMoney;
     }
 
-    public void UpdateMoneyText()
+    public void UpdateMoneyTexts()
     {
-        if (moneyText != null)
+        if (moneyTexts != null)
         {
-            moneyText.text = "FRGz: " + currentMoney.ToString();
+            foreach (TextMeshProUGUI moneyText in moneyTexts)
+            {
+                if (moneyText != null)
+                {
+                    moneyText.text = currentMoney.ToString();
+                }
+            }
         }
     }
 
@@ -94,7 +100,7 @@ public class MoneyManager : MonoBehaviour
     {
         int moneyFromScore = score;
         AddMoney(moneyFromScore);
-        Debug.Log("added " +moneyFromScore+ " from gamemode");
+        Debug.Log("added " + moneyFromScore + " from gamemode");
     }
 
     private void SaveMoney()
@@ -112,15 +118,15 @@ public class MoneyManager : MonoBehaviour
     {
         currentMoney = 0;
         SaveMoney();
-        UpdateMoneyText();
+        UpdateMoneyTexts();
         Debug.Log("Money has been reset. Current money: " + currentMoney);
     }
 
     private void OnValidate()
     {
-        if (moneyText != null)
+        if (moneyTexts != null)
         {
-            UpdateMoneyText();
+            UpdateMoneyTexts();
         }
     }
 }

@@ -14,7 +14,7 @@ public class StatusManager : MonoBehaviour
     public bool nonStopPopUp;
     public bool glitchesOn;
     public bool shopNullify;
-    public GameObject shopNavigation;
+    public GameObject[] shopNavigation;
 
     [Header("Buffs:")]
     public bool shopDiscount;
@@ -146,7 +146,13 @@ public class StatusManager : MonoBehaviour
         else
         {
             shopNullOn();
-            shopNavigation.SetActive(false);
+            foreach (GameObject navigation in shopNavigation)
+            {
+                if (navigation != null)
+                {
+                    navigation.SetActive(false);
+                }
+            }
         }
 
 
