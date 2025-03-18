@@ -16,7 +16,7 @@ public class sdPlayerMovement : MonoBehaviour
     public float boostCD = 3f;
     public float recoveryTime = 5f;
     public float boostRegenDelay = 10f;
-    private float currentSpeed = 0f;
+    public float currentSpeed = 0f;
     public int maxHP;
     private int currHP;
 
@@ -159,6 +159,7 @@ public class sdPlayerMovement : MonoBehaviour
             {
                 isBraking = false;
             }
+
         }
         else if (Input.GetKey(KeyCode.S))
         {
@@ -166,6 +167,14 @@ public class sdPlayerMovement : MonoBehaviour
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter (Collider other)
+    {
+        if (other.CompareTag("Colliders"))
+        {
+            currentSpeed = 0f;
+        }
     }
 
     private void HandleRotation()

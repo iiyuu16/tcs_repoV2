@@ -10,7 +10,7 @@ public class plyrWorm : MonoBehaviour
     public Rigidbody rb;
     public GameObject plyrObj;
     public GameObject volumeFX;
-
+    public GameObject transition;
     private bool isBraking = false;
     public bool isStunned = false;
 
@@ -57,13 +57,13 @@ public class plyrWorm : MonoBehaviour
 
     private void HandleLife()
     {
-        if (currHP <= 0 && !isStunned)
+        if (currHP <= 0)
         {
             isStunned = true;
             Debug.Log("Stunned state activated");
             sfx.stunSFX();
-
             recoveryCoroutine = StartCoroutine(RecoveryState());
+            transition.SetActive(true);
         }
     }
 

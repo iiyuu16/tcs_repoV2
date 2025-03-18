@@ -643,7 +643,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 6be3631cc8d83ac42ab1a1744176afb3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -5275,7 +5275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373745133}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5739665, y: 0.000000057208332, z: -0.00000004770136, w: 0.81887877}
+  m_LocalRotation: {x: 0.5739665, y: -0.000000056640044, z: 0.0000000484392, w: 0.81887877}
   m_LocalPosition: {x: 121.4969, y: -48.877308, z: 283.0403}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5606,7 +5606,8 @@ MonoBehaviour:
   nonStopPopUp: 0
   glitchesOn: 0
   shopNullify: 0
-  shopNavigation: {fileID: 0}
+  shopNavigation:
+  - {fileID: 0}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
@@ -5779,7 +5780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentMoney: 0
-  moneyText: {fileID: 0}
+  moneyTexts: []
 --- !u!1 &1527981105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6886,7 +6887,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874488695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6101942, y: 0.00000005902737, z: -0.00000004546301, w: 0.79225194}
+  m_LocalRotation: {x: 0.6101942, y: -0.00000005902737, z: 0.00000004546301, w: 0.79225194}
   m_LocalPosition: {x: 45.25, y: 23.5, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
