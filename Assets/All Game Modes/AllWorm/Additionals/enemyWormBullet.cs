@@ -21,7 +21,7 @@ public class enemyWormBullet : MonoBehaviour
             sparksFX.Play();
             smokeFX.Play();
             fireFX.Play();
-            plyrWorm.instance.PlayerHit();
+            //plyrWorm.instance.PlayerHit();
             col.enabled = false;
             bulletSkin.enabled = false;
             StartCoroutine(DelayDestroy());

@@ -105,6 +105,7 @@ public class survivalPlayerMovement : MonoBehaviour
             {
                 isBraking = false;
             }
+
         }
         else if (Input.GetKey(KeyCode.S))
         {
@@ -112,6 +113,14 @@ public class survivalPlayerMovement : MonoBehaviour
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Colliders"))
+        {
+            currentSpeed = 0f;
+        }
     }
 
     private void HandleRotation()

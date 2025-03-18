@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17960714, g: 0.23634247, b: 0.23281474, a: 1}
+  m_IndirectSpecularColor: {r: 0.17960684, g: 0.2363419, b: 0.2328147, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -501,6 +501,7 @@ Transform:
   - {fileID: 916172614}
   - {fileID: 558885593}
   - {fileID: 230613017}
+  - {fileID: 1307611132}
   m_Father: {fileID: 463508871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77354116 stripped
@@ -1124,12 +1125,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (16)
@@ -1255,12 +1260,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (8)
@@ -1847,12 +1856,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (2)
@@ -2317,12 +2330,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (4)
@@ -2991,12 +3008,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (1)
@@ -3073,12 +3094,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (7)
@@ -3704,12 +3729,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (12)
@@ -3861,12 +3890,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (10)
@@ -4321,12 +4354,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (17)
@@ -4885,12 +4922,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (15)
@@ -6055,12 +6096,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (3)
@@ -6652,7 +6697,8 @@ MonoBehaviour:
   nonStopPopUp: 0
   glitchesOn: 0
   shopNullify: 0
-  shopNavigation: {fileID: 0}
+  shopNavigation:
+  - {fileID: 0}
   shopDiscount: 0
   shopNormal: 0
   noPopups: 0
@@ -6724,12 +6770,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (6)
@@ -7205,6 +7255,92 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &1307611131
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 70580242}
+    m_Modifications:
+    - target: {fileID: 1293311129859252827, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_Radius
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 80.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -183.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: sfx
+      value: 
+      objectReference: {fileID: 875602802}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8982383324198136906}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: fireRate
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: _plyrWorm
+      value: 
+      objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: m_Name
+      value: WormTurretObj (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+--- !u!4 &1307611132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8167345203648730589, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+  m_PrefabInstance: {fileID: 1307611131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310138034
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,12 +8757,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (11)
@@ -8754,10 +8894,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6be3631cc8d83ac42ab1a1744176afb3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4b623a1d6a607814f8fa54d52d73c908, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.3
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -8917,12 +9057,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (13)
@@ -9031,12 +9175,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (5)
@@ -9113,12 +9261,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (9)
@@ -9923,12 +10075,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj (14)
@@ -10798,9 +10954,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: fireRate
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 1062192147465252023, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: sfx
       value: 
@@ -10810,9 +10974,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: fireRate
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 1211779923868687899, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1550933550805934391, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: player
       value: 
@@ -10846,9 +11018,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: fireRate
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 4334830245180334897, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6377002773568722117, guid: 434d053f5ab42d84eb1882cc6f35b7d7, type: 3}
       propertyPath: objTransition
       value: 
@@ -11128,12 +11308,16 @@ PrefabInstance:
       objectReference: {fileID: 8982383324198136906}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: fireRate
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: _plyrWorm
       value: 
       objectReference: {fileID: 4307208334895432961}
+    - target: {fileID: 9022402502676195008, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
+      propertyPath: bulletSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177620496623307308, guid: 1b43af90eeb0a6c469d8c5dfb3f6e841, type: 3}
       propertyPath: m_Name
       value: WormTurretObj
@@ -11232,7 +11416,7 @@ PrefabInstance:
     - target: {fileID: 1634113700015561044, guid: 32e79e8d764483f469f5a8b39ad91e91, type: 3}
       propertyPath: volumeFX
       value: 
-      objectReference: {fileID: 213936115}
+      objectReference: {fileID: 1673013682}
     - target: {fileID: 1634113700015561044, guid: 32e79e8d764483f469f5a8b39ad91e91, type: 3}
       propertyPath: stunEffects
       value: 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028335, g: 0.22571343, b: 0.3069227, a: 1}
+  m_IndirectSpecularColor: {r: 0.1802831, g: 0.22571328, b: 0.3069222, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20cda6c0f8f514c8a2176c76dc5dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bpm: 120
+  _bpm: 175
   _audioSource: {fileID: 755543451}
   _intervals:
   - _steps: 1
@@ -1869,7 +1869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleSystem: {fileID: 5172832301304977543}
-  noteRestriction: 7
+  noteRestriction: 0
   input: 32
   notePrefab: {fileID: 3521555005425061812, guid: 7fd84e522f0ec3049baa8556c643e1d4, type: 3}
   timeStamps: []
@@ -2614,7 +2614,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 471f2b5d6f6c46e40b21d75e18c283ae, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 09520560f5a48714fa148931abbfe19e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.6
   m_Pitch: 1
@@ -2713,8 +2713,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1721420371}
   - {fileID: 956001426}
+  - {fileID: 1721420371}
   m_Father: {fileID: 302936847}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &847706218
@@ -4394,7 +4394,7 @@ MonoBehaviour:
   marginOfError: 0.1
   inputDelayInMilliseconds: 0
   inputSensitivity: 5
-  fileLocation: RG_BGM.mid
+  fileLocation: adwareOST.mid
   noteTime: 1
   noteSpawnY: 50
   noteTapY: -3

@@ -26,6 +26,7 @@ public class WormMovementRevamp : MonoBehaviour
     public Transform target;
     public Transform origin;
     // Start is called before the first frame update
+
     void Start()
     {
         rb = sphere.GetComponent<Rigidbody>();
