@@ -100,11 +100,13 @@ MonoBehaviour:
   rotationSpeed: 180
   acceleration: 3
   deceleration: 3
-  maxHP: 100
-  currHP: 100
-  decayRate: 0.5
+  maxInfection: 100
+  currInfection: 0
+  infectionRate: 0.5
   sfx: {fileID: 0}
-  sliderHP: {fileID: 0}
+  sliderInf: {fileID: 0}
+  fx1: {fileID: 0}
+  fx2: {fileID: 0}
 --- !u!1 &3727887470343921113
 GameObject:
   m_ObjectHideFlags: 0

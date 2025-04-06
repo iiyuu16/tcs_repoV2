@@ -11,15 +11,17 @@ public class survivalPlayerMovement : MonoBehaviour
     public float deceleration = 10f;
 
     private float currentSpeed = 0f;
-    public float maxHP;
-    public float currHP;
-    public float decayRate = 0.1f;
+    public float maxInfection;
+    public float currInfection;
+    public float infectionRate = 0.1f;
 
     private bool isBraking = false;
 
     public survivalSoundSource sfx;
 
-    public Slider sliderHP;
+    public Slider sliderInf;
+    public Image fx1;
+    public Image fx2;
 
     private void Awake()
     {
@@ -35,15 +37,15 @@ public class survivalPlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        currHP = maxHP;
-        Debug.Log("starting hp:" + currHP);
+        currInfection = 0f;
+        Debug.Log("starting hp:" + currInfection);
 
-        if (sliderHP != null)
+        if (sliderInf != null)
         {
-            sliderHP.minValue = 0;
-            sliderHP.maxValue = maxHP;
-            sliderHP.value = maxHP;
-            sliderHP.onValueChanged.AddListener(OnHealthChanged);
+            sliderInf.minValue = 0;
+            sliderInf.maxValue = maxInfection;
+            sliderInf.value = currInfection;
+            sliderInf.onValueChanged.AddListener(OnHealthChanged);
         }
     }
 
@@ -52,44 +54,46 @@ public class survivalPlayerMovement : MonoBehaviour
         HandleMovement();
         HandleRotation();
         ApplyBrake();
-        ApplyHPDecay();
+        ApplyInfection();
     }
 
     public void OnHealthChanged(float value)
     {
-        currHP = Mathf.RoundToInt(value);
+        currInfection = Mathf.RoundToInt(value);
+        fx1.color = new Color(fx1.color.r, fx1.color.g, fx1.color.b, currInfection / maxInfection);
+        fx2.color = new Color(fx2.color.r, fx2.color.g, fx2.color.b, currInfection / maxInfection);
     }
 
     public void PlayerHit()
     {
-        currHP -= 1;
+        currInfection += 2;
         sfx.hurtSFX();
-        Debug.Log("hp:" + currHP);
+        Debug.Log("hp:" + currInfection);
         sdCamShake.instance.ShakeCamera();
 
-        if (sliderHP != null)
+        if (sliderInf != null)
         {
-            sliderHP.value = currHP;
+            sliderInf.value = currInfection;
         }
     }
 
-    public void AddHealth(int amount)
+    public void NegateInf(int amount)
     {
-        currHP += amount;
-        currHP = Mathf.Min(currHP, maxHP);
-        Debug.Log("hp:" + currHP);
-        if (sliderHP != null)
+        currInfection -= amount;
+        currInfection = Mathf.Max(currInfection, 0);
+        Debug.Log("Infection: " + currInfection);
+        if (sliderInf != null)
         {
-            sliderHP.value = currHP;
+            sliderInf.value = currInfection;
         }
     }
 
-    private void ApplyHPDecay()
+    private void ApplyInfection()
     {
-        if (currHP > 0)
+        if (currInfection < 100)
         {
-            currHP -= decayRate * Time.deltaTime;
-            sliderHP.value = currHP;
+            currInfection += infectionRate * Time.deltaTime;
+            sliderInf.value = currInfection;
         }
     }
 

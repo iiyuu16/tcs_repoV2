@@ -3,7 +3,7 @@ using System.Collections;
 
 public class survivalHPItem : MonoBehaviour
 {
-    public int healthBonus = 15;
+    public int cleanInfection = 15;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,7 +12,7 @@ public class survivalHPItem : MonoBehaviour
             survivalPlayerMovement player = other.GetComponent<survivalPlayerMovement>();
             if (player != null)
             {
-                player.AddHealth(healthBonus);
+                player.NegateInf(cleanInfection);
                 Destroy(gameObject);
             }
         }

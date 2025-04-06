@@ -8886,7 +8886,7 @@ MonoBehaviour:
   m_text: 'Game Conditions:
 
 
-    Lose Condition: Health reaches 0.
+    Lose Condition: Infection bar becomes full.
 
     Failing
     results in: Shop Closed
@@ -9592,7 +9592,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Every second, your health will deteriorate.
+  m_text: Every second, the infection will slowly build up.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
@@ -10341,7 +10341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pick up Health cores to restore your health.
+  m_text: Pick up repair cores to reduce the infection.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}

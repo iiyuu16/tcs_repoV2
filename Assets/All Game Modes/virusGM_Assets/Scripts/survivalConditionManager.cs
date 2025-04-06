@@ -10,7 +10,7 @@ public class survivalConditionManager : MonoBehaviour
 
     public void Update()
     {
-        if (playerMovement.currHP < 1)
+        if (playerMovement.currInfection == playerMovement.maxInfection)
         {
             GameOver();
         }
