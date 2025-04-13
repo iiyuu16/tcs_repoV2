@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useTestBeat: 0
-  _pulseSize: 1.1
+  _pulseSize: 1
   _returnSpeed: 5
 --- !u!1001 &28817529
 PrefabInstance:
@@ -792,6 +792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175958337}
   - component: {fileID: 175958338}
+  - component: {fileID: 175958339}
   m_Layer: 5
   m_Name: Shield%
   m_TagString: Untagged
@@ -872,6 +873,21 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &175958339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175958336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2704cfced4b58b140b658cd89f720e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useTestBeat: 0
+  _pulseSize: 1
+  _returnSpeed: 5
 --- !u!1 &181405928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,13 +1740,9 @@ MonoBehaviour:
   - _steps: 1
     _trigger:
       m_PersistentCalls:
-        m_Calls: []
-  - _steps: 1
-    _trigger:
-      m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1204813}
-          m_TargetAssemblyTypeName: BeatPulsate, Assembly-CSharp
+          m_TargetAssemblyTypeName: rhythmBeatPulsate, Assembly-CSharp
           m_MethodName: Pulse
           m_Mode: 1
           m_Arguments:
@@ -1745,8 +1757,8 @@ MonoBehaviour:
     _trigger:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5974196516944108159}
-          m_TargetAssemblyTypeName: BeatPulsate, Assembly-CSharp
+        - m_Target: {fileID: 2048908683}
+          m_TargetAssemblyTypeName: rhythmBeatPulsate, Assembly-CSharp
           m_MethodName: Pulse
           m_Mode: 1
           m_Arguments:
@@ -4420,6 +4432,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634413032}
   m_CullTransparentMesh: 1
+--- !u!1 &1642190225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7675996107255182830, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+  m_PrefabInstance: {fileID: 2048908679}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1671949322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5127,13 +5144,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7675996107255182830, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048908683}
   m_SourcePrefab: {fileID: 100100000, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
 --- !u!4 &2048908680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4995505266812042879, guid: 39dcc0813db771e42950b67636b339e4, type: 3}
   m_PrefabInstance: {fileID: 2048908679}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2048908683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642190225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2704cfced4b58b140b658cd89f720e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useTestBeat: 0
+  _pulseSize: 5
+  _returnSpeed: 5
 --- !u!1001 &2095064859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6058,6 +6093,7 @@ GameObject:
   - component: {fileID: 1445923416370037743}
   - component: {fileID: 5974196516944108158}
   - component: {fileID: 5974196516944108159}
+  - component: {fileID: 5974196516944108160}
   m_Layer: 0
   m_Name: pad1
   m_TagString: Untagged
@@ -11036,7 +11072,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4721612215286577279}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2704cfced4b58b140b658cd89f720e1d, type: 3}
   m_Name: 
@@ -11044,6 +11080,20 @@ MonoBehaviour:
   _useTestBeat: 0
   _pulseSize: 1.1
   _returnSpeed: 5
+--- !u!114 &5974196516944108160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4721612215286577279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbac48dfe23a2d4093479d56e4720b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulseSize: 1.1
+  pulseSpeed: 5
 --- !u!224 &6751192313872072007
 RectTransform:
   m_ObjectHideFlags: 0
