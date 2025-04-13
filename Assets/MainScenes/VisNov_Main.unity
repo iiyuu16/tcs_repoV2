@@ -3465,6 +3465,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1282682780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6249080178320439896, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+  m_PrefabInstance: {fileID: 6359135323470225384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1300261971
 GameObject:
   m_ObjectHideFlags: 0
@@ -5361,6 +5366,10 @@ PrefabInstance:
       value: GM_Manager
       objectReference: {fileID: 0}
     - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
+      propertyPath: notifDot
+      value: 
+      objectReference: {fileID: 1282682780}
+    - target: {fileID: 8830446115647297654, guid: 95d20d12e8e5e014dbd1da1bb6edc964, type: 3}
       propertyPath: malwareFL
       value: 
       objectReference: {fileID: 2029744238}
@@ -6283,6 +6292,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6249080178320439896, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6737480396028066822, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6295,6 +6308,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1575412928}
+    - target: {fileID: 7424955391329996479, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424955391329996479, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424955391329996479, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7424955391329996479, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7533421994777520218, guid: b552b6d8de2104a4c90078616eeee2bb, type: 3}
       propertyPath: m_IsActive
       value: 1
