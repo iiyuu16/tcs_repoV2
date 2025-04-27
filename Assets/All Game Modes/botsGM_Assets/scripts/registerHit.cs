@@ -12,9 +12,9 @@ public class registerHit : MonoBehaviour
     public ParticleSystem fireFX;
     public ParticleSystem smokeFX;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player Bullet")
+        if (other.CompareTag("Player Bullet"))
         {
             objMesh.SetActive(false);
             sparksFX.Play();
@@ -22,16 +22,13 @@ public class registerHit : MonoBehaviour
             flashFX.Play();
             fireFX.Play();
             sfx.explosionSFX();
-            DelayDisable();
+            StartCoroutine(DelayDisable());
         }
     }
 
     private IEnumerator DelayDisable()
     {
         yield return new WaitForSeconds(0.5f);
-        this.gameObject.SetActive(false);
+        Destroy(gameObject);
     }
-
-
-
 }

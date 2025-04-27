@@ -6,9 +6,9 @@ public class mainSceneController : MonoBehaviour
 {
     private ParticleTransition particleTransition;
     private glitchManager _glitchManager;
+
     public float delayTimeToPlay;
     public float delayTimeToTransition;
-
     public GameObject objTransition;
     public string targetSceneName;
 
@@ -18,45 +18,22 @@ public class mainSceneController : MonoBehaviour
         _glitchManager = FindAnyObjectByType<glitchManager>();
 
         if (particleTransition == null)
-        {
-            Debug.Log("No ParticleTransition found in the scene.");
-        }
+            Debug.Log("No ParticleTransition found.");
 
-        if (SceneManager.GetActiveScene().name == "MainMenu" || SceneManager.GetActiveScene().name == "VisNov_Prologue")
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        if (sceneName == "MainMenu" || sceneName == "VisNov_Prologue")
         {
-            _glitchManager.DisableGlitchEffect();
+            _glitchManager?.DisableGlitchEffect();
             Debug.Log("glitchOff");
         }
 
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToADWARE")
-        {
-            ADWARE_gamemode();
-        }
-
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToFLM")
-        {
-            FLM_gamemode();
-        }
-
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToVIRUS")
-        {
-            VIRUS_gamemode();
-        }
-
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToROOTKIT")
-        {
-            ROOTKIT_gamemode();
-        }
-
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToBOTS")
-        {
-            BOTS_gamemode();
-        }
-
-        if (SceneManager.GetActiveScene().name == "LoadingScreenToWORM")
-        {
-            WORM_gamemode();
-        }
+        if (sceneName == "LoadingScreenToADWARE") ADWARE_gamemode();
+        if (sceneName == "LoadingScreenToFLM") FLM_gamemode();
+        if (sceneName == "LoadingScreenToVIRUS") VIRUS_gamemode();
+        if (sceneName == "LoadingScreenToROOTKIT") ROOTKIT_gamemode();
+        if (sceneName == "LoadingScreenToBOTS") BOTS_gamemode();
+        if (sceneName == "LoadingScreenToWORM") WORM_gamemode();
     }
 
     private void Update()
@@ -65,7 +42,7 @@ public class mainSceneController : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(targetSceneName))
             {
-                StartCoroutine(DelayedSceneTransition());
+                StartCoroutine(DelayedSceneTransition(targetSceneName));
                 StartCoroutine(DelayedObjTransition());
             }
             else
@@ -82,7 +59,7 @@ public class mainSceneController : MonoBehaviour
         {
             particleTransition.TriggerTransition();
         }
-        StartCoroutine(DelayedSceneTransition());
+        StartCoroutine(DelayedSceneTransition(targetSceneName));
         StartCoroutine(DelayedObjTransition());
     }
 
@@ -92,290 +69,57 @@ public class mainSceneController : MonoBehaviour
         Application.Quit();
     }
 
-    public void toMainMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
+    public void toMainMenu() => StartCoroutine(DelayedSceneTransition("MainMenu"));
+    public void toVisNovPrologue() => StartCoroutine(DelayedSceneTransition("VisNov_Prologue"));
+    public void toVisNovMain() => StartCoroutine(DelayedSceneTransition("VisNov_Main"));
 
-    public void toVisNovPrologue()
-    {
-        SceneManager.LoadScene("VisNov_Prologue");
-    }
+    public void toLoadingSceneFLM() => StartCoroutine(DelayedSceneTransition("LoadingScreenToFLM"));
+    public void toLoadingSceneADWARE() => StartCoroutine(DelayedSceneTransition("LoadingScreenToADWARE"));
+    public void toLoadingSceneWORM() => StartCoroutine(DelayedSceneTransition("LoadingScreenToWORM"));
+    public void toLoadingSceneVIRUS() => StartCoroutine(DelayedSceneTransition("LoadingScreenToVIRUS"));
+    public void toLoadingSceneROOTKIT() => StartCoroutine(DelayedSceneTransition("LoadingScreenToROOTKIT"));
+    public void toLoadingSceneBOTS() => StartCoroutine(DelayedSceneTransition("LoadingScreenToBOTS"));
 
-    public void toVisNovMain()
-    {
-        StartCoroutine(DelayToVNMain());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toLoadingSceneFLM()
-    {
-        StartCoroutine(DelayToLoadingSceneFLM());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toLoadingSceneADWARE()
-    {
-        StartCoroutine(DelayToLoadingSceneADWARE());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toLoadingSceneWORM()
-    {
-        StartCoroutine(DelayToLoadingSceneWORM());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toLoadingSceneVIRUS()
-    {
-        StartCoroutine(DelayToLoadingSceneVIRUS());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toLoadingSceneROOTKIT()
-    {
-        StartCoroutine(DelayToLoadingSceneROOTKIT());
-        StartCoroutine(DelayedObjTransition());
-    }
-    public void toLoadingSceneBOTS()
-    {
-        StartCoroutine(DelayToLoadingSceneBOTS());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    //visual novels scenes
-
-    public void toVisNov_FLM()
-    {
-        StartCoroutine(DelayToFLM());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_ADWARE()
-    {
-        StartCoroutine(DelayToADWARE());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_WORM()
-    {
-        StartCoroutine(DelayToWORM());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_VIRUS()
-    {
-        StartCoroutine(DelayToVIRUS());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_ROOTKIT()
-    {
-        StartCoroutine(DelayToROOTKIT());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_BOTS()
-    {
-        StartCoroutine(DelayToBOTS());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_TrueEnding()
-    {
-        StartCoroutine(DelayToTrueEnding());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void toVisNov_GoodEnding()
-    {
-        StartCoroutine(DelayToGoodEnding());
-        StartCoroutine(DelayedObjTransition());
-    }
+    public void toVisNov_FLM() => StartCoroutine(DelayedSceneTransition("VisNov_FLM"));
+    public void toVisNov_ADWARE() => StartCoroutine(DelayedSceneTransition("VisNov_ADWARE"));
+    public void toVisNov_WORM() => StartCoroutine(DelayedSceneTransition("VisNov_WORM"));
+    public void toVisNov_VIRUS() => StartCoroutine(DelayedSceneTransition("VisNov_VIRUS"));
+    public void toVisNov_ROOTKIT() => StartCoroutine(DelayedSceneTransition("VisNov_ROOTKIT"));
+    public void toVisNov_BOTS() => StartCoroutine(DelayedSceneTransition("VisNov_BOTS"));
+    public void toVisNov_TrueEnding() => StartCoroutine(DelayedSceneTransition("VisNov_TrueEnding"));
+    public void toVisNov_GoodEnding() => StartCoroutine(DelayedSceneTransition("VisNov_GoodEnding"));
 
     // gamemode scenes
+    public void FLM_gamemode() => StartCoroutine(DelayedSceneTransition("s&dGM"));
+    public void ADWARE_gamemode() => StartCoroutine(DelayedSceneTransition("rhythmGM"));
+    public void VIRUS_gamemode() => StartCoroutine(DelayedSceneTransition("survivalGM"));
+    public void ROOTKIT_gamemode() => StartCoroutine(DelayedSceneTransition("flappyGM"));
+    public void WORM_gamemode() => StartCoroutine(DelayedSceneTransition("WormGM"));
+    public void BOTS_gamemode() => StartCoroutine(DelayedSceneTransition("Bots GM"));
 
-
-    public void FLM_gamemode()
-    {
-        StartCoroutine(DelayToFLM_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void ADWARE_gamemode()
-    {
-        StartCoroutine(DelayToADWARE_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void VIRUS_gamemode()
-    {
-        StartCoroutine(DelayToVIRUS_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void ROOTKIT_gamemode()
-    {
-        StartCoroutine(DelayToROOTKIT_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void WORM_gamemode()
-    {
-        StartCoroutine(DelayToWORM_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-    public void BOTS_gamemode()
-    {
-        StartCoroutine(DelayToBOTS_gamemode());
-        StartCoroutine(DelayedObjTransition());
-    }
-
-
-    IEnumerator DelayToVNMain()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_Main");
-    }
-
-    IEnumerator DelayToLoadingSceneFLM()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToFLM");
-    }
-
-    IEnumerator DelayToLoadingSceneADWARE()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToADWARE");
-    }
-    IEnumerator DelayToLoadingSceneWORM()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToWORM");
-    }
-
-    IEnumerator DelayToLoadingSceneVIRUS()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToVIRUS");
-    }
-
-    IEnumerator DelayToLoadingSceneROOTKIT()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToROOTKIT");
-    }
-
-    IEnumerator DelayToLoadingSceneBOTS()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("LoadingScreenToBOTS");
-    }
-
-    IEnumerator DelayToFLM()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_FLM");
-    }
-
-    IEnumerator DelayToFLM_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("s&dGM");
-    }
-
-    IEnumerator DelayToADWARE()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_ADWARE");
-    }
-
-    IEnumerator DelayToADWARE_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("rhythmGM");
-    }
-
-    IEnumerator DelayToWORM()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_WORM");
-    }
-
-    IEnumerator DelayToWORM_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("WormGM");
-    }
-
-    IEnumerator DelayToVIRUS()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_VIRUS");
-    }
-
-    IEnumerator DelayToVIRUS_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("survivalGM");
-    }
-
-    IEnumerator DelayToROOTKIT()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_ROOTKIT");
-    }
-
-    IEnumerator DelayToROOTKIT_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("flappyGM");
-    }
-
-    IEnumerator DelayToBOTS()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_BOTS");
-    }
-
-    IEnumerator DelayToBOTS_gamemode()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("Bots GM");
-    }
-
-    IEnumerator DelayToTrueEnding()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_TrueEnding");
-    }
-
-    IEnumerator DelayToGoodEnding()
-    {
-        yield return new WaitForSeconds(delayTimeToPlay);
-        SceneManager.LoadScene("VisNov_GoodEnding");
-    }
-
-    IEnumerator DelayedSceneTransition()
+    IEnumerator DelayedSceneTransition(string sceneName)
     {
         yield return new WaitForSeconds(delayTimeToPlay);
 
-        if (!string.IsNullOrEmpty(targetSceneName))
+        if (!string.IsNullOrEmpty(sceneName))
         {
-            SceneManager.LoadScene(targetSceneName);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+
+            while (!asyncLoad.isDone)
+            {
+                yield return null;
+            }
         }
         else
         {
-            Debug.LogError("Target scene name is empty.");
+            Debug.LogError("Scene name is empty.");
         }
-
     }
 
     IEnumerator DelayedObjTransition()
     {
         yield return new WaitForSeconds(delayTimeToTransition);
-        objTransition.SetActive(true);
+        if (objTransition != null)
+            objTransition.SetActive(true);
     }
 }

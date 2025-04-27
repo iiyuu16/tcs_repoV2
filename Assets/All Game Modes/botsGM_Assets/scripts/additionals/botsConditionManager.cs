@@ -14,21 +14,30 @@ public class botsConditionManager : MonoBehaviour
     {
         if (!hasWon)
         {
-            int remainingTargets = CountActiveTargets();
-            objRemaining.text = $"Bots: {remainingTargets}/15";
+            UpdateStatusText();
 
-            if (remainingTargets == 0)
+            if (AreAllTargetsDestroyed())
             {
+                if (winScreen != null)
+                {
+                    winScreen.SetActive(true);
+                }
+
+                DisableGameObjects();
                 hasWon = true;
-                WinGame();
             }
         }
     }
-
-    public void WinGame()
+    private bool AreAllTargetsDestroyed()
     {
-        winScreen.SetActive(true);
-        DisableGameObjects();
+        foreach (GameObject target in targetObjs)
+        {
+            if (target != null)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     private void DisableGameObjects()
@@ -39,21 +48,22 @@ public class botsConditionManager : MonoBehaviour
         }
     }
 
-    private int CountActiveTargets()
+    private void UpdateStatusText()
     {
-        int activeTargets = 0;
-        foreach (GameObject target in targetObjs)
+        if (objRemaining != null)
         {
-            if (target.activeSelf)
-            {
-                activeTargets++;
-            }
-        }
-        return activeTargets;
-    }
+            int totalTargets = targetObjs.Length;
+            int missingTargets = 0;
 
-    private void Start()
-    {
-        objRemaining.text = $"Bots: {CountActiveTargets()}/5";
+            foreach (GameObject target in targetObjs)
+            {
+                if (target == null)
+                {
+                    missingTargets++;
+                }
+            }
+
+            objRemaining.text = $"Targets: {missingTargets}/{totalTargets}";
+        }
     }
 }
