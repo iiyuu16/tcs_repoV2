@@ -17,7 +17,7 @@ public class plyrWormBullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Shield"||other.tag == "Target"|| other.tag == "Obstacle")
+        if (other.tag == "Shield"||other.tag == "Target"|| other.tag == "Obstacle" || other.tag == "Turret")
         {
             sparksFX.Play();
             smokeFX.Play();

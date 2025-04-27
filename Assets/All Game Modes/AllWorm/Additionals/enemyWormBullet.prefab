@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 416150486102831556}
   - component: {fileID: 8763924548522060527}
   - component: {fileID: 2791938642567101861}
-  - component: {fileID: 3715233664351593810}
   - component: {fileID: 6888398748520932499}
-  - component: {fileID: 5514518874857359336}
+  - component: {fileID: 4980678794812077228}
+  - component: {fileID: 4736621437688365638}
   m_Layer: 0
   m_Name: enemyWormBullet
   m_TagString: Bullet
@@ -104,13 +104,47 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3715233664351593810
+--- !u!114 &6888398748520932499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525128527710475867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c911b2eec0c477f48b1055fd12454037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletLife: 20
+  bulletSkin: {fileID: 8763924548522060527}
+  hitFX: {fileID: 8755727859214683974}
+  sparksFX: {fileID: 3124352681297776015}
+  flashFX: {fileID: 8392534580144107049}
+  fireFX: {fileID: 7400505939360035016}
+  smokeFX: {fileID: 2978159421293515754}
+  col: {fileID: 2791938642567101861}
+--- !u!114 &4980678794812077228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8525128527710475867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f9ba7c0e2207543ad5ff1f57ac4944, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayTimeToPlay: 1
+  delayTimeToTransition: 0
+--- !u!54 &4736621437688365638
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,43 +169,8 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 64
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6888398748520932499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8525128527710475867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c911b2eec0c477f48b1055fd12454037, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletLife: 20
-  bulletSkin: {fileID: 8763924548522060527}
-  hitFX: {fileID: 8755727859214683974}
-  sparksFX: {fileID: 3124352681297776015}
-  flashFX: {fileID: 8392534580144107049}
-  fireFX: {fileID: 7400505939360035016}
-  smokeFX: {fileID: 2978159421293515754}
-  col: {fileID: 2791938642567101861}
---- !u!114 &5514518874857359336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8525128527710475867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f9ba7c0e2207543ad5ff1f57ac4944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayTimeToPlay: 1
-  delayTimeToTransition: 0
-  objTransition: {fileID: 0}
 --- !u!1001 &783379755794453445
 PrefabInstance:
   m_ObjectHideFlags: 0
