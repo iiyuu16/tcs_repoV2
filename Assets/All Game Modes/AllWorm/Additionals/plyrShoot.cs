@@ -19,7 +19,7 @@ public class plyrShoot : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && plyrWorm.isStunned == false)
+        if (Input.GetKeyDown(KeyCode.J) && plyrWorm.isStunned == false)
         {
             ShootBullet();
         }
