@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BlinkingText : MonoBehaviour
 {
+    public float freq = 0.5f;
     private TextMeshProUGUI textMesh;
 
     void Start()
@@ -18,7 +19,7 @@ public class BlinkingText : MonoBehaviour
         {
             textMesh.enabled = !textMesh.enabled;
 
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(freq);
         }
     }
 }
