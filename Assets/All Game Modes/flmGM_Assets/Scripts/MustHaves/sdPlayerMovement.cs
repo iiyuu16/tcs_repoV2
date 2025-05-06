@@ -20,7 +20,7 @@ public class sdPlayerMovement : MonoBehaviour
     public int maxHP;
     private int currHP;
 
-    private bool isBraking = false;
+    //private bool isBraking = false;
     private bool isBoosting = false;
     public bool isStunned = false;
     private Coroutine recoveryCoroutine;
@@ -78,7 +78,7 @@ public class sdPlayerMovement : MonoBehaviour
         {
             HandleMovement();
             HandleRotation();
-            ApplyBrake();
+            //ApplyBrake();
             HandleBoost();
         }
         HandleLife();
@@ -151,19 +151,21 @@ public class sdPlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            if (!isBraking)
+/*            if (!isBraking)
             {
                 currentSpeed += acceleration * Time.deltaTime;
             }
             else
             {
                 isBraking = false;
-            }
+            }*/
+            currentSpeed += acceleration * Time.deltaTime;
 
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            isBraking = true;
+            //isBraking = true;
+            currentSpeed -= acceleration * Time.deltaTime;
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
@@ -189,14 +191,14 @@ public class sdPlayerMovement : MonoBehaviour
         }
     }
 
-    private void ApplyBrake()
+    /*private void ApplyBrake()
     {
         if (isBraking)
         {
             currentSpeed -= deceleration * Time.deltaTime;
             currentSpeed = Mathf.Clamp(currentSpeed, 0f, moveSpeed);
         }
-    }
+    }*/
 
     private void HandleBoost()
     {

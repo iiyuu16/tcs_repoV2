@@ -2107,6 +2107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!114 &589733287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3466,6 +3467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!1 &878492929
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,8 +4291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemHP: {fileID: 3287934747263593660, guid: 095aa5f69f8b97c4b8ee9f61247cca07, type: 3}
   spawnPoint: {fileID: 620004186}
-  spawnInterval: 30
-  itemDespawnTime: 15
+  spawnInterval: 25
+  itemDespawnTime: 12.5
 --- !u!1 &1139323750
 GameObject:
   m_ObjectHideFlags: 0
@@ -5375,7 +5377,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373745133}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5739665, y: 0.000000057208336, z: -0.000000047701363, w: 0.81887877}
+  m_LocalRotation: {x: 0.5739665, y: -0.000000056640044, z: 0.0000000484392, w: 0.81887877}
   m_LocalPosition: {x: 121.4969, y: -48.877308, z: 283.0403}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6988,7 +6990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874488695}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6101942, y: 0.000000059027375, z: -0.000000045463015, w: 0.79225194}
+  m_LocalRotation: {x: 0.6101942, y: -0.00000005902737, z: 0.00000004546301, w: 0.79225194}
   m_LocalPosition: {x: 45.25, y: 23.5, z: 26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

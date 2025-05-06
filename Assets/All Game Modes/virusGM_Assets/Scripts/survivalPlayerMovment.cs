@@ -15,7 +15,7 @@ public class survivalPlayerMovement : MonoBehaviour
     public float currInfection;
     public float infectionRate = 0.1f;
 
-    private bool isBraking = false;
+    //private bool isBraking = false;
 
     public survivalSoundSource sfx;
 
@@ -53,7 +53,7 @@ public class survivalPlayerMovement : MonoBehaviour
     {
         HandleMovement();
         HandleRotation();
-        ApplyBrake();
+        //ApplyBrake();
         ApplyInfection();
     }
 
@@ -101,19 +101,20 @@ public class survivalPlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            if (!isBraking)
+            /*if (!isBraking)
             {
                 currentSpeed += acceleration * Time.deltaTime;
             }
             else
             {
                 isBraking = false;
-            }
-
+            }*/
+            currentSpeed += acceleration * Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            isBraking = true;
+            //isBraking = true;
+            currentSpeed -= acceleration * Time.deltaTime;
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
@@ -139,12 +140,12 @@ public class survivalPlayerMovement : MonoBehaviour
         }
     }
 
-    private void ApplyBrake()
+    /*private void ApplyBrake()
     {
         if (isBraking)
         {
             currentSpeed -= deceleration * Time.deltaTime;
             currentSpeed = Mathf.Clamp(currentSpeed, 0f, moveSpeed);
         }
-    }
+    }*/
 }
