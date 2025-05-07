@@ -175,6 +175,7 @@ MonoBehaviour:
   boostCD: 1
   recoveryTime: 5
   boostRegenDelay: 5
+  currentSpeed: 0
   maxHP: 15
   isStunned: 0
   maxBoosts: 3
@@ -288,7 +289,7 @@ MonoBehaviour:
   cooldownTime: 0.25
   colliderDisableTime: 0.25
   attkDMG: 1
-  Attack: 323
+  Attack: 106
   playerMovement: {fileID: 5862614335967002488}
   sfx: {fileID: 0}
 --- !u!135 &832482793996661607
@@ -10065,6 +10066,10 @@ PrefabInstance:
     - target: {fileID: 4002541350830119246, guid: d6fe95e676a6003488c3952b420c6aa2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009500174294957690, guid: d6fe95e676a6003488c3952b420c6aa2, type: 3}
+      propertyPath: Scan
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 5009500174294957690, guid: d6fe95e676a6003488c3952b420c6aa2, type: 3}
       propertyPath: maxSize

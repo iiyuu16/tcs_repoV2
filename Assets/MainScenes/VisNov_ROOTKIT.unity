@@ -4977,7 +4977,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5783060600970382699, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 521240729501405112, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1269097085029904336, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5215544662992931229, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2150278755940500328, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6583433053856636546, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1275171766758155352, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
 --- !u!20 &1216329558 stripped
 Camera:
@@ -6735,6 +6756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!114 &1669370271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8393,6 +8415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!114 &2042394548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8793,6 +8816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!222 &1076376362483595553
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10261,7 +10285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Survive for 30 seconds \nwhile going through obstacles."
+  m_text: "Survive for 15 seconds \nwhile going through obstacles."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}
   m_sharedMaterial: {fileID: -8606282389204350942, guid: 4725fd2127879ef4bb7de8d429201d99, type: 2}

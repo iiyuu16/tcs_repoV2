@@ -109,6 +109,7 @@ public class survivalRewardsManager : MonoBehaviour
             else if (winScreenActive && !loseScreenActive)
             {
                 GetSurvivalBuff();
+                statusManager.shopNullOn();
                 _survivalScoreManager.BaseScoring();
                 return "Insurance Augment is active! : Augment skill is not triggered.\n";
             }
@@ -123,6 +124,7 @@ public class survivalRewardsManager : MonoBehaviour
             augmentManager.isMultiplyingOnEffect = true;
             if (loseScreenActive && !winScreenActive)
             {
+                statusManager.shopNullOn();
                 _survivalScoreManager.BaseScoring();
                 return "Multiplying Augment is active. : Augment conditions is not triggered.\n";
             }
@@ -169,6 +171,7 @@ public class survivalRewardsManager : MonoBehaviour
             }
             else if (loseScreenActive && !winScreenActive)
             {
+                statusManager.shopNullOn();
                 _survivalScoreManager.BaseScoring();
                 return "Augmentless : Punishments triggered!\n";
             }

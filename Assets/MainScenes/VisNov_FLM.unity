@@ -8850,6 +8850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!114 &1669370271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9337,7 +9338,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5783060600970382699, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 521240729501405112, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1269097085029904336, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 5215544662992931229, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 2150278755940500328, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 6583433053856636546, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 1275171766758155352, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: f0cf9499205663643afb67cbb0c68c36, type: 3}
 --- !u!1001 &1835953657
 PrefabInstance:
@@ -10175,6 +10197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25017c163a2afef4eb7d4dff6ec2bf74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  freq: 0.5
 --- !u!114 &2042394548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10545,10 +10568,10 @@ PrefabInstance:
 
         ASWD - Movement
 
-        Left Click - Attack
+        J- Attack
 
-        Right
-        Click - Scan'
+        K -
+        Scan'
       objectReference: {fileID: 0}
     - target: {fileID: 2186263579930126143, guid: ffc4c7548805ebc4282ef134f1456ca9, type: 3}
       propertyPath: m_IsActive
