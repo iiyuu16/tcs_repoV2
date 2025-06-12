@@ -93,7 +93,7 @@ public class mainSceneController : MonoBehaviour
     public void FLM_gamemode() => StartCoroutine(DelayedSceneTransition("s&dGM"));
     public void ADWARE_gamemode() => StartCoroutine(DelayedSceneTransition("rhythmGM"));
     public void VIRUS_gamemode() => StartCoroutine(DelayedSceneTransition("survivalGM"));
-    public void ROOTKIT_gamemode() => StartCoroutine(DelayedSceneTransition("flappyGM"));
+    public void ROOTKIT_gamemode() => StartCoroutine(DelayedSceneTransition("mazeGM"));
     public void WORM_gamemode() => StartCoroutine(DelayedSceneTransition("WormGM"));
     public void BOTS_gamemode() => StartCoroutine(DelayedSceneTransition("Bots GM"));
 

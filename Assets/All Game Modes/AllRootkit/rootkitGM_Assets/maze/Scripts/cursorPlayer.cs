@@ -2,8 +2,9 @@
 
 public class CursorPlayer : MonoBehaviour
 {
-    public Transform startPoint;         // Assign start point in inspector
-
+    public Transform startPoint;
+    public mazeConditionManager _mazeConditionManager;
+    public mazeSoundSource soundSource;
     private bool isDragging = false;
     private float floorY;
 
@@ -61,13 +62,24 @@ public class CursorPlayer : MonoBehaviour
         if (other.CompareTag("Wall") && isDragging)
         {
             Debug.LogWarning("Hit wall! Resetting and dropping player.");
+            soundSource.deadSFX();
+            ResetToStart();
+            isDragging = false;
+        }
+        else if (other.CompareTag("Hazard") && isDragging)
+        {
+            Debug.LogWarning("Hit hazard while moving! Resetting.");
+            soundSource.deadSFX();
             ResetToStart();
             isDragging = false;
         }
         else if (other.CompareTag("Target"))
         {
-            Debug.Log("🎉 Reached END POINT!");
-            // TODO: add win logic
+            Debug.Log("Target reached!");
+            if (_mazeConditionManager != null)
+            {
+                _mazeConditionManager.mazeWin();
+            }
         }
     }
 
@@ -82,18 +94,6 @@ public class CursorPlayer : MonoBehaviour
         else
         {
             Debug.LogError("Start point not assigned.");
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, 0.2f);
-
-        if (startPoint != null)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawSphere(startPoint.position, 0.15f);
         }
     }
 }
