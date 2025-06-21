@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386735802}
         m_TargetAssemblyTypeName: mainSoundSource, Assembly-CSharp
         m_MethodName: click2
         m_Mode: 1
@@ -243,7 +243,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 74505994}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -255,7 +255,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 74505993}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -973,6 +973,21 @@ GameObject:
 --- !u!82 &74505992 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8269165308627291765, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+  m_PrefabInstance: {fileID: 74505989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74505993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8865194670462114712, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+  m_PrefabInstance: {fileID: 74505989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74505994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5497507186173398397, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+  m_PrefabInstance: {fileID: 74505989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &227962760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5155589559924244665, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
   m_PrefabInstance: {fileID: 74505989}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &253147931
@@ -2082,7 +2097,7 @@ MonoBehaviour:
   - {fileID: 2034265567502839631, guid: 43ed52c7d1380804ea791274710b1492, type: 3}
   - {fileID: 2739721743551825824, guid: 73ca050cf36a7c74dbab0290ad3d8f37, type: 3}
   - {fileID: 783839396749974549, guid: acdd6286a9d9000419b13daaf1f181d5, type: 3}
-  canvas: {fileID: 0}
+  canvas: {fileID: 642008549}
   spawnInterval: 15
   numPopUpsToShow: 2
   maxPopUpCount: 4
@@ -2232,7 +2247,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1386735802}
         m_TargetAssemblyTypeName: mainSoundSource, Assembly-CSharp
         m_MethodName: click2
         m_Mode: 1
@@ -2256,7 +2271,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 227962760}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -2268,7 +2283,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1484984694}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3740,6 +3755,74 @@ MonoBehaviour:
   sfx1: {fileID: 8300000, guid: d56d2a616f422a64ba4f6c4f2bfdfdd4, type: 3}
   sfx2: {fileID: 8300000, guid: 18fb56eaf4f8b6f4aba0781db52fb7a4, type: 3}
   sfx3: {fileID: 8300000, guid: c599657f4404ea247bb9b0469bcf8fa8, type: 3}
+--- !u!1 &1391954106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391954109}
+  - component: {fileID: 1391954108}
+  - component: {fileID: 1391954107}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1391954107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391954106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1391954108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391954106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1391954109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391954106}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1414296572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4014,6 +4097,11 @@ MonoBehaviour:
   - {fileID: 1879869681}
   - {fileID: 1054102988}
   winScreen: {fileID: 500734435}
+--- !u!1 &1484984694 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 205757055089140129, guid: c69cfa717b4b69c40950b2c987af5b39, type: 3}
+  m_PrefabInstance: {fileID: 74505989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1493572211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,7 +4464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a5fa7af648bb044da7da091e90a8e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeValue: 180.5
+  timeValue: 300.5
   timeText: {fileID: 1963188883}
   gameOverScreen: {fileID: 1127720380}
   objectsToDisable:
@@ -5235,6 +5323,7 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1391954109}
   - {fileID: 1499324414}
   - {fileID: 727232336}
   - {fileID: 667535214}
