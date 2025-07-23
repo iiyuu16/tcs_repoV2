@@ -6,6 +6,7 @@ public class GameModeManager : MonoBehaviour
 {
     public static GameModeManager instance;
     public GameObject finalGameMSG;
+    public GameObject evaluationUIPrefab;
 
     private const string ROOTKIT_DONE_KEY = "RootkitDone";
     private const string FILELESS_MALWARE_DONE_KEY = "FilelessMalwareDone";
@@ -63,12 +64,7 @@ public class GameModeManager : MonoBehaviour
         }
 
         //check and update buttons
-        UpdateFilelessButton();
-        UpdateAdwareButton();
-        UpdateVirusButton();
-        UpdateRootkitButton();
-        UpdateBotsButton();
-        UpdateWormButton();
+        CheckAndUpdateButtons();
 
         //icon check
         UpdateMalwareIcons();
@@ -128,12 +124,7 @@ public class GameModeManager : MonoBehaviour
         wormDoneCount = PlayerPrefs.GetInt(WORM_DONE_KEY, 0);
 
         // Update buttons after loading
-        UpdateFilelessButton();
-        UpdateAdwareButton();
-        UpdateVirusButton();
-        UpdateRootkitButton();
-        UpdateBotsButton();
-        UpdateWormButton();
+        CheckAndUpdateButtons();
 
         Debug.Log("Data Loaded!");
 
@@ -256,5 +247,42 @@ public class GameModeManager : MonoBehaviour
         }
         else
             Debug.Log("all gms not finished");
+    }
+
+    public void EvaluatePlyrProgress(bool force = false)
+    {
+        int completed = GetCompletedMissionCount();
+
+        if (completed > 0 || force)
+        {
+            Debug.Log($"[Evaluation] Triggered. Completed: {completed}, Forced: {force}");
+
+            if (evaluationUIPrefab != null)
+            {
+                evaluationUIPrefab.SetActive(true);
+
+                EvaluationManager evalManager = evaluationUIPrefab.GetComponent<EvaluationManager>();
+                if (evalManager != null)
+                {
+                    evalManager.DisplayRank();
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("[Evaluation] Skipped — No missions completed.");
+        }
+    }
+
+    public int GetCompletedMissionCount()
+    {
+        int count = 0;
+        if (rootkitDoneCount > 0) count++;
+        if (filelessMalwareDoneCount > 0) count++;
+        if (virusDoneCount > 0) count++;
+        if (botsDoneCount > 0) count++;
+        if (adwareDoneCount > 0) count++;
+        if (wormDoneCount > 0) count++;
+        return count;
     }
 }
